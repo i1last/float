@@ -79,6 +79,16 @@ strong {
   justify-content: space-between;
 }
 
+.section_header .header_links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section_header .header_links #main {
+  margin-left: 24px;
+}
+
 .section_hello .main_text {
   margin-bottom: 20px;
 }
@@ -151,7 +161,7 @@ strong {
 }
 
 .section_footer {
-  margin-bottom: 100px;
+  margin-bottom: 120px;
   margin-top: 100px;
   display: flex;
   align-items: center;

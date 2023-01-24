@@ -1,0 +1,3 @@
+replac: (without "+")
+- =+"/integer/
+- =+"/
