@@ -1,3 +1,9 @@
 *.dl
 *.code-workspace
 _*
+node_modules
+yarn.lock
+# app
+# yarn.lock
+# package.json
+# gulpfile.js
