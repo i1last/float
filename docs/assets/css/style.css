@@ -32,7 +32,8 @@ h3 {
   font-size: 15px;
 }
 
-p {
+p,
+td {
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -66,6 +67,59 @@ hr {
   border: 0 solid #383d66;
   border-radius: 5px;
   background-color: #383d66;
+}
+
+ul {
+  list-style: disc;
+}
+
+table {
+  border-collapse: collapse;
+  border-style: hidden;
+  width: 100%;
+}
+
+td,
+th {
+  padding: 12px;
+  vertical-align: middle;
+  border: 1px solid #24273a;
+}
+
+tr td:first-child,
+th {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  color: #cad3f5;
+  padding: 20px;
+  text-align: center;
+}
+
+th,
+td:nth-child(3),
+th,
+td:nth-child(4) {
+  text-align: center;
+}
+
+th,
+td:nth-child(5),
+th,
+td:nth-child(2) {
+  text-align: left;
+}
+
+.table h1 {
+  margin-bottom: 20px;
+}
+
+.table {
+  overflow-x: scroll;
+  margin: 60px auto;
+}
+
+.important_note .note {
+  margin-left: 40px;
 }
 
 .header {
@@ -157,7 +211,7 @@ hr {
 }
 
 .footer #source,
-.footer #authors {
+.footer #feedback {
   font-size: 15px;
   width: fit-content;
   padding: 4px 8px;
@@ -179,12 +233,12 @@ hr {
   border-color: #c6a0f6;
 }
 
-.footer #authors:hover {
+.footer #feedback:hover {
   background-color: #5f9089;
   border-color: #5f9089;
 }
 
-.footer #authors {
+.footer #feedback {
   background-color: #8bd5ca;
   border-color: #8bd5ca;
 }
@@ -212,6 +266,18 @@ hr {
   .actual .buttons,
   .archive .buttons {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .footer {
+    display: block;
+  }
+
+  .footer #source {
+    margin-left: 0;
+  }
+
+  .footer div:last-child {
+    margin-top: 20px;
   }
 }
 

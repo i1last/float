@@ -1,60 +1,53 @@
 {% extends "layout.njk" %}
 {% block title %}Главная{% endblock %}
 {% block content %}
-    <section class="hello_world">
-      <div class="main_text">
-        <h1>Привет! &#128075;</h1>
-      </div>
-
-      <div class="sub_text">
-        <p>
-          <strong>integer</strong> &#8211; это сайт, который поможет тебе в учебе! Здесь хранятся расписание на текущий
-          день, недельное расписание, актуальные, архивированные распечатки от учителей, а также их улучшенные версии :)
+  <section class="hello_world">
+    <div class="main_text">
+      <h1>Привет! &#128075;</h1>
+    </div>
+    <div class="sub_text">
+      <p>
+        <strong>integer</strong>
+        &#8211; это сайт, который поможет тебе в учебе! Здесь хранятся расписание на текущий день, недельное расписание,
+        актуальные, архивированные распечатки от учителей, а также их улучшенные версии :)
+      </p>
+    </div>
+  </section>
+  <section class="actual">
+    <div class="header">
+      <h3>Актуальное</h3>
+    </div>
+    <div class="buttons">
+      <a href="/day-timetable" class="button" id="btn_day-timetable">
+        <h2 class="button_header">Дневное расписание</h2>
+        <p class="button_desc">Расписание текущего и следующего дня. Обновляется ежедневно в 17:00</p>
+      </a>
+      <a href="/handbook" class="button" id="btn_handbook">
+        <h2 class="button_header">Справочник</h2>
+        <p class="button_desc">Улучшенная или дополнительная информация к каждой распечатке.</p>
+      </a>
+      <a href="/week-timetable" class="button" id="btn_week-timetable">
+        <h2 class="button_header">Недельное расписание</h2>
+        <p class="button_desc">Расписание уроков на всю неделю. Не включает форс-мажоров.</p>
+      </a>
+      <a href="/actual-printouts" class="button" id="btn_actual-printouts">
+        <h2 class="button_header">Распечатки</h2>
+        <p class="button_desc">Исходные распечатки, без каких-либо правок.</p>
+      </a>
+    </div>
+  </section>
+  <section class="archive">
+    <div class="header">
+      <h3>Архивное</h3>
+    </div>
+    <div>
+      <a href="/archive-printouts" class="button">
+        <h2 class="button_header">Распечатки</h2>
+        <p class="button_desc">
+          Распечатки могут попасть сюда лишь по двум причинам: преподователь отметил их некорректными или они устарели, по
+          сравнению с новыми распечатками.
         </p>
-      </div>
-    </section>
-
-    <section class="actual">
-      <div class="header">
-        <h3>Актуальное</h3>
-      </div>
-
-      <div class="buttons">
-        <a href="/day-timetable" class="button" id="btn_day-timetable">
-          <h2 class="button_header">Расписание дня</h2>
-          <p class="button_desc">Расписание дня со всеми изменениями. Обновляется ежедневно в 17:00</p>
-        </a>
-
-        <a href="/handbook" class="button" id="btn_handbook">
-          <h2 class="button_header">Справочник</h2>
-          <p class="button_desc">Улучшенная или дополнительная информация к каждой распечатке.</p>
-        </a>
-
-        <a href="/week-timetable" class="button" id="btn_week-timetable">
-          <h2 class="button_header">Расписание недели</h2>
-          <p class="button_desc">Расписание уроков на всю неделю. Не включает форс-мажоров.</p>
-        </a>
-
-        <a href="/actual-printouts" class="button" id="btn_actual-printouts">
-          <h2 class="button_header">Распечатки</h2>
-          <p class="button_desc">Исходные распечатки, без каких-либо правок.</p>
-        </a>
-      </div>
-    </section>
-
-    <section class="archive">
-      <div class="header">
-        <h3>Архивное</h3>
-      </div>
-
-      <div>
-        <a href="/archive-printouts" class="button">
-          <h2 class="button_header">Распечатки</h2>
-          <p class="button_desc">
-            Распечатки могут попасть сюда лишь по двум причинам: преподователь отметил их некорректными или они
-            устарели, по сравнению с новыми распечатками.
-          </p>
-        </a>
-      </div>
-    </section>
+      </a>
+    </div>
+  </section>
 {% endblock %}

@@ -1,5 +1,5 @@
-const { src, dest, series } = require('gulp');
 const njkRender = require('gulp-nunjucks-render');
+const { src, dest, series } = require('gulp');
 const replace = require('gulp-replace');
 
 function localCompil() {

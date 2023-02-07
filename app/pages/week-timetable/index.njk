@@ -1,4 +1,396 @@
 {% extends "layout.njk" %}
+{% block title %}Дневное расписание{% endblock %}
 {% block content %}
-    week
+  <section class="hello_world">
+    <div class="main_text">
+      <h1>Недельное расписание</h1>
+    </div>
+    <div class="sub_text">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+      </p>
+    </div>
+  </section>
+  <section class="table" id="monday">
+    <h1>Понедельник</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>№</th>
+          <th>Предмет</th>
+          <th>Кабинет</th>
+          <th>Время</th>
+          <th>Учитель</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Классный час</td>
+          <td>311</td>
+          <td>9:00 - 9:45</td>
+          <td>Олеся Анатольевна</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Физика</td>
+          <td>412</td>
+          <td>9:55 - 10:40</td>
+          <td>Марина Валентиновна</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Физика</td>
+          <td>412</td>
+          <td>11:00 - 11:45</td>
+          <td>Марина Валентиновна</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Алгебра</td>
+          <td>307</td>
+          <td>12:05 - 12:50</td>
+          <td>Александр Константинович</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Алгебра</td>
+          <td>307</td>
+          <td>13:05 - 13:50</td>
+          <td>Александр Константинович</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Информатика</td>
+          <td>314 / 315</td>
+          <td>14:00 - 14:45</td>
+          <td>Екатерина Алексеевна /<br/>Юлия Николаевна</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Информатика</td>
+          <td>314 / 315</td>
+          <td>14:55 - 15:40</td>
+          <td>Екатерина Алексеевна /<br/>Юлия Николаевна</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <hr/>
+  <section class="table" id="tuesday">
+    <h1>Вторник</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>№</th>
+          <th>Предмет</th>
+          <th>Кабинет</th>
+          <th>Время</th>
+          <th>Учитель</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Информатика</td>
+          <td>314 / 315</td>
+          <td>9:00 - 9:45</td>
+          <td>Екатерина Алексеевна /<br/>Юлия Николаевна</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Информатика</td>
+          <td>314 / 315</td>
+          <td>9:55 - 10:40</td>
+          <td>Екатерина Алексеевна /<br/>Юлия Николаевна</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Физика</td>
+          <td>412</td>
+          <td>11:00 - 11:45</td>
+          <td>Марина Валентиновна</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Физика</td>
+          <td>412</td>
+          <td>12:05 - 12:50</td>
+          <td>Марина Валентиновна</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>История</td>
+          <td>406</td>
+          <td>13:05 - 13:50</td>
+          <td>Юрий Владимирович</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Русский язык</td>
+          <td>311</td>
+          <td>14:00 - 14:45</td>
+          <td>Олеся Анатольевна</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Английский язык</td>
+          <td>210 / 308</td>
+          <td>14:55 - 15:40</td>
+          <td>Валентин Петрович /<br/>Лариса Ивановна</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <hr/>
+  <section class="table" id="wednesday">
+    <h1>Среда</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>№</th>
+          <th>Предмет</th>
+          <th>Кабинет</th>
+          <th>Время</th>
+          <th>Учитель</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Английский</td>
+          <td>210 / 308</td>
+          <td>9:00 - 9:45</td>
+          <td>Валентин Петрович /<br/>Лариса Ивановна</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Английский</td>
+          <td>210 / 308</td>
+          <td>9:55 - 10:40</td>
+          <td>Валенти Петрович /<br/>Лариса Ивановна</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Химия /<br/>Физика</td>
+          <td>410</td>
+          <td>11:00 - 11:45</td>
+          <td>Наталия Владимировна /<br/>Марина Валентиновна</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Химия /<br/>Физика</td>
+          <td>410</td>
+          <td>12:05 - 12:50</td>
+          <td>Наталия Владимировна /<br/>Марина Валентиновна</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Литература</td>
+          <td>311</td>
+          <td>13:05 - 13:50</td>
+          <td>Олеся Анатольевна</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Алгебра</td>
+          <td>307</td>
+          <td>14:00 - 14:45</td>
+          <td>Александр Константинович</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Геометрия</td>
+          <td>307</td>
+          <td>14:55 - 15:40</td>
+          <td>Александр Константинович</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Внеурочка: Математика</td>
+          <td>307</td>
+          <td>15:45 - 16:30</td>
+          <td>Александр Константинович</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <hr/>
+  <section class="table" id="thursday">
+    <h1>Четверг</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>№</th>
+          <th>Предмет</th>
+          <th>Кабинет</th>
+          <th>Время</th>
+          <th>Учитель</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Биология</td>
+          <td>408</td>
+          <td>9:00 - 9:45</td>
+          <td>Ирина Викторовна</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Литература</td>
+          <td>311</td>
+          <td>9:55 - 10:40</td>
+          <td>Олеся Анатольевна</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Литература</td>
+          <td>311</td>
+          <td>11:00 - 11:45</td>
+          <td>Олеся Анатольевна</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Биология</td>
+          <td>408</td>
+          <td>12:05 - 12:50</td>
+          <td>Ирина Викторовна</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>История</td>
+          <td>406</td>
+          <td>13:05 - 13:50</td>
+          <td>Юрий Владимирович</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>История</td>
+          <td>406</td>
+          <td>14:00 - 14:45</td>
+          <td>Юрий Владимирович</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Внеурочка: Группа 2: Русский</td>
+          <td>311</td>
+          <td>14:55 - 15:40</td>
+          <td>Олеся Анатольевна</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <hr/>
+  <section class="table" id="friday">
+    <h1>Пятница</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>№</th>
+          <th>Предмет</th>
+          <th>Кабинет</th>
+          <th>Время</th>
+          <th>Учитель</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>География</td>
+          <td>417</td>
+          <td>9:00 - 9:45</td>
+          <td>Татьяна Вениаминовна</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>ОБЖ</td>
+          <td>408</td>
+          <td>9:55 - 10:40</td>
+          <td>Владимир Геннадиевич</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Алгебра</td>
+          <td>307</td>
+          <td>11:00 - 11:45</td>
+          <td>Александр Константинович</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Геометрия</td>
+          <td>307</td>
+          <td>12:05 - 12:50</td>
+          <td>Александр Константинович</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Русский</td>
+          <td>311</td>
+          <td>13:05 - 13:50</td>
+          <td>Олеся Анатольевна</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Русский</td>
+          <td>311</td>
+          <td>14:00 - 14:45</td>
+          <td>Олеся Анатольевна</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Обществознание</td>
+          <td>415</td>
+          <td>14:55 - 15:40</td>
+          <td>Ольга Викторовна</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <hr/>
+  <section class="table" id="saturday">
+    <h1>Суббота</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>№</th>
+          <th>Предмет</th>
+          <th>Кабинет</th>
+          <th>Время</th>
+          <th>Учитель</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Химия</td>
+          <td>410</td>
+          <td>9:00 - 9:45</td>
+          <td>Наталия Владимировна</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Обществознание</td>
+          <td>415</td>
+          <td>9:50 - 10:35</td>
+          <td>Ольга Викторовна</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Физкультура</td>
+          <td>-</td>
+          <td>10:45 - 11:30</td>
+          <td>Виталий Викторович</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Физкультура</td>
+          <td>-</td>
+          <td>11:40 - 12:25</td>
+          <td>Виталий Викторович</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 {% endblock %}
