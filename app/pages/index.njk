@@ -1,11 +1,11 @@
 {% extends "layout.njk" %}
 {% block title %}Главная{% endblock %}
 {% block content %}
-  <section class="hello_world">
-    <div class="main_text">
-      <h1>Привет! &#128075;</h1>
+  <section class="preview">
+    <div class="mrgn-b-20">
+      <h1 class="font-big">Привет! &#128075;</h1>
     </div>
-    <div class="sub_text">
+    <div class="preview__sub-text">
       <p>
         <strong>integer</strong>
         &#8211; это сайт, который поможет тебе в учебе! Здесь хранятся расписание на текущий день, недельное расписание,
@@ -14,36 +14,36 @@
     </div>
   </section>
   <section class="actual">
-    <div class="header">
-      <h3>Актуальное</h3>
+    <div class="head-block-green">
+      <h2 class="font-small">Актуальное</h2>
     </div>
-    <div class="buttons">
+    <div class="buttons buttons_default">
       <a href="/day-timetable" class="button" id="btn_day-timetable">
-        <h2 class="button_header">Дневное расписание</h2>
-        <p class="button_desc">Расписание текущего и следующего дня. Обновляется ежедневно в 17:00</p>
+        <h3 class="button__main-text font-medium">Дневное расписание</h3>
+        <p class="button__sub-text">Расписание текущего и следующего дня. Обновляется ежедневно в 17:00</p>
       </a>
       <a href="/handbook" class="button" id="btn_handbook">
-        <h2 class="button_header">Справочник</h2>
-        <p class="button_desc">Улучшенная или дополнительная информация к каждой распечатке.</p>
+        <h3 class="button__main-text font-medium">Справочник</h3>
+        <p class="button__sub-text">Улучшенная или дополнительная информация к каждой распечатке.</p>
       </a>
       <a href="/week-timetable" class="button" id="btn_week-timetable">
-        <h2 class="button_header">Недельное расписание</h2>
-        <p class="button_desc">Расписание уроков на всю неделю. Не включает форс-мажоров.</p>
+        <h3 class="button__main-text font-medium">Недельное расписание</h3>
+        <p class="button__sub-text">Расписание уроков на всю неделю. Не включает форс-мажоров.</p>
       </a>
       <a href="/actual-printouts" class="button" id="btn_actual-printouts">
-        <h2 class="button_header">Распечатки</h2>
-        <p class="button_desc">Исходные распечатки, без каких-либо правок.</p>
+        <h3 class="button__main-text font-medium">Распечатки</h3>
+        <p class="button__sub-text">Исходные распечатки, без каких-либо правок.</p>
       </a>
     </div>
   </section>
   <section class="archive">
-    <div class="header">
-      <h3>Архивное</h3>
+    <div class="head-block-orange">
+      <h2 class="font-small">Архивное</h2>
     </div>
     <div>
       <a href="/archive-printouts" class="button">
-        <h2 class="button_header">Распечатки</h2>
-        <p class="button_desc">
+        <h3 class="button__main-text font-medium">Распечатки</h3>
+        <p class="button__sub-text">
           Распечатки могут попасть сюда лишь по двум причинам: преподователь отметил их некорректными или они устарели, по
           сравнению с новыми распечатками.
         </p>

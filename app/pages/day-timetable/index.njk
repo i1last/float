@@ -1,27 +1,22 @@
 {% extends "layout.njk" %}
 {% block title %}Дневное расписание{% endblock %}
 {% block content %}
-  <section class="hello_world">
-    <div class="main_text">
-      <h1>Дневное расписание</h1>
+  <section class="preview">
+    <div class="mrgn-b-20">
+      <h1 class="font-big">Дневное расписание</h1>
     </div>
-    <div class="sub_text">
+    <div class="preview__sub-text">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
         aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
       </p>
     </div>
-    {# </section>
-            <section class="important_note hello_world">
-                <div class="main_text">
-                  <h1>Примечание</h1>
-                </div>
-                <ul class="note sub_text">
-                </ul>
-          </section> #}
+  </section>
+  {# <section class="important_note hello_world"><div class="main_text"><h1>Примечание</h1></div><ul class="note sub_text"></ul></section> #}
+  <section class="tables">
     <div class="table" id="monday" hidden="hidden">
-      <h1>Понедельник</h1>
-      <table>
+      <h1 class="font-big mrgn-b-20">Понедельник</h1>
+      <table class="timetable">
         <thead>
           <tr>
             <th>№</th>
@@ -85,7 +80,7 @@
       </table>
     </div>
     <div class="table" id="tuesday" hidden="hidden">
-      <h1>Вторник</h1>
+      <h1 class="font-big mrgn-b-20">Вторник</h1>
       <table>
         <thead>
           <tr>
@@ -150,7 +145,7 @@
       </table>
     </div>
     <div class="table" id="wednesday" hidden="hidden">
-      <h1>Среда</h1>
+      <h1 class="font-big mrgn-b-20">Среда</h1>
       <table>
         <thead>
           <tr>
@@ -222,7 +217,7 @@
       </table>
     </div>
     <div class="table" id="thursday" hidden="hidden">
-      <h1>Четверг</h1>
+      <h1 class="font-big mrgn-b-20">Четверг</h1>
       <table>
         <thead>
           <tr>
@@ -287,7 +282,7 @@
       </table>
     </div>
     <div class="table" id="friday" hidden="hidden">
-      <h1>Пятница</h1>
+      <h1 class="font-big mrgn-b-20">Пятница</h1>
       <table>
         <thead>
           <tr>
@@ -352,7 +347,7 @@
       </table>
     </div>
     <div class="table" id="saturday" hidden="hidden">
-      <h1>Суббота</h1>
+      <h1 class="font-big mrgn-b-20">Суббота</h1>
       <table>
         <thead>
           <tr>
@@ -395,5 +390,6 @@
         </tbody>
       </table>
     </div>
-    <script src="/assets/js/includer-01.js"></script>
-  {% endblock %}
+  </section>
+  <script src="/assets/js/includer-01.js"></script>
+{% endblock %}

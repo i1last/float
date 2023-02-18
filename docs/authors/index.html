@@ -1,94 +1,88 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <!-- main -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/integer/assets/css/reset.css" />
-    <link rel="stylesheet" href="/integer/assets/css/style.css" />
-
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet" />
-
+    <!-- metadata -->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/integer/assets/css/reset.css"/>
+    <link
+    rel="stylesheet" href="/integer/assets/css/style.css"/> <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+    <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet"/>
     <!-- title -->
     <title>Авторы &#8211; integer</title>
   </head>
-
-  <body class="container">
-    <section class="header">
+  <body>
+    <header class="header">
       <div>
-        <a href="/integer/"> <img src="/integer/assets/images/logo.svg" alt="logo.svg" /></a>
+        <a href="/integer/"><img src="/integer/assets/images/logo.svg" alt="logo.svg"/></a>
       </div>
-
-      <div class="links">
-        <a class="colorized" href="/integer/authors"><h3>Авторы</h3></a>
-        <a class="colorized" id="main" href="/integer/"><h3>Главная</h3></a>
+      <div class="header__links">
+        <a class="hover-color header__links-a" href="/integer/authors">
+          <h3 class="font-small">Авторы</h3>
+        </a>
+        <a class="hover-color header__links-a" id="main" href="/integer/">
+          <h3 class="font-small">Главная</h3>
+        </a>
       </div>
-    </section>
-
+    </header>
     
-    <section class="hello_world hello_authors">
-      <div class="main_text">
-        <h1>Авторы</h1>
-      </div>
-
-      <div class="sub_text">
-        <p>Хотите узнать создателей их их секреты? Хе-хе-хе-хе...</p>
-      </div>
+  <section class="preview">
+    <div class="mrgn-b-20">
+      <h1 class="font-big">Авторы</h1>
+    </div>
+    <div class="preview__sub-text">
+      <p>
+        Enfant d'chienne de baptême de cochonnerie de charogne de bâtard de viande à chien de sainte-viarge de cibouleau de
+        ciarge de maudite marde. Saint-cimonaque de sapristi de maudite marde d'estique de cimonaque de viande à chien de cul de
+        torrieux de boswell de p'tit Jésus.
+      </p>
+    </div>
+  </section>
+  <section class="author">
+    <img src="/integer/assets/images/teacher_avatar.png" alt="teacher_avatar.png" class="author__img"/>
+    <section class="author__about">
+      <h1 class="font-big author__about-h1">Юлия Нилова</h1>
+      <p>Какое-то описание для данного объекта. Краткое и не скучное.</p>
     </section>
-
-    <section class="author">
-      <img src="/integer/assets/images/teacher_avatar.png" alt="teacher_avatar.png" />
-      <section class="text_group">
-        <h1>Юлия Нилова</h1>
-        <p>Какое-то описание для данного объекта. Краткое и не скучное.</p>
-      </section>
+  </section>
+  <hr/>
+  <section class="author">
+    <img src="/integer/assets/images/albert_avatar.png" alt="albert_avatar.png" class="author__img"/>
+    <section class="author__about">
+      <h1 class="font-big author__about-h1">Альберт Рахметов</h1>
+      <p>Разработчик сайта. Тот, кто создал сайт, а после сломал и починил его трижды.</p>
     </section>
-
-    <hr />
-
-    <section class="author">
-      <img src="/integer/assets/images/albert_avatar.png" alt="albert_avatar.png" />
-      <section class="text_group">
-        <h1>Альберт Рахметов</h1>
-        <p>Разработчик сайта. Тот, кто создал сайт, а после сломал и починил его трижды.</p>
-      </section>
+  </section>
+  <hr/>
+  <section class="author">
+    <img src="/integer/assets/images/semen_avatar.png" alt="semen_avatar.png" class="author__img"/>
+    <section class="author__about">
+      <h1 class="font-big author__about-h1">Семен Вторушин</h1>
+      <p>Какое-то описание для данного объекта. Краткое и не скучное.</p>
     </section>
-
-    <hr />
-
-    <section class="author">
-      <img src="/integer/assets/images/semen_avatar.png" alt="semen_avatar.png" />
-      <section class="text_group">
-        <h1>Семен Вторушин</h1>
-        <p>Какое-то описание для данного объекта. Краткое и не скучное.</p>
-      </section>
+  </section>
+  <hr/>
+  <section class="author">
+    <img src="/integer/assets/images/andrey_avatar.png" alt="andrey_avatar.png" class="author__img"/>
+    <section class="author__about">
+      <h1 class="font-big author__about-h1">Андрей Махоткин</h1>
+      <p>Какое-то описание для данного объекта. Краткое и не скучное.</p>
     </section>
+  </section>
 
-    <hr />
-
-    <section class="author">
-      <img src="/integer/assets/images/andrey_avatar.png" alt="andrey_avatar.png" />
-      <section class="text_group">
-        <h1>Андрей Махоткин</h1>
-        <p>Какое-то описание для данного объекта. Краткое и не скучное.</p>
-      </section>
-    </section>
-
-
-    <section class="footer">
+    <footer class="footer">
       <div>
-        <a href="/integer/"> <img src="/integer/assets/images/logo.svg" alt="logo.svg" /></a>
+        <a href="/integer/"><img src="/integer/assets/images/logo.svg" alt="logo.svg"/></a>
       </div>
-
-      <div>
-        <a class="colorized" id="source" href="https://github.com/i1last/integer" target="_blank">Исходный код</a>
-        <a class="colorized" id="feedback" href="https://wip.wip/">Обратная связь</a>
+      <div class="footer__links">
+        <a class="footer__links-a footer__links-a_purple" href="https://github.com/i1last/integer" target="_blank">Исходный код</a>
+        <a class="footer__links-a footer__links-a_cyan" href="https://forms.gle/weuyGnz1A4G1TJmp7" target="_blank">Обратная связь</a>
       </div>
-    </section>
+    </footer>
   </body>
 </html>
