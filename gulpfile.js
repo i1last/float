@@ -10,14 +10,14 @@ function njkCompile() {
 }
 
 function serverPath() {
-  return src('docs/**/*.html')
+  return src('docs/**/*')
     .pipe(replace('="/', '="/integer/'))
     .pipe(dest('docs/'));
 }
 
 function localPath() {
-  return src('docs/**/*.html')
-    .pipe(replace('="/', '="/integer/'))
+  return src('docs/**/*')
+    .pipe(replace('="/integer/', '="/'))
     .pipe(dest('docs/'));
 }
 
