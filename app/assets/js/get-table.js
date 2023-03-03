@@ -62,7 +62,7 @@ function generateTables(json, sections, tableDataClasses) {
 const tableRequest = document.currentScript.getAttribute('table');
 const sectionRequest = document.currentScript.getAttribute('section');
 
-fetch(`../data/${tableRequest}.json`)
+fetch(`/assets/data/${tableRequest}.json`)
   .then((res) => res.json())
   .then((json) => {
     let sections;
