@@ -10,13 +10,13 @@ function njkCompile() {
 }
 
 function serverPath() {
-  return src('docs/**/*')
+  return src(['docs/**/*.html', 'docs/**/*.js', 'docs/**/*.css'])
     .pipe(replace('="/', '="/integer/'))
     .pipe(dest('docs/'));
 }
 
 function localPath() {
-  return src('docs/**/*')
+  return src(['docs/**/*.html', 'docs/**/*.js', 'docs/**/*.css'])
     .pipe(replace('="/integer/', '="/'))
     .pipe(dest('docs/'));
 }
