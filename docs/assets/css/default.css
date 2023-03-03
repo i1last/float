@@ -1,0 +1,264 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.logo__link {
+  display: block;
+}
+
+.header__links-item {
+  display: inline;
+  margin-left: 20px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    display: block;
+  }
+
+  .header__links {
+    margin-top: 16px;
+  }
+
+  .header__links-item:first-child {
+    margin-left: 0px;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 450px) {
+  .footer {
+    display: block;
+  }
+
+  .footer__links {
+    margin-top: 16px;
+  }
+
+  .footer__links-item:first-child {
+    margin-left: 0px;
+  }
+}
+
+.footer__links-item {
+  display: inline;
+  margin-left: 12px;
+}
+
+.footer__link {
+  padding: 4px 8px;
+  color: var(--ctp-macchiato-base);
+  border: 2px solid;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.footer__link:hover {
+  opacity: 0.7;
+}
+
+.link {
+  color: var(--ctp-macchiato-text);
+  transition: 300ms;
+}
+
+.link:hover {
+  color: var(--ctp-macchiato-blue);
+  transition: 300ms;
+}
+
+.logo-style {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 400;
+  color: var(--ctp-macchiato-text);
+}
+
+.preview__text {
+  color: var(--ctp-macchiato-subtext1);
+}
+
+.restrange-title {
+  width: fit-content;
+  padding: 5px 10px 5px 10px;
+  color: var(--ctp-macchiato-base);
+  margin-bottom: 16px;
+  border-radius: 6px;
+  border: 2px solid;
+}
+
+.text--bold {
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.restrange--green {
+  background-color: var(--ctp-macchiato-green);
+  border-color: var(--ctp-macchiato-green);
+}
+
+.restrange--orange {
+  background-color: var(--ctp-macchiato-yellow);
+  border-color: var(--ctp-macchiato-yellow);
+}
+
+.restrange--blue {
+  background-color: var(--ctp-macchiato-blue);
+  border-color: var(--ctp-macchiato-blue);
+}
+
+.restrange--purple {
+  background-color: var(--ctp-macchiato-mauve);
+  border-color: var(--ctp-macchiato-mauve);
+}
+
+.restrange--purple {
+  background-color: var(--ctp-macchiato-mauve);
+  border-color: var(--ctp-macchiato-mauve);
+}
+
+.restrange--cyan {
+  background-color: var(--ctp-macchiato-teal);
+  border-color: var(--ctp-macchiato-teal);
+}
+
+.buttons__list {
+  display: grid;
+  row-gap: 18px;
+  column-gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.buttons__list--columns--1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.buttons__list--columns--3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media screen and (max-width: 768px) {
+  .buttons__list {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .buttons__list--columns--3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .buttons__list--columns--3 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.button {
+  display: block;
+  padding: 20px;
+  border-radius: 12px;
+
+  background-color: var(--ctp-macchiato-surface0);
+  box-shadow: 0px 20px 70px -20px rgba(0, 0, 0, 0.3);
+
+  transition: 250ms;
+}
+
+.button:hover {
+  background-color: var(--ctp-macchiato-surface1);
+}
+
+.button__title {
+  color: var(--ctp-macchiato-sapphire);
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.button--size--m {
+  min-height: 115px;
+}
+
+.button--alight--center {
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.table-container__content {
+  width: 100%;
+  overflow: scroll;
+}
+
+.table {
+  border-style: hidden;
+  width: 100%;
+}
+
+.table__heading {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  color: var(--ctp-macchiato-text);
+  padding: 20px;
+  text-align: center;
+}
+
+.table__data-center {
+  text-align: center;
+}
+
+.drop-menu-button {
+  background-color: transparent;
+  border: none;
+  width: fit-content;
+}
+
+.drop-menu-button--expanded-area {
+  position: relative;
+  padding: 20px;
+  margin: -40px;
+}
+
+.drop-content {
+  display: none;
+  position: absolute;
+  background-color: var(--ctp-macchiato-mantle);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  margin-left: -44px;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.drop-content__link {
+  padding: 12px 16px;
+  display: block;
+  border-radius: 8px;
+}
+
+.drop-content__link:hover {
+  background-color: var(--ctp-macchiato-surface0);
+}
+
+.drop-content--showing {
+  display: block;
+}
+
+.button--row-content {
+  display: flex;
+  justify-content: space-between;
+}
