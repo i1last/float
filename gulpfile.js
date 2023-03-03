@@ -1,20 +1,41 @@
-const njkRender = require('gulp-nunjucks-render');
-const { src, dest, series } = require('gulp');
-const replace = require('gulp-replace');
+import gulp from 'gulp';
+import njkRender from 'gulp-nunjucks-render';
+import replace from 'gulp-replace';
+const { task, src, dest, series, watch } = gulp;
 
-function localCompil() {
+function njkCompile() {
   return src('app/pages/**/*.njk')
     .pipe(njkRender({ path: ['app/templates'] }))
-    .pipe(replace('="/integer/', '="/'))
-    .pipe(dest('docs'));
+    .pipe(dest('docs/'));
 }
 
-function globalCompil() {
-  return src('app/pages/**/*.njk')
-    .pipe(njkRender({ path: ['app/templates'] }))
-    .pipe(replace('="/', '="/integer/'))
-    .pipe(dest('docs'));
+function serverPath() {
+  return src('docs/**').pipe(replace('="/', '="/integer/'));
 }
 
-exports.buildEx = series(globalCompil); // for github repo
-exports.build = series(localCompil); // for local machine
+function localPath() {
+  return src('docs/**').pipe(replace('="/', '="/integer/'));
+}
+
+function filesTransfer() {
+  return src([
+    'app/pages/**',
+    'app/assets*/**',
+    '!app/pages/**/*.njk'
+  ]).pipe(dest('docs/'));
+}
+
+function test() {
+  return 0;
+}
+
+task('test', series(test));
+task('build', series(njkCompile, localPath, filesTransfer));
+task('buildEX', series(njkCompile, serverPath, filesTransfer));
+
+task('watch', function () {
+  watch(
+    ['app/**/*'],
+    series(njkCompile, filesTransfer),
+  );
+});

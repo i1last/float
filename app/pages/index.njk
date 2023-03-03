@@ -1,53 +1,58 @@
-{% extends "layout.njk" %}
+{% extends "base-layout.njk" %}
 {% block title %}Главная{% endblock %}
 {% block content %}
   <section class="preview">
-    <div class="mrgn-b-20">
-      <h1 class="font-big">Привет! &#128075;</h1>
-    </div>
-    <div class="preview__sub-text">
-      <p>
-        <strong>integer</strong>
-        &#8211; это сайт, который поможет тебе в учебе! Здесь хранятся расписание на текущий день, недельное расписание,
-        актуальные, архивированные распечатки от учителей, а также их улучшенные версии :)
-      </p>
-    </div>
+    <div class="title">Привет! &#128075</div>
+    <div class="preview__text text">
+      Сайт создан с целью помощи в централизации и систематизации справочной
+      информации, которая используется в ходе обучения.
   </section>
   <section class="actual">
-    <div class="head-block-green">
-      <h2 class="font-small">Актуальное</h2>
+    <div class="restrange-title restrange--green text--bold">
+      Актуальное
     </div>
-    <div class="buttons buttons_default">
-      <a href="/day-timetable" class="button" id="btn_day-timetable">
-        <h3 class="button__main-text font-medium">Дневное расписание</h3>
-        <p class="button__sub-text">Расписание текущего и следующего дня. Обновляется ежедневно в 17:00</p>
-      </a>
-      <a href="/handbook" class="button" id="btn_handbook">
-        <h3 class="button__main-text font-medium">Справочник</h3>
-        <p class="button__sub-text">Улучшенная или дополнительная информация к каждой распечатке.</p>
-      </a>
-      <a href="/week-timetable" class="button" id="btn_week-timetable">
-        <h3 class="button__main-text font-medium">Недельное расписание</h3>
-        <p class="button__sub-text">Расписание уроков на всю неделю. Не включает форс-мажоров.</p>
-      </a>
-      <a href="/actual-printouts" class="button" id="btn_actual-printouts">
-        <h3 class="button__main-text font-medium">Распечатки</h3>
-        <p class="button__sub-text">Исходные распечатки, без каких-либо правок.</p>
-      </a>
+    <div class="buttons">
+      <ul class="buttons__list">
+        <li class="buttons__list-item">
+          <a class="button button--size--m" href="/day-timetable">
+            <div class="button__title">Дневное расписание</div>
+            <div class="button__desc">Показывает расписание нужного дня. Обновление в 17:00</div>
+          </a>
+        </li>
+        <li class="buttons__list-item">
+          <a class="button button--size--m" href="/handbook">
+            <div class="button__title">Справочник</div>
+            <div class="button__desc">Справочная информация по разлиным предметам</div>
+          </a>
+        </li>
+        <li class="buttons__list-item">
+          <a class="button button--size--m" href="/week-timetable">
+            <div class="button__title">Недельное расписание</div>
+            <div class="button__desc">Расписание на всей недели.</div>
+          </a>
+        </li>
+        <li class="buttons__list-item">
+          <a class="button button--size--m" href="/actual-printouts">
+            <div class="button__title">Распечатки</div>
+            <div class="button__desc">Отсканированные материалы, выданные преподавателями</div>
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
   <section class="archive">
-    <div class="head-block-orange">
-      <h2 class="font-small">Архивное</h2>
+    <div class="restrange-title restrange--orange text--bold">
+      Архивное
     </div>
-    <div>
-      <a href="/archive-printouts" class="button">
-        <h3 class="button__main-text font-medium">Распечатки</h3>
-        <p class="button__sub-text">
-          Распечатки могут попасть сюда лишь по двум причинам: преподователь отметил их некорректными или они устарели, по
-          сравнению с новыми распечатками.
-        </p>
-      </a>
+    <div class="buttons">
+      <ul class="buttons__list buttons__list--columns--1">
+        <li class="buttons__list-item">
+          <a class="button button--size--m" href="/archive-printouts">
+            <div class="button__title">Распечатки</div>
+            <div class="button__desc">Отсканированные материалы, выданные преподавателями, но потерявшие свою актуальность</div>
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
 {% endblock %}

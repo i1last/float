@@ -1,17 +1,19 @@
 {
   "name": "integer",
   "version": "1.0.0",
-  "description": "some website",
+  "description": "website",
   "main": "gulpfile.js",
+  "type": "module",
   "scripts": {
+    "watch": "gulp watch",
     "build": "gulp build",
-    "buildEX": "gulp buildEx"
+    "buildEX": "gulp buildEX",
+    "test": "gulp test"
   },
   "author": "i1last Team",
   "license": "ISC",
   "dependencies": {
     "gulp": "^4.0.2",
-    "gulp-data": "^1.3.1",
     "gulp-nunjucks-render": "^2.2.3",
     "gulp-replace": "^1.1.4"
   }

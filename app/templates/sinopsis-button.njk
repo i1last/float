@@ -1,0 +1,40 @@
+{% set title %}{{ name | replace(r/(-.*)/, "") }}{% endset %}
+{% set id %}{{ name | replace("-", "") | replace("+", "") }}{% endset %}
+<a
+  class="buttons__list-item button button--row-content"
+  href="/handbook/physics-synopsis/{{ title }}/{{ name }}.svg">
+  Конспект {{ name }}
+  <object>
+    <a href="#!">
+      <button class="drop-menu-button drop-menu-button--expanded-area" onclick="dropMenu('#card{{ id }}')">
+        <div class="drop-menu-button__content">
+          <img
+            class="drop-menu-button"
+            src="/assets/images/download.svg"
+            alt="download.svg"></div>
+        </button>
+        <div class="drop-content" id="card{{ id }}">
+          <ul class="drop-content__list-item">
+            <li class="drop-content__list-item">
+              <a
+                class="drop-content__link"
+                href="/handbook/physics-synopsis/{{ title }}/{{ name }}.pdf"
+                download>PDF</a>
+            </li>
+            <li class="drop-content__list-item">
+              <a
+                class="drop-content__link"
+                href="/handbook/physics-synopsis/{{ title }}/{{ name }}.png"
+                download>PNG</a>
+            </li>
+            <li class="drop-content__list-item">
+              <a
+                class="drop-content__link"
+                href="/handbook/physics-synopsis/{{ title }}/{{ name }}.svg"
+                download>SVG</a>
+            </li>
+          </ul>
+        </div>
+      </a>
+    </object>
+  </a>

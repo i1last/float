@@ -2,82 +2,116 @@
 <html lang="ru">
   <head>
     <!-- metadata -->
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="/integer/assets/css/reset.css"/>
-    <link
-    rel="stylesheet" href="/integer/assets/css/style.css"/> <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"/>
-    <link
-    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- links -->
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/colors.css" />
+    <link rel="stylesheet" href="/assets/css/core.css" />
+    <link rel="stylesheet" href="/assets/css/default.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet" />
+
     <!-- title -->
     <title>Справочник &#8211; integer</title>
   </head>
   <body>
     <header class="header">
-      <div>
-        <a href="/integer/"><img src="/integer/assets/images/logo.svg" alt="logo.svg"/></a>
+      <div class="logo">
+        <a class="logo__link" href="/">
+          <img src="/assets/images/logo.svg" alt="logo.svg" />
+        </a>
       </div>
       <div class="header__links">
-        <a class="hover-color header__links-a" href="/integer/authors">
-          <h3 class="font-small">Авторы</h3>
-        </a>
-        <a class="hover-color header__links-a" id="main" href="/integer/">
-          <h3 class="font-small">Главная</h3>
-        </a>
+        <ul class="header__links-list">
+          <li class="header__links-item"><a class="link" href="../">Назад</a></li>
+          <li class="header__links-item"><a class="link" href="/authors">Авторы</a></li>
+          <li class="header__links-item"><a class="link" href="/">Главная</a></li>
+        </ul>
       </div>
     </header>
     
-  <content class="preview">
-    <div class="mrgn-b-20">
-      <h1 class="font-big">Verrat de sacrament.</h1>
-    </div>
-    <div class="preview__sub-text">
-      <p>Calvinouche de cul de bâtard d'estique de crucifix de cibouleau de saintes fesses de verrat d'étole de colon de
-        charogne.</p>
-    </div>
-  </content>
-  <section class="physics">
-    <div class="head-block-green">
-      <h2 class="font-small">Физика</h2>
-    </div>
-    <div class="buttons buttons_mini">
-      <a href="/integer/handbook/physics-formulas" class="button" id="formulas">Формулы</a>
-      <a href="/integer/handbook/physics-definitions" class="button" id="definitions">Определения</a>
-      <a href="/integer/handbook/physics-synopsis" class="button" id="synopsis">Конспекты</a>
+  <section class="preview">
+    <div class="title">Справочник</div>
+    <div class="preview__text">
+      На данной странице сайта Вы можете обнаружить полезные материалы для каждого
+      предмета. Создание каждого справочного материала было под проверкой
+      преподавателя.
     </div>
   </section>
-  <section class="russian">
-    <div class="head-block-orange">
-      <h2 class="font-small">Русский язык</h2>
-    </div>
-    <div class="buttons buttons_mini">
-      <a href="/integer/handbook/russian-paronyms" class="button" id="formulas">Таблица паронимов</a>
-      <a href="#" class="button" id="definitions">Правила ударений</a>
-      <a href="#" class="button" id="synopsis">Правила суффиксов</a>
-      <a href="#" class="button" id="synopsis">Правила приставок</a>
-      <a href="#" class="button" id="synopsis">Правила корней</a>
+  <section class="physics">
+    <div class="restrange-title restrange--green text--bold">Физика</div>
+    <div class="buttons">
+      <ul class="buttons__list buttons__list--columns--3">
+        <li class="buttons__list-item">
+          <a class="button button--alight--center" href="/handbook/physics-synopsis">Конспекты</a>
+        </li>
+        <li class="buttons__list-item">
+          <a class="button button--alight--center" href="/handbook/physics-definitions">Определения</a>
+        </li>
+        <li class="buttons__list-item">
+          <a class="button button--alight--center" href="/handbook/physics-formulas">Формулы</a>
+        </li>
+      </ul>
     </div>
   </section>
   <section class="informatics">
-    <div class="head-block-blue">
-      <h2 class="font-small">Информатика</h2>
+    <div class="restrange-title restrange--blue text--bold">Информатика</div>
+    <div class="buttons">
+      <ul class="buttons__list buttons__list--columns--3">
+        <li class="buttons__list-item">
+          <a class="button button--alight--center" href="">Конспекты</a>
+        </li>
+        <li class="buttons__list-item">
+          <a class="button button--alight--center" href="">Определения</a>
+        </li>
+        <li class="buttons__list-item">
+          <a class="button button--alight--center" href="">Формулы</a>
+        </li>
+      </ul>
     </div>
-    <div class="buttons buttons_mini">
-      <a href="/integer/handbook/informatics-formulas" class="button" id="formulas">Формулы</a>
+  </section>
+  <section class="russian">
+    <div class="restrange-title restrange--orange text--bold">Русский</div>
+    <div class="buttons">
+      <ul class="buttons__list buttons__list--columns--3">
+        <li class="buttons__list-item">
+          <a class="button button--alight--center" href="">Конспекты</a>
+        </li>
+        <li class="buttons__list-item">
+          <a class="button button--alight--center" href="">Определения</a>
+        </li>
+        <li class="buttons__list-item">
+          <a class="button button--alight--center" href="">Формулы</a>
+        </li>
+      </ul>
     </div>
   </section>
 
     <footer class="footer">
-      <div>
-        <a href="/integer/"><img src="/integer/assets/images/logo.svg" alt="logo.svg"/></a>
+      <div class="logo">
+        <a class="logo__link" href="/">
+          <img src="/assets/images/logo.svg" alt="logo.svg" />
+        </a>
       </div>
       <div class="footer__links">
-        <a class="footer__links-a footer__links-a_purple" href="https://github.com/i1last/integer" target="_blank">Исходный код</a>
-        <a class="footer__links-a footer__links-a_cyan" href="https://forms.gle/weuyGnz1A4G1TJmp7" target="_blank">Обратная связь</a>
+        <ul class="footer__links-list">
+          <li class="footer__links-item">
+            <a class="footer__link restrange--purple text--bold" href="https://github.com/i1last/integer" target="_blank">
+              Исходный код
+            </a>
+          </li>
+          <li class="footer__links-item">
+            <a class="footer__link restrange--cyan text--bold" href="https://forms.gle/weuyGnz1A4G1TJmp7" target="_blank">
+              Обратная связь
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
   </body>

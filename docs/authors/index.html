@@ -2,86 +2,105 @@
 <html lang="ru">
   <head>
     <!-- metadata -->
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="/integer/assets/css/reset.css"/>
-    <link
-    rel="stylesheet" href="/integer/assets/css/style.css"/> <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"/>
-    <link
-    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- links -->
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/colors.css" />
+    <link rel="stylesheet" href="/assets/css/core.css" />
+    <link rel="stylesheet" href="/assets/css/default.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet" />
+
     <!-- title -->
     <title>Авторы &#8211; integer</title>
   </head>
   <body>
     <header class="header">
-      <div>
-        <a href="/integer/"><img src="/integer/assets/images/logo.svg" alt="logo.svg"/></a>
+      <div class="logo">
+        <a class="logo__link" href="/">
+          <img src="/assets/images/logo.svg" alt="logo.svg" />
+        </a>
       </div>
       <div class="header__links">
-        <a class="hover-color header__links-a" href="/integer/authors">
-          <h3 class="font-small">Авторы</h3>
-        </a>
-        <a class="hover-color header__links-a" id="main" href="/integer/">
-          <h3 class="font-small">Главная</h3>
-        </a>
+        <ul class="header__links-list">
+          <li class="header__links-item"><a class="link" href="../">Назад</a></li>
+          <li class="header__links-item"><a class="link" href="/authors">Авторы</a></li>
+          <li class="header__links-item"><a class="link" href="/">Главная</a></li>
+        </ul>
       </div>
     </header>
     
   <section class="preview">
-    <div class="mrgn-b-20">
-      <h1 class="font-big">Авторы</h1>
-    </div>
-    <div class="preview__sub-text">
-      <p>
-        Enfant d'chienne de baptême de cochonnerie de charogne de bâtard de viande à chien de sainte-viarge de cibouleau de
-        ciarge de maudite marde. Saint-cimonaque de sapristi de maudite marde d'estique de cimonaque de viande à chien de cul de
-        torrieux de boswell de p'tit Jésus.
-      </p>
+    <div class="title">Авторы</div>
+    <div class="preview__text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente fugiat ipsam
+      dolorum nostrum ut voluptates tempore voluptate libero voluptas eos blanditiis
+      consequatur similique quia est vitae natus, dolorem sunt! Consequatur?
     </div>
   </section>
-  <section class="author">
-    <img src="/integer/assets/images/teacher_avatar.png" alt="teacher_avatar.png" class="author__img"/>
-    <section class="author__about">
-      <h1 class="font-big author__about-h1">Юлия Нилова</h1>
-      <p>Какое-то описание для данного объекта. Краткое и не скучное.</p>
-    </section>
-  </section>
-  <hr/>
-  <section class="author">
-    <img src="/integer/assets/images/albert_avatar.png" alt="albert_avatar.png" class="author__img"/>
-    <section class="author__about">
-      <h1 class="font-big author__about-h1">Альберт Рахметов</h1>
-      <p>Разработчик сайта. Тот, кто создал сайт, а после сломал и починил его трижды.</p>
-    </section>
-  </section>
-  <hr/>
-  <section class="author">
-    <img src="/integer/assets/images/semen_avatar.png" alt="semen_avatar.png" class="author__img"/>
-    <section class="author__about">
-      <h1 class="font-big author__about-h1">Семен Вторушин</h1>
-      <p>Какое-то описание для данного объекта. Краткое и не скучное.</p>
-    </section>
-  </section>
-  <hr/>
-  <section class="author">
-    <img src="/integer/assets/images/andrey_avatar.png" alt="andrey_avatar.png" class="author__img"/>
-    <section class="author__about">
-      <h1 class="font-big author__about-h1">Андрей Махоткин</h1>
-      <p>Какое-то описание для данного объекта. Краткое и не скучное.</p>
-    </section>
+  <section class="authors">
+    <div class="author">
+      <div class="author__img"><img src="/assets/images/teacher-avatar.png" alt="teacher-avatar.png">
+      </div>
+      <div class="author__about">
+        <div class="author__name">Нилова Юлия</div>
+        <div class="author__desc">Mautadit de viarge de p'tit Jésus de verrat de taboire
+          de crucifix de crime.</div>
+      </div>
+    </div>
+    <div class="author">
+      <div class="author__img"><img src="/assets/images/albert-avatar.png" alt="albert-avatar.png">
+      </div>
+      <div class="author__about">
+        <div class="author__name">Рахметов Альберт</div>
+        <div class="author__desc">Ciarge de boswell de colon de sacréfice de cul de
+          gériboire de verrat.</div>
+      </div>
+    </div>
+    <div class="author">
+      <div class="author__img"><img src="/assets/images/semen-avatar.png" alt="semen-avatar.png">
+      </div>
+      <div class="author__about">
+        <div class="author__name">Вторушин Семен</div>
+        <div class="author__desc">Saint-cimonaque de bout d'viarge de mosus de
+          calvinouche de géritole de marde de calvince d'étole de cibouleau.</div>
+      </div>
+    </div>
+    <div class="author">
+      <div class="author__img"><img src="/assets/images/andrey-avatar.png" alt="andrey-avatar.png">
+      </div>
+      <div class="author__about">
+        <div class="author__name">Махоткин Андрей</div>
+        <div class="author__desc"></div>
+      </div>
+    </div>
   </section>
 
     <footer class="footer">
-      <div>
-        <a href="/integer/"><img src="/integer/assets/images/logo.svg" alt="logo.svg"/></a>
+      <div class="logo">
+        <a class="logo__link" href="/">
+          <img src="/assets/images/logo.svg" alt="logo.svg" />
+        </a>
       </div>
       <div class="footer__links">
-        <a class="footer__links-a footer__links-a_purple" href="https://github.com/i1last/integer" target="_blank">Исходный код</a>
-        <a class="footer__links-a footer__links-a_cyan" href="https://forms.gle/weuyGnz1A4G1TJmp7" target="_blank">Обратная связь</a>
+        <ul class="footer__links-list">
+          <li class="footer__links-item">
+            <a class="footer__link restrange--purple text--bold" href="https://github.com/i1last/integer" target="_blank">
+              Исходный код
+            </a>
+          </li>
+          <li class="footer__links-item">
+            <a class="footer__link restrange--cyan text--bold" href="https://forms.gle/weuyGnz1A4G1TJmp7" target="_blank">
+              Обратная связь
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
   </body>

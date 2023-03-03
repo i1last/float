@@ -1,47 +1,49 @@
-{% extends "layout.njk" %}
+{% extends "base-layout.njk" %}
 {% block title %}Авторы{% endblock %}}
 {% block content %}
   <section class="preview">
-    <div class="mrgn-b-20">
-      <h1 class="font-big">Авторы</h1>
-    </div>
-    <div class="preview__sub-text">
-      <p>
-        Enfant d'chienne de baptême de cochonnerie de charogne de bâtard de viande à chien de sainte-viarge de cibouleau de
-        ciarge de maudite marde. Saint-cimonaque de sapristi de maudite marde d'estique de cimonaque de viande à chien de cul de
-        torrieux de boswell de p'tit Jésus.
-      </p>
+    <div class="title">Авторы</div>
+    <div class="preview__text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente fugiat ipsam
+      dolorum nostrum ut voluptates tempore voluptate libero voluptas eos blanditiis
+      consequatur similique quia est vitae natus, dolorem sunt! Consequatur?
     </div>
   </section>
-  <section class="author">
-    <img src="/assets/images/teacher_avatar.png" alt="teacher_avatar.png" class="author__img"/>
-    <section class="author__about">
-      <h1 class="font-big author__about-h1">Юлия Нилова</h1>
-      <p>Какое-то описание для данного объекта. Краткое и не скучное.</p>
-    </section>
-  </section>
-  <hr/>
-  <section class="author">
-    <img src="/assets/images/albert_avatar.png" alt="albert_avatar.png" class="author__img"/>
-    <section class="author__about">
-      <h1 class="font-big author__about-h1">Альберт Рахметов</h1>
-      <p>Разработчик сайта. Тот, кто создал сайт, а после сломал и починил его трижды.</p>
-    </section>
-  </section>
-  <hr/>
-  <section class="author">
-    <img src="/assets/images/semen_avatar.png" alt="semen_avatar.png" class="author__img"/>
-    <section class="author__about">
-      <h1 class="font-big author__about-h1">Семен Вторушин</h1>
-      <p>Какое-то описание для данного объекта. Краткое и не скучное.</p>
-    </section>
-  </section>
-  <hr/>
-  <section class="author">
-    <img src="/assets/images/andrey_avatar.png" alt="andrey_avatar.png" class="author__img"/>
-    <section class="author__about">
-      <h1 class="font-big author__about-h1">Андрей Махоткин</h1>
-      <p>Какое-то описание для данного объекта. Краткое и не скучное.</p>
-    </section>
+  <section class="authors">
+    <div class="author">
+      <div class="author__img"><img src="/assets/images/teacher-avatar.png" alt="teacher-avatar.png">
+      </div>
+      <div class="author__about">
+        <div class="author__name">Нилова Юлия</div>
+        <div class="author__desc">Mautadit de viarge de p'tit Jésus de verrat de taboire
+          de crucifix de crime.</div>
+      </div>
+    </div>
+    <div class="author">
+      <div class="author__img"><img src="/assets/images/albert-avatar.png" alt="albert-avatar.png">
+      </div>
+      <div class="author__about">
+        <div class="author__name">Рахметов Альберт</div>
+        <div class="author__desc">Ciarge de boswell de colon de sacréfice de cul de
+          gériboire de verrat.</div>
+      </div>
+    </div>
+    <div class="author">
+      <div class="author__img"><img src="/assets/images/semen-avatar.png" alt="semen-avatar.png">
+      </div>
+      <div class="author__about">
+        <div class="author__name">Вторушин Семен</div>
+        <div class="author__desc">Saint-cimonaque de bout d'viarge de mosus de
+          calvinouche de géritole de marde de calvince d'étole de cibouleau.</div>
+      </div>
+    </div>
+    <div class="author">
+      <div class="author__img"><img src="/assets/images/andrey-avatar.png" alt="andrey-avatar.png">
+      </div>
+      <div class="author__about">
+        <div class="author__name">Махоткин Андрей</div>
+        <div class="author__desc"></div>
+      </div>
+    </div>
   </section>
 {% endblock %}

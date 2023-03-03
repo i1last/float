@@ -1,41 +1,42 @@
-{% extends "layout.njk" %}
+{% extends "base-layout.njk" %}
 {% block title %}Физика: Конспекты{% endblock %}
 {% block content %}
-  <content class="preview">
-    <div class="mrgn-b-20">
-      <h1 class="font-big">Boswell d'ostifie de calvaire de cul.</h1>
+  <section class="preview">
+    <div class="title">Конспекты</div>
+    <div class="preview__text">
+      Все карточки по физике и дополнения к ним. Вы можете скачать любую карточку в
+      удобном для Вас формате: pdf, png, svg
     </div>
-    <div class="preview__sub-text">
-      <p>Bâtard de maudite marde de boswell de crucifix de saint-sacrament de mosus de bout d'viarge de calvaire de cimonaque
-        d'estique.</p>
-    </div>
-  </content>
+  </section>
   <section class="10-grade">
-    <div class="head-block-green">
-      <h2 class="font-small">10 класс</h2>
-    </div>
-    <div class="buttons buttons_mini">
-      <div class="button button_download">
-        {# <a href="/handbook/physics-synopsis/10/1" id="formulas"> #}
-        <a href="/assets/files/physics/sinopsis-10/10-1.svg" id="formulas">
-          Конспект 10/1
-        </a>
-        <a class="button_download-a" href="/assets/st/10-1.txt" download>
-          <img src="/assets/images/download.svg" alt="download.svg">
-        </a>
-      </div>
+    <div class="restrange-title restrange--green">10 класс</div>
+    <div class="buttons">
+      <ul class="buttons__list buttons__list--columns--3">
+        <li>{% set name = "10-1" %}{% include "sinopsis-button.njk" %}</li>
+        <li>{% set name = "10-2" %}{% include "sinopsis-button.njk" %}</li>
+        <li>{% set name = "10-3" %}{% include "sinopsis-button.njk" %}</li>
+        <li>{% set name = "10-4" %}{% include "sinopsis-button.njk" %}</li>
+        <li>{% set name = "10-5" %}{% include "sinopsis-button.njk" %}</li>
+        <li>{% set name = "10-6+7" %}{% include "sinopsis-button.njk" %}</li>
+        <li>{% set name = "10-8+9" %}{% include "sinopsis-button.njk" %}</li>
+        <li>{% set name = "10-10-1" %}{% include "sinopsis-button.njk" %}</li>
+        <li>{% set name = "10-10-2" %}{% include "sinopsis-button.njk" %}</li>
+        <li>{% set name = "10-11" %}{% include "sinopsis-button.njk" %}</li>
+        <li>{% set name = "10-12" %}{% include "sinopsis-button.njk" %}</li>
+        <li>{% set name = "10-13" %}{% include "sinopsis-button.njk" %}</li>
+      </ul>
     </div>
   </section>
   <section class="11-grade">
-    <div class="head-block-orange">
-      <h2 class="font-small">11 класс</h2>
-    </div>
-    <div class="buttons buttons_mini">
-      <a href="#" class="button" id="formulas">32</a>
-      <a href="#" class="button" id="definitions">33</a>
-      <a href="#" class="button" id="synopsis">34</a>
-      <a href="#" class="button" id="synopsis">35</a>
-      <a href="#" class="button" id="synopsis">36</a>
+    <div class="restrange-title restrange--orange">11 класс</div>
+    <div class="buttons">
+      <ul class="buttons__list buttons__list--columns--3">
+        <li>
+          <a class="buttons__list-item button button--row-content" href="#!">Здесь ничего
+            нет!</a>
+        </li>
+      </ul>
     </div>
   </section>
+  <script src="/assets/js/drop-menu.js"></script>
 {% endblock %}
