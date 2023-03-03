@@ -10,19 +10,21 @@ function njkCompile() {
 }
 
 function serverPath() {
-  return src('docs/**').pipe(replace('="/', '="/integer/'));
+  return src('docs/**/*.html')
+    .pipe(replace('="/', '="/integer/'))
+    .pipe(dest('docs/'));
 }
 
 function localPath() {
-  return src('docs/**').pipe(replace('="/', '="/integer/'));
+  return src('docs/**/*.html')
+    .pipe(replace('="/', '="/integer/'))
+    .pipe(dest('docs/'));
 }
 
 function filesTransfer() {
-  return src([
-    'app/pages/**',
-    'app/assets*/**',
-    '!app/pages/**/*.njk'
-  ]).pipe(dest('docs/'));
+  return src(['app/pages/**', 'app/assets*/**', '!app/pages/**/*.njk']).pipe(
+    dest('docs/'),
+  );
 }
 
 function test() {
@@ -30,12 +32,9 @@ function test() {
 }
 
 task('test', series(test));
-task('build', series(njkCompile, localPath, filesTransfer));
-task('buildEX', series(njkCompile, serverPath, filesTransfer));
+task('build', series(njkCompile, filesTransfer, localPath));
+task('buildEX', series(njkCompile, filesTransfer, serverPath));
 
 task('watch', function () {
-  watch(
-    ['app/**/*'],
-    series(njkCompile, filesTransfer),
-  );
+  watch(['app/**/*'], series(njkCompile, filesTransfer));
 });
