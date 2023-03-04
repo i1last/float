@@ -20,6 +20,7 @@ function createTable(json, section, tableDataClasses) {
   divTitle.classList.add('title');
   divContainer.classList.add('table-container');
   divContent.classList.add('table-container__content');
+  divContainer.id = section;
 
   thead.innerHTML = `
   <th class="table__heading">${json.header[array[0]]}</th>

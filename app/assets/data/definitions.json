@@ -13,7 +13,7 @@
         "number": 1,
         "word": "Механическое движение",
         "definition": "Изменение положения тела (или частей тела) в пространстве относительно других тел с течением времени",
-        "example": "<a href=\"https://youtu.be/cSGrSpcySwg\" target=\"_blank\" class=\"hover-color\">Видео-пример</a>",
+        "example": "<a class=\"link\" href=\"https://youtu.be/cSGrSpcySwg\" target=\"_blank\">Видео-пример</a>",
         "page": 11
       },
       {

@@ -1,6 +1,5 @@
 import gulp from 'gulp';
 import njkRender from 'gulp-nunjucks-render';
-import replace from 'gulp-replace';
 const { task, src, dest, series, watch } = gulp;
 
 function njkCompile() {
@@ -8,18 +7,6 @@ function njkCompile() {
     .pipe(njkRender({ path: ['app/templates'] }))
     .pipe(dest('docs/'));
 }
-
-// function serverPath() {
-//   return src(['docs/**/*.html', 'docs/**/*.js', 'docs/**/*.css'])
-//     .pipe(replace('="/', '="/integer/'))
-//     .pipe(dest('docs/'));
-// }
-
-// function localPath() {
-//   return src(['docs/**/*.html', 'docs/**/*.js', 'docs/**/*.css'])
-//     .pipe(replace('="/integer/', '="/'))
-//     .pipe(dest('docs/'));
-// }
 
 function filesTransfer() {
   return src(['app/pages/**', 'app/assets*/**', '!app/pages/**/*.njk']).pipe(
