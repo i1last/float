@@ -9,17 +9,17 @@ function njkCompile() {
     .pipe(dest('docs/'));
 }
 
-function serverPath() {
-  return src(['docs/**/*.html', 'docs/**/*.js', 'docs/**/*.css'])
-    .pipe(replace('="/', '="/integer/'))
-    .pipe(dest('docs/'));
-}
+// function serverPath() {
+//   return src(['docs/**/*.html', 'docs/**/*.js', 'docs/**/*.css'])
+//     .pipe(replace('="/', '="/integer/'))
+//     .pipe(dest('docs/'));
+// }
 
-function localPath() {
-  return src(['docs/**/*.html', 'docs/**/*.js', 'docs/**/*.css'])
-    .pipe(replace('="/integer/', '="/'))
-    .pipe(dest('docs/'));
-}
+// function localPath() {
+//   return src(['docs/**/*.html', 'docs/**/*.js', 'docs/**/*.css'])
+//     .pipe(replace('="/integer/', '="/'))
+//     .pipe(dest('docs/'));
+// }
 
 function filesTransfer() {
   return src(['app/pages/**', 'app/assets*/**', '!app/pages/**/*.njk']).pipe(
@@ -32,8 +32,8 @@ function test() {
 }
 
 task('test', series(test));
-task('build', series(njkCompile, filesTransfer, localPath));
-task('buildEX', series(njkCompile, filesTransfer, serverPath));
+task('build', series(njkCompile, filesTransfer));
+task('buildEX', series(njkCompile, filesTransfer));
 
 task('watch', function () {
   watch(['app/**/*'], series(njkCompile, filesTransfer));
