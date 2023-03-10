@@ -20,7 +20,7 @@ function dropMenu(name) {
   dropContentItem.classList.toggle('drop-content--showing');
 }
 
-window.onclick = function (event) {
+window.addEventListener('click', (event) => {
   if (!event.target.matches('.drop-menu-button')) {
     let dropContent = document.querySelectorAll('.drop-content');
 
@@ -31,4 +31,4 @@ window.onclick = function (event) {
       }
     }
   }
-};
+})

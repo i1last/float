@@ -12,8 +12,8 @@ html {
 
 body {
   font-family: 'Ubuntu';
-  color: var(--ctp-macchiato-text);
-  background-color: var(--ctp-macchiato-mantle);
+  color: var(--main-text);
+  background-color: var(--main-background);
   font-weight: 300;
   line-height: 22px;
 }
@@ -41,7 +41,7 @@ body > * {
 }
 
 a {
-  color: var(--ctp-macchiato-text);
+  color: var(--main-text);
   transition: 300ms;
 }
 
@@ -49,14 +49,14 @@ td,
 th {
   padding: 12px;
   vertical-align: middle;
-  border: 1px solid var(--ctp-macchiato-base);
+  border: 1px solid var(--main-surface0);
 }
 
 hr {
   height: 5px;
-  border: 0 solid var(--ctp-macchiato-surface0);
+  border: none;
   border-radius: 5px;
-  background-color: var(--ctp-macchiato-surface0);
+  background-color: var(--main-surface0);
 
   margin-top: 60px;
   margin-bottom: 60px;

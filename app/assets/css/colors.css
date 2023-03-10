@@ -111,3 +111,51 @@
   --ctp-frappe-mantle: #292c3c;
   --ctp-frappe-crust: #232634;
 }
+
+:root {
+  --main-background: var(--ctp-macchiato-crust);
+  --main-surface0: var(--ctp-macchiato-base);
+  --main-surface1: var(--ctp-macchiato-surface0);
+  --main-surface2: var(--ctp-macchiato-surface1);
+  --main-text: var(--ctp-macchiato-text);
+  --main-subtext: var(--ctp-macchiato-subtext1);
+
+  --color-rosewater: var(--ctp-macchiato-rosewater);
+  --color-flamingo: var(--ctp-macchiato-flamingo);
+  --color-pink: var(--ctp-macchiato-pink);
+  --color-mauve: var(--ctp-macchiato-mauve);
+  --color-red: var(--ctp-macchiato-red);
+  --color-maroon: var(--ctp-macchiato-maroon);
+  --color-peach: var(--ctp-macchiato-peach);
+  --color-yellow: var(--ctp-macchiato-yellow);
+  --color-green: var(--ctp-macchiato-green);
+  --color-teal: var(--ctp-macchiato-teal);
+  --color-sky: var(--ctp-macchiato-sky);
+  --color-sapphire: var(--ctp-macchiato-sapphire);
+  --color-blue: var(--ctp-macchiato-blue);
+  --color-lavender: var(--ctp-macchiato-lavender);
+}
+
+.light {
+  --main-background: var(--ctp-latte-mantle);
+  --main-surface0: var(--ctp-latte-base);
+  --main-surface1: var(--ctp-latte-surface0);
+  --main-surface2: var(--ctp-latte-surface1);
+  --main-text: var(--ctp-latte-text);
+  --main-subtext: var(--ctp-latte-subtext1);
+
+  --color-rosewater: var(--ctp-latte-rosewater);
+  --color-flamingo: var(--ctp-latte-flamingo);
+  --color-pink: var(--ctp-latte-pink);
+  --color-mauve: var(--ctp-latte-mauve);
+  --color-red: var(--ctp-latte-red);
+  --color-yellow: var(--ctp-latte-maroon); /* maroon -> yellow*/
+  --color-peach: var(--ctp-latte-peach);
+  /* --color-yellow: var(--ctp-latte-yellow); */
+  --color-green: var(--ctp-latte-green);
+  --color-teal: var(--ctp-latte-teal);
+  --color-sky: var(--ctp-latte-sky);
+  --color-sapphire: var(--ctp-latte-sapphire);
+  --color-blue: var(--ctp-latte-blue);
+  --color-lavender: var(--ctp-latte-lavender);
+}
