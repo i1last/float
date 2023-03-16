@@ -1,0 +1,23 @@
+@import '../modules/color-theme';
+
+.up-button {
+  position: fixed;
+  bottom: -40px;
+  right: 20px;
+
+  @media screen and (min-width: 800px) {
+    bottom: 0px;
+    right: 80px;
+  }
+
+  &__link {
+    display: block;
+    fill: var(--main-text);
+    transition: 300ms;
+
+    &:hover {
+      fill: var(--color-blue);
+      transition: 300ms;
+    }
+  }
+}

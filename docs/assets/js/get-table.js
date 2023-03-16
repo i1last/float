@@ -7,7 +7,6 @@ function createTable(json, section, tableDataClasses) {
   let divContainer = document.createElement('div');
   let divTitle = document.createElement('div');
   let divContent = document.createElement('div');
-
   divTitle.innerText = json[section][0];
 
   table.appendChild(thead);
@@ -63,7 +62,7 @@ function generateTables(json, sections, tableDataClasses) {
 const tableRequest = document.currentScript.getAttribute('table');
 const sectionRequest = document.currentScript.getAttribute('section');
 
-fetch(`/assets/data/${tableRequest}.json`)
+fetch(`/assets/database/tables/${tableRequest}.json`)
   .then((res) => res.json())
   .then((json) => {
     let sections;
@@ -72,7 +71,6 @@ fetch(`/assets/data/${tableRequest}.json`)
       sections = Object.keys(json).slice(1);
     } else if (sectionRequest == 'current') {
       const currentDayOfWeek = new Date().getDay();
-      console.log(currentDayOfWeek)
       const currentHour = new Date().getHours();
       const days = [
         "monday",
@@ -81,7 +79,8 @@ fetch(`/assets/data/${tableRequest}.json`)
         "wednesday",
         "thursday",
         "friday",
-        "saturday"
+        "saturday",
+        "monday"
       ];
 
       if (currentHour >= 17) {

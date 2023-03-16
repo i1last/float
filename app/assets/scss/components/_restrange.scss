@@ -1,0 +1,32 @@
+@import '../modules/color-theme';
+
+.restrange {
+  &-title {
+    width: fit-content;
+    padding: 5px 10px 5px 10px;
+    color: var(--main-background);
+    margin-bottom: 16px;
+    border-radius: 6px;
+  }
+
+  &--teal {
+    background-color: var(--color-teal);
+    border-color: var(--color-teal);
+  }
+  &--mauve {
+    background-color: var(--color-mauve);
+    border-color: var(--color-mauve);
+  }
+  &--blue {
+    background-color: var(--color-blue);
+    border-color: var(--color-blue);
+  }
+  &--yellow {
+    background-color: var(--color-yellow);
+    border-color: var(--color-yellow);
+  }
+  &--green {
+    background-color: var(--color-green);
+    border-color: var(--color-green);
+  }
+}

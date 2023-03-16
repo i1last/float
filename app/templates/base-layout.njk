@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html theme="dark" lang="ru">
   <head>
+    <!-- scripts -->
+    <script src="/assets/js/set-theme.js"></script>
+
     <!-- metadata -->
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta
-    name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- links -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- links -->
     <link rel="icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/assets/css/reset.css"/>
-    <link rel="stylesheet" href="/assets/css/colors.css"/>
-    <link rel="stylesheet" href="/assets/css/core.css"/>
-    <link rel="stylesheet" href="/assets/css/default.css"/>
+    <link rel="stylesheet" href="/assets/css/main.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
@@ -19,13 +20,13 @@
     <link
     href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
       rel="stylesheet"/>
+
     <!-- title -->
     <title>
       {% block title %}{% endblock %}
       &#8211; integer</title>
   </head>
   <body>
-    <script src="/assets/js/set-theme.js"></script>
     <header class="header">
       <div class="logo">
         <a class="logo__link" href="/">
@@ -61,7 +62,7 @@
                   8.18 22 10 22c5.52 0 10-4.48 10-10S15.52 2 10 2z"/>
                 </svg>
                 <svg
-                  class="change-theme-button__image change-theme-button__image--light hidden"
+                  class="change-theme-button__image change-theme-button__image--light"
                   height="20px"
                   viewbox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
@@ -73,10 +74,10 @@
             </div>
           </li>
           <li class="header__links-item">
-            <a class="link header__links-item--element" href="/authors">Авторы</a>
+            <a class="link header__links-item--element" href="/">Главная</a>
           </li>
           <li class="header__links-item">
-            <a class="link header__links-item--element" href="/">Главная</a>
+            <a class="link header__links-item--element" href="/authors">Авторы</a>
           </li>
           <li class="header__links-item">
             <a class="link header__links-item--element" href="../">Предыдущая страница</a>

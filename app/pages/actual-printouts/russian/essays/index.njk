@@ -1,0 +1,39 @@
+{% extends "base-layout.njk" %}
+{% block title %}Русский: Сочинения{% endblock %}
+{% block content %}
+  <section class="preview">
+    <div class="title">Сочинения</div>
+    <div class="preview__text">
+      Все сочинения по русскому языку без дополнений к ним. Вы можете скачать любое
+      сочинение в удобном для Вас формате: pdf, png, svg
+    </div>
+  </section>
+  <section class="10-grade">
+    <div class="restrange-title restrange--green">10 класс</div>
+    <div class="buttons">
+      <ul class="buttons__list buttons__list--columns--3">
+        <li>
+          {% set image = "ribka" %}
+          {% set name %}Сочинение "РЫБКА" (WIP){% endset %}
+          {% include "card-button.njk" %}
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="11-grade">
+    <div class="restrange-title restrange--yellow">11 класс</div>
+    <div class="buttons">
+      <ul class="buttons__list buttons__list--columns--3">
+        <li>
+          <a class="buttons__list-item button button--row-content" href="#!">
+            Здесь ничего нет!
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+{% endblock %}
+{% block scripts %}
+  <script src="/assets/js/drop-menu.js"></script>
+  <script src="/assets/js/open-image.js"></script>
+{% endblock %}

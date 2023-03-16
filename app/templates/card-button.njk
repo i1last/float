@@ -1,0 +1,46 @@
+{% set title %}{{ image | replace(r/(-.*)/, "") }}{% endset %}
+{% set id %}{{ image | replace("-", "") | replace("+", "") }}{% endset %}
+<a
+  class="buttons__list-item button button--row-content"
+  href="./?part={{ title }}&image={{ image }}.svg">
+  {{ name }}
+  <object>
+    <a href="#!">
+      <button class="drop-menu-button drop-menu-button--expanded-area" onclick="dropMenu('#card{{ id }}')">
+        <div class="drop-menu-button drop-menu-button__content">
+          <svg
+            class="drop-menu-button"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            xmlns="http://www.w3.org/2000/svg">
+            <path class="drop-menu-button drop-menu-button__image"
+              d="M8.01207 11.6168C7.89945 11.6168 7.79889 11.6008 7.71041 11.5689C7.62192 11.5369 7.52941 11.4731 7.43288 11.3772L3.71644 7.68862C3.55556 7.52894 3.47914 7.33733 3.48718 7.11377C3.49522 6.89022 3.57969 6.6986 3.74057 6.53892C3.91755 6.37924 4.11865 6.2994 4.34389 6.2994C4.56913 6.2994 4.76219 6.37924 4.92308 6.53892L7.19155 8.81437V0.814371C7.19155 0.590819 7.272 0.399202 7.43288 0.239521C7.59377 0.0798403 7.78683 0 8.01207 0C8.25339 0 8.45048 0.0798403 8.60332 0.239521C8.75616 0.399202 8.83258 0.590819 8.83258 0.814371V8.81437L11.1252 6.53892C11.2861 6.37924 11.4791 6.2994 11.7044 6.2994C11.9296 6.2994 12.1307 6.37924 12.3077 6.53892C12.4686 6.6986 12.549 6.89022 12.549 7.11377C12.549 7.33733 12.4686 7.52894 12.3077 7.68862L8.59125 11.3772C8.49472 11.4731 8.39819 11.5369 8.30166 11.5689C8.20513 11.6008 8.1086 11.6168 8.01207 11.6168ZM1.64103 16C1.20664 16 0.824535 15.8403 0.494721 15.521C0.164907 15.2016 0 14.8184 0 14.3713V11.497C0 11.2735 0.0804424 11.0818 0.241327 10.9222C0.402212 10.7625 0.603318 10.6826 0.844645 10.6826C1.06988 10.6826 1.25892 10.7625 1.41176 10.9222C1.56461 11.0818 1.64103 11.2735 1.64103 11.497V14.3713H14.359V11.497C14.359 11.2735 14.4394 11.0818 14.6003 10.9222C14.7612 10.7625 14.9623 10.6826 15.2036 10.6826C15.4289 10.6826 15.6179 10.7625 15.7707 10.9222C15.9236 11.0818 16 11.2735 16 11.497V14.3713C16 14.8184 15.8391 15.2016 15.5173 15.521C15.1956 15.8403 14.8095 16 14.359 16H1.64103Z" fill="#D2C6F7"/>
+          </svg>
+        </div>
+        </button>
+        <div class="drop-content" id="card{{ id }}">
+          <ul class="drop-content__list-item">
+            <li class="drop-content__list-item">
+              <a
+                class="drop-content__link"
+                href="./{{ title }}/{{ image }}.pdf"
+                download>PDF</a>
+            </li>
+            <li class="drop-content__list-item">
+              <a
+                class="drop-content__link"
+                href="./{{ title }}/{{ image }}.png"
+                download>PNG</a>
+            </li>
+            <li class="drop-content__list-item">
+              <a
+                class="drop-content__link"
+                href="./{{ title }}/{{ image }}.svg"
+                download>SVG</a>
+            </li>
+          </ul>
+        </div>
+      </a>
+    </object>
+  </a>

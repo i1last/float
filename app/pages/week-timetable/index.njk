@@ -1,6 +1,7 @@
 {% extends "base-layout.njk" %}
 {% block title %}Недельное расписание{% endblock %}
 {% block content %}
+  {% include "up-button.njk" %}
   <section class="preview">
     <div class="title">Недельное расписание</div>
     <div class="preview__text">
@@ -33,5 +34,7 @@
     </div>
   </section>
   <section class="tables"></section>
+{% endblock %}
+{% block scripts %}
   <script src="/assets/js/get-table.js" table="timetable" section="all"></script>
 {% endblock %}

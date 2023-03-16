@@ -1,0 +1,33 @@
+@import '../modules/color-theme';
+
+.link {
+  color: var(--main-text);
+  transition: 300ms;
+
+  &:hover {
+    color: var(--color-blue);
+    transition: 300ms;
+  }
+}
+
+.logo-style {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 400;
+  color: var(--main-text);
+}
+
+.preview__text {
+  color: var(--main-subtext00);
+}
+
+.text--bold {
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1;
+}

@@ -1,0 +1,60 @@
+@import '../modules/color-theme';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+
+  &__hamburger-menu {
+    display: none;
+
+    @media screen and (max-width: 550px) {
+      display: flex;
+      width: fit-content;
+      fill: var(--main-text);
+    }
+  }
+
+  &__links {
+    &-list {
+      @media screen and (min-width: 550px) {
+        display: flex;
+        position: inherit;
+        background-color: transparent;
+        box-shadow: none;
+      }
+      @media screen and (max-width: 550px) {
+        margin-left: 0;
+        right: 20px;
+      }
+    }
+    &-item {
+      display: inline;
+      margin-left: 20px;
+      font-size: 15px;
+      font-weight: 400;
+
+      @media screen and (max-width: 550px) {
+        display: block;
+        border-radius: 8px;
+        margin-left: 0;
+
+        &:hover {
+          background-color: var(--main-surface2);
+        }
+      }
+
+      &--element {
+        @media screen and (max-width: 550px) {
+          display: flex;
+          padding: 12px 22px;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

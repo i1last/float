@@ -1,7 +1,14 @@
-let body = document.body;
+const localStorageTheme = localStorage.getItem('theme');
+let html = document.documentElement;
 
-if (localStorage.getItem('theme') == 'light') {
-  body.classList.remove('light')
-} else {
-  body.classList.add('light')
+switch (localStorageTheme) {
+  case 'dark':
+    html.setAttribute('theme', 'dark');
+    break;
+  case 'light':
+    html.setAttribute('theme', 'light');
+    break;
+  default:
+    html.setAttribute('theme', 'dark');
+    break;
 }

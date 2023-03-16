@@ -1,0 +1,30 @@
+@import '../modules/color-theme';
+
+_:-moz-tree-row(hover),
+.drop-content {
+  margin-left: -40px;
+}
+
+.drop-content {
+  display: none;
+  position: absolute;
+  background-color: var(--main-surface0);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  margin-left: -27px;
+  border-radius: 8px;
+  z-index: 1;
+
+  &__link {
+    padding: 12px 16px;
+    display: block;
+    border-radius: 8px;
+
+    &:hover {
+      background-color: var(--main-surface2);
+    }
+  }
+
+  &--showing {
+    display: block;
+  }
+}

@@ -1,0 +1,14 @@
+// .card__image {
+//   width: 100%;
+//   cursor: zoom-in;
+// } WIP удалить?
+
+.hamburger-menu {
+  cursor: pointer;
+  transition: 300ms;
+
+  &:hover {
+    fill: var(--color-blue);
+    transition: 300ms;
+  }
+}

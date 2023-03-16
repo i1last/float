@@ -1,0 +1,40 @@
+@import '../modules/color-theme';
+
+.author {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+
+  &__img {
+    height: 230px;
+    border-radius: 500px;
+
+    @media screen and (max-width: 768px) {
+      height: 200px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__name {
+    margin-bottom: 24px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 16px;
+    }
+  }
+  &__about {
+    margin-left: 80px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 40px;
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+}
