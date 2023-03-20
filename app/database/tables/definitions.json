@@ -363,8 +363,8 @@
         "number": 51,
         "word": "Закон Паскаля",
         "definition": "Давление, производимое на ж/г, передается в любую точку без изменений во всех направлениях",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"https://youtu.be/FchBsT92IyE\">Видео-пример</a>",
-        "page": "<details><summary>Ж/Г</summary>Жидкость или газ</details>"
+        "example": "<details><summary>Ж/Г</summary>Жидкость или газ</details> <a class=\"link\" target=\"_blank\" href=\"https://youtu.be/FchBsT92IyE\">Видео-пример</a>",
+        "page": ""
       },
       {
         "number": 52,
