@@ -62,7 +62,7 @@ function generateTables(json, sections, tableDataClasses) {
 const tableRequest = document.currentScript.getAttribute('table');
 const sectionRequest = document.currentScript.getAttribute('section');
 
-fetch(`/assets/database/tables/${tableRequest}.json`)
+fetch(`/database/tables/${tableRequest}.json`)
   .then((res) => res.json())
   .then((json) => {
     let sections;
@@ -102,7 +102,7 @@ fetch(`/assets/database/tables/${tableRequest}.json`)
         tableDataClasses = ['table__heading', '', 'table__data-center', 'table__data-center', '']
         break;
       case 'definitions':
-        tableDataClasses = ['table__heading', '', '', '', 'table__data-center']
+        tableDataClasses = ['table__heading', '', 'table__data table__data-width--long', 'table__data table__data-width--short', 'table__data-center']
         break;
     }
 

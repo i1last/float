@@ -1,4 +1,4 @@
-const { task, src, dest, series, watch } = require('gulp');
+const { task, src, dest, series, watch, parallel } = require('gulp');
 const browserSync = require('browser-sync').create();
 const nunjucksRender = require('gulp-nunjucks-render');
 const sass = require('gulp-sass')(require('sass'));
@@ -19,9 +19,11 @@ function rastrCompile() {
 }
 
 function jsCompile() {
-  return src('app/assets/js/**/*.js')
+  return src('app/assets/js/*.js')
     .pipe(uglifyEs())
-    .pipe(babel())
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
     .pipe(dest('docs/assets/js/'))
     .pipe(browserSync.stream());
 }
@@ -64,21 +66,15 @@ function njkCompile() {
 }
 
 function filesTransfer() {
-  return src(['app/pages/**', 'app/assets*/**', '!app/pages/**/*.njk', '!app/assets/scss*/**'])
+  return src(['app/pages/**', 'app/database*/**', 'app/assets*/**', '!app/pages/**/*.njk', '!app/assets/scss*/**'])
     .pipe(dest('docs/'))
     .pipe(browserSync.stream());
 }
 
 // task('test', series());
-task('build', series(rastrCompile, scssCompile, jsCompile, njkCompile, filesTransfer));
+task('build', parallel(rastrCompile, scssCompile, jsCompile, njkCompile, filesTransfer));
 
-task('watch', function () {
-  rastrCompile();
-  scssCompile();
-  jsCompile();
-  njkCompile();
-  filesTransfer();
-
+task('watch', series('build', function () {
   browserSync.init({
     server: {
       baseDir: './docs/',
@@ -87,6 +83,12 @@ task('watch', function () {
     logFileChanges: false
   });
 
-  watch(['app/**/*', 'pacifier.md'], series(rastrCompile, scssCompile, jsCompile, njkCompile, filesTransfer));
+  watch(['app/**/*.scss'], scssCompile);
+  watch(['app/**/*.js'], jsCompile);
+  watch(['app/**/*.+(njk|html)'], njkCompile);
+
+  watch(['app/**/*', '!app/**/*.+(njk|html|scss|js)', '!pacifier.md'], filesTransfer);
+  watch(['pacifier.md'], parallel(rastrCompile, scssCompile, jsCompile, njkCompile, filesTransfer));
+
   watch(['app/**/*', 'pacifier.md'], browserSync.reload());
-});
+}));

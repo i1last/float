@@ -62,3 +62,35 @@ hr {
 ol {
   list-style: unset;
 }
+
+details {
+  border: 1px solid var(--color-green);
+  border-radius: 4px;
+  padding: .5em .5em 0;
+
+  &[open] {
+    padding: .5em;
+
+    summary {
+      border-bottom: 1px solid var(--color-green);
+      margin-bottom: .5em;
+    }
+  }
+}
+
+summary {
+  margin: -.5em -.5em 0;
+  padding: .5em;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+b {
+  font-weight: bolder;
+}
+
+s {
+  text-decoration: line-through;
+}

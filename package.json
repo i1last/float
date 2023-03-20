@@ -9,13 +9,14 @@
     "test": "gulp test"
   },
   "author": "i1last Team",
-  "license": "ISC",
-  "dependencies": {
+  "license": "GPL-3.0-only",
+  "devDependencies": {
     "browser-sync": "^2.28.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
     "gulp-htmlmin": "^5.0.1",
     "gulp-nunjucks-render": "^2.2.3",
     "gulp-sass": "^5.1.0",
@@ -23,9 +24,8 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
-    "sass": "^1.59.2"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.21.0"
+    "sass": "^1.59.2",
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2"
   }
 }

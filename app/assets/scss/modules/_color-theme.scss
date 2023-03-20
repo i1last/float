@@ -15,6 +15,7 @@ html {
     --color-red: #ed8796;
     --color-maroon: #ee99a0;
     --color-peach: #f5a97f;
+
     --color-yellow: #eed49f;
     --color-green: #a6da95;
     --color-teal: #8bd5ca;
@@ -22,6 +23,13 @@ html {
     --color-sapphire: #7dc4e4;
     --color-blue: #8aadf4;
     --color-lavender: #b7bdf8;
+
+    // --color-yellow: #ffd277; /* changed */  DL
+    // --color-green: #8bff65; /* changed */  DL
+    // --color-teal: #84ffed; /* changed */  DL
+
+    // --main-background: #0d0e18;   /* changed */
+    // --main-surface0: #1c2036;    /* changed */
   }
   &[theme='light'] {
     --main-background: #e6e9ef;  // mantle
