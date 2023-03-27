@@ -1,13 +1,13 @@
 {% extends "base-layout.njk" %}
 {% block title %}Недельное расписание{% endblock %}
+
+{% block preview_title %}Недельное расписание{% endblock %}
+{% block preview_text %}
+  На данной странице Вы можете увидеть полное недельное расписание
+{% endblock %}
+
 {% block content %}
   {% include "up-button.njk" %}
-  <section class="preview">
-    <div class="title">Недельное расписание</div>
-    <div class="preview__text">
-      На данной странице Вы можете увидеть полное недельное расписание
-    </div>
-  </section>
   <section class="table-of-contents">
     <div class="title">Оглавление</div>
     <div class="table-of-contents__content">

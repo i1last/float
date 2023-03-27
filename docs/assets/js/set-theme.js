@@ -1,14 +1,12 @@
-const localStorageTheme = localStorage.getItem('theme');
-let html = document.documentElement;
+"use strict";
 
+var localStorageTheme = localStorage.getItem("theme");
+var html = document.documentElement;
 switch (localStorageTheme) {
-  case 'dark':
-    html.setAttribute('theme', 'dark');
-    break;
-  case 'light':
-    html.setAttribute('theme', 'light');
-    break;
+  case "dark":
   default:
-    html.setAttribute('theme', 'dark');
+    html.setAttribute("theme", "dark");
     break;
+  case "light":
+    html.setAttribute("theme", "light");
 }

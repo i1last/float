@@ -85,6 +85,10 @@
         </ul>
       </div>
     </header>
+    <section class="preview">
+      <div class="title">{% block preview_title %}{% endblock %}</div>
+      <div class="preview__text">{% block preview_text %}{% endblock %}</div>
+    </section>
     {% block content %}{% endblock %}
     <footer class="footer">
       <div class="logo">

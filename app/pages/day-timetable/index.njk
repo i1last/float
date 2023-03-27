@@ -1,13 +1,13 @@
 {% extends "base-layout.njk" %}
 {% block title %}Дневное расписание{% endblock %}
+
+{% block preview_title %}Дневное расписание{% endblock %}
+{% block preview_text %}
+  На данной странице Вы можете увидеть расписание текущего или следующего дня.
+  Расписание следующего дня заменяет текущее после 17:00
+{% endblock %}
+
 {% block content %}
-  <section class="preview">
-    <div class="title">Дневное расписание</div>
-    <div class="preview__text">
-      На данной странице Вы можете увидеть расписание текущего или следующего дня.
-      Расписание следующего дня заменяет текущее после 17:00
-    </div>
-  </section>
   <section class="tables"></section>
 {% endblock %}
 {% block scripts %}

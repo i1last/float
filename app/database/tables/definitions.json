@@ -54,7 +54,7 @@
       {
         "number": 7,
         "word": "Траектория",
-        "definition": "Линия по которой тело движется в пространстве",
+        "definition": "Линия, по которой точка движется в пространстве",
         "example": "<a class=\"link\" target=\"_blank\" href=\"https://youtube.com/shorts/wALASaiXzMw?feature=share\">Видео-пример</a>",
         "page": 18
       },
@@ -117,7 +117,7 @@
       {
         "number": 16,
         "word": "Частота обращения",
-        "definition": "Число полных оборотов за единицу времени.",
+        "definition": "Число полных оборотов за единицу времени",
         "example": "<a class=\"link\" target=\"_blank\" href=\"https://youtu.be/v_GrdqfOFig\">Видео-пример</a>",
         "page": 59
       },
@@ -201,7 +201,7 @@
       {
         "number": 28,
         "word": "Первая космическая скорость",
-        "definition": "Минимальная скорость, которую необходимо придать телу, чтобы оно могло двигаться по орбите планеты",
+        "definition": "Минимальная скорость тела, при которой оно еще способно двигаться по орбите Земли",
         "example": "Первая космическая скорость для орбиты Земли равна 8 км/с",
         "page": 100
       },
@@ -266,7 +266,7 @@
         "word": "Потенциальная энергия тела",
         "definition": "Энергия взаимодействия тел или частей тела",
         "example": "<a class=\"link\" target=\"_blank\" href=\"https://youtu.be/nqVBE5jAjY8\">Видео-пример</a>",
-        "page": ""
+        "page": 143
       },
       {
         "number": 38,
@@ -292,7 +292,7 @@
       {
         "number": 41,
         "word": "Коэффициент полезного действия (КПД)",
-        "definition": "Это процент полезной работы от работы затраченной",
+        "definition": "Равен проценту отношения работы полезной от работы затраченной",
         "example": "<a class=\"link\" target=\"_blank\" href=\"https://skysmart.ru/articles/physics/koefficient-poleznogo-dejstviya-kpd\">SkySmart – сайт</a> <a class=\"link\" target=\"_blank\" href=\"./images/formula--kpd.svg\">Формула</a>",
         "page": ""
       },
