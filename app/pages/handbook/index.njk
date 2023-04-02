@@ -1,14 +1,14 @@
 {% extends "base-layout.njk" %}
 {% block title %}Справочник{% endblock %}
+
+{% block preview_title %}Справочник{% endblock %}
+{% block preview_text %}
+  На данной странице сайта Вы можете обнаружить полезные материалы для каждого
+  предмета. Создание каждого справочного материала было под проверкой
+  преподавателя.
+{% endblock %}
+
 {% block content %}
-  <section class="preview">
-    <div class="title">Справочник</div>
-    <div class="preview__text">
-      На данной странице сайта Вы можете обнаружить полезные материалы для каждого
-      предмета. Создание каждого справочного материала было под проверкой
-      преподавателя.
-    </div>
-  </section>
   <section class="physics">
     <div class="restrange-title restrange--green text--bold">Физика</div>
     <div class="buttons">
@@ -49,7 +49,7 @@
     <div class="buttons">
       <ul class="buttons__list buttons__list--columns--3">
         <li class="buttons__list-item">
-          <a class="button button--alight--center" href="#!">WIP 1</a>
+          <a class="button button--alight--center" href="./russian/base">Основы</a>
         </li>
         <li class="buttons__list-item">
           <a class="button button--alight--center" href="#!">WIP 2</a>

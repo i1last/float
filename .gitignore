@@ -1,5 +1,10 @@
+yarn.lock
+yarn-error.log
+package-lock.json
+pacifier.md
 node_modules
-yarn*
-*.code-workspace
+..*
+*.bp
 *.dl
-.*
+*.code-workspace
+.vscode

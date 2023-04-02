@@ -1,34 +1,24 @@
-function dropMenu(name) {
-  let currentDropContent = document.querySelector(name);
-  if (currentDropContent.classList.contains('drop-content--showing')) {
-    currentDropContent.classList.remove('drop-content--showing');
-    return;
-  }
+"use strict";
 
-  if (!window.event.target.matches(name)) {
-    let dropContent = document.querySelectorAll('.drop-content');
-
-    for (let i = 0; i < dropContent.length; i++) {
-      let dropContentItem = dropContent[i];
-      if (dropContentItem.classList.contains('drop-content--showing')) {
-        dropContentItem.classList.remove('drop-content--showing');
+function dropMenu(t) {
+  var e = document.querySelector(t);
+  if (e.classList.contains("drop-content--showing")) e.classList.remove("drop-content--showing");else {
+    if (!window.event.target.matches(t)) {
+      var _t = document.querySelectorAll(".drop-content");
+      for (var _e = 0; _e < _t.length; _e++) {
+        var o = _t[_e];
+        o.classList.contains("drop-content--showing") && o.classList.remove("drop-content--showing");
       }
     }
+    document.querySelector(t).classList.toggle("drop-content--showing");
   }
-
-  let dropContentItem = document.querySelector(name);
-  dropContentItem.classList.toggle('drop-content--showing');
 }
-
-window.addEventListener('click', (event) => {
-  if (!event.target.matches('.drop-menu-button')) {
-    let dropContent = document.querySelectorAll('.drop-content');
-
-    for (let i = 0; i < dropContent.length; i++) {
-      let dropContentItem = dropContent[i];
-      if (dropContentItem.classList.contains('drop-content--showing')) {
-        dropContentItem.classList.remove('drop-content--showing');
-      }
+window.addEventListener("click", function (t) {
+  if (!t.target.matches(".drop-menu-button")) {
+    var _t2 = document.querySelectorAll(".drop-content");
+    for (var e = 0; e < _t2.length; e++) {
+      var o = _t2[e];
+      o.classList.contains("drop-content--showing") && o.classList.remove("drop-content--showing");
     }
   }
-})
+});

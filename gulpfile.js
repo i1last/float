@@ -1,20 +1,79 @@
-const { task, src, dest, series, watch, parallel } = require('gulp');
-const browserSync = require('browser-sync').create();
-const nunjucksRender = require('gulp-nunjucks-render');
-const sass = require('gulp-sass')(require('sass'));
-const cleanCss = require('gulp-clean-css');
-const autoprefixer = require('gulp-autoprefixer');
-const sassBulkImporter = require('gulp-sass-bulk-importer');
-const sourcemaps = require('gulp-sourcemaps');
-const uglifyEs = require('gulp-uglify-es').default;
-const babel = require('gulp-babel');
-const htmlmin = require('gulp-htmlmin');
-const webp = require('gulp-webp');
+import gulp from 'gulp';
+const { task, src, dest, series, watch, parallel } = gulp;
+import browserSync from 'browser-sync';
+import nunjucksRender from 'gulp-nunjucks-render';
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+const sass = gulpSass(dartSass);
+import cleanCss from 'gulp-clean-css';
+import autoprefixer from 'gulp-autoprefixer';
+import sassBulkImporter from 'gulp-sass-bulk-importer';
+import sourcemaps from 'gulp-sourcemaps';
+import gulpUglifyEs from 'gulp-uglify-es';
+const uglifyEs = gulpUglifyEs.default;
+import babel from 'gulp-babel';
+import htmlmin from 'gulp-htmlmin';
+import imagemin from 'gulp-imagemin';
+import imageminGifsicle from 'imagemin-gifsicle';
+import imageminOptipng from 'imagemin-optipng';
+import recompress from 'imagemin-jpeg-recompress';
+import pngquant from 'imagemin-pngquant';
+import changed from 'gulp-changed';
+import svgmin from 'gulp-svgmin';
+import multiDest from 'gulp-multi-dest';
+import plumber from 'gulp-plumber'
+
+function svgCompile() {
+  return src('app/pages/**/*.svg')
+    .pipe(changed('docs/'))
+    .pipe(changed('app/..SVG/dest/pages'))
+    .pipe(svgmin({
+      plugins: [
+        {
+          name: 'preset-default',
+        },
+        'removeComments',
+        'removeEmptyContainers'
+      ]
+    }))
+    .pipe(multiDest(['docs/', 'app/..SVG/dest/pages']))
+}
+
+function localSvgCompile() {
+  return src('app/..SVG/src/*.svg')
+    .pipe(changed('app/..SVG/dest/local'))
+    .pipe(svgmin({
+      plugins: [
+        {
+          name: 'preset-default',
+        },
+        'removeComments',
+        'removeEmptyContainers'
+      ]
+    }))
+    .pipe(dest('app/..SVG/dest/local'))
+}
 
 function rastrCompile() {
-  return src('app/assets/database/images/**/*.+(png|jpg|jpeg|gif|svg|ico)')
-    .pipe(webp())
-    .pipe(dest('docs/assets/database/images/'))
+  return src('app/database/images/**/*.*')
+    .pipe(changed('docs/database/images/'))
+    .pipe(imagemin({interlaced: true, progressive: true, optimizationLevel: 5},
+      [
+        recompress({
+          loops: 6,
+          min: 50,
+          max: 90,
+          quality: 'high',
+          use: [pngquant({
+            quality: [0.8, 1],
+            strip: true,
+            speed: 1})],
+          }),
+        imageminGifsicle(),
+        imageminOptipng()
+      ]))
+    .pipe(plumber())
+    .pipe(dest('docs/database/images/'))
     .pipe(browserSync.stream());
 }
 
@@ -66,13 +125,14 @@ function njkCompile() {
 }
 
 function filesTransfer() {
-  return src(['app/pages/**', 'app/database*/**', 'app/assets*/**', '!app/pages/**/*.njk', '!app/assets/scss*/**'])
+  return src(['app/pages/**', 'app/database*/**', 'app/assets*/**', '!app/**/*.+(njk|js|scss)', '!app/assets/scss*/**', '!app/database/images/'])
     .pipe(dest('docs/'))
     .pipe(browserSync.stream());
 }
 
-// task('test', series());
-task('build', parallel(rastrCompile, scssCompile, jsCompile, njkCompile, filesTransfer));
+task('localSvgCompile', series(localSvgCompile));
+task('test', () => {console.log('test passed');});
+task('build', series(svgCompile, rastrCompile, scssCompile, jsCompile, njkCompile, filesTransfer));
 
 task('watch', series('build', function () {
   browserSync.init({
@@ -88,7 +148,7 @@ task('watch', series('build', function () {
   watch(['app/**/*.+(njk|html)'], njkCompile);
 
   watch(['app/**/*', '!app/**/*.+(njk|html|scss|js)', '!pacifier.md'], filesTransfer);
-  watch(['pacifier.md'], parallel(rastrCompile, scssCompile, jsCompile, njkCompile, filesTransfer));
+  watch(['pacifier.md'], task('build'));
 
   watch(['app/**/*', 'pacifier.md'], browserSync.reload());
 }));

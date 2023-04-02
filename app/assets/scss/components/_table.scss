@@ -16,7 +16,6 @@
     }
     &::-webkit-scrollbar-thumb {
       border-left: 5px solid transparent;
-      border-radius: 16px;
 
       html[theme="dark"] & {
         background: #646a76;
@@ -62,7 +61,7 @@
         margin-bottom: 0px;
       }
     }
-    
+
     &-center {
       text-align: center;
     }
