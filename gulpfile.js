@@ -116,7 +116,7 @@ function scssCompile() {
 
 function njkCompile() {
   return src('app/pages/**/*.njk')
-    .pipe(nunjucksRender({ path: ['app/templates'] }))
+    .pipe(nunjucksRender({ path: ['app/templates/', 'app/templates/components', 'app/templates/svg'] }))
     .pipe(htmlmin({
       collapseWhitespace: true
     }))

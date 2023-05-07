@@ -3,12 +3,10 @@
   <head>
     <!-- scripts -->
     <script src="/assets/js/set-theme.js"></script>
-
     <!-- metadata -->
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
     <!-- links -->
     <link rel="icon" href="/favicon.ico">
     <link rel="stylesheet" href="/assets/css/main.css"/>
@@ -16,33 +14,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet"/>
-
     <!-- title -->
-    <title>
-      {% block title %}{% endblock %}
-      &#8211; integer</title>
+    <title>{% block title %}{% endblock %}&#8211; integer</title>
   </head>
   <body>
     <header class="header">
       <div class="logo">
-        <a class="logo__link" href="/">
-          {% include "logo.svg.njk" %}
-        </a>
+        <a class="logo__link" href="/">{% include "logo.svg.njk" %}</a>
       </div>
       <div class="header__links">
         <div class="header__hamburger-menu hamburger-menu" tabindex="0">
-          <svg
-            class="hamburger-menu__img hamburger-menu"
-            height="28px"
-            viewbox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              class="hamburger-menu"
-              d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z
-                M28,14H4c-1.104,0-2,0.896-2,2
-                s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z
-                M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2
-                S29.104,22,28,22z"/>
+          <svg class="hamburger-menu__img hamburger-menu" height="28px" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path class="hamburger-menu" d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2 s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2 S29.104,22,28,22z"/>
           </svg>
         </div>
         <ul class="header__links-list drop-content">
