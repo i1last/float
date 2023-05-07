@@ -18,6 +18,7 @@ html {
     --clr-footer: var(--color-dark-grey);
     --clr-surface: var(--color-light-grey);
     --clr-surface-colored: var(--color-green-light);
+    --clr-text: var(--color-black);
   }
   &[theme='dark'] {
     --clr-background: var(--color-light-black);
@@ -25,5 +26,6 @@ html {
     --clr-footer: var(--color-black);
     --clr-surface: var(--color-dark-grey);
     --clr-surface-colored: var(--color-dark-grey);
+    --clr-text: var(--color-light-grey);
   }
 }
