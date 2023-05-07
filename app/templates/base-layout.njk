@@ -19,47 +19,36 @@
   </head>
   <body>
     <header class="header">
-      <div class="logo">
-        <a class="logo__link" href="/">{% include "logo.svg.njk" %}</a>
+      <div class="left">
+        <div class="header__hamburger-menu hamburger-menu" tabindex="0">{% include "svg/hamburger-menu.njk"%}</div>
+        <div class="logo"><a class="logo__link" href="/">{% include "svg/logo.njk" %}</a></div>
       </div>
-      <div class="header__links">
-        <div class="header__hamburger-menu hamburger-menu" tabindex="0">
-          <svg class="hamburger-menu__img hamburger-menu" height="28px" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-            <path class="hamburger-menu" d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2 s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2 S29.104,22,28,22z"/>
-          </svg>
-        </div>
+      <div class="right header__links">
         <ul class="header__links-list drop-content">
           <li class="header__links-item">
             <div class="change-theme-button link header__links-item--element">
-              <div class="change-theme-button__images" title="Сменить тему" tabindex="0">
-                <svg
-                  class="change-theme-button__image change-theme-button__image--dark"
-                  height="20px"
-                  viewbox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 2c-1.82 0-3.53.5-5 1.35C7.99 5.08 10 8.3 10 12s-2.01 6.92-5 8.65C6.47 21.5
-                  8.18 22 10 22c5.52 0 10-4.48 10-10S15.52 2 10 2z"/>
-                </svg>
-                <svg
-                  class="change-theme-button__image change-theme-button__image--light"
-                  height="20px"
-                  viewbox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4
-                  15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18V6c3.31 0 6 2.69 6 6s-2.69 6-6 6z"/>
-                </svg>
+              <div class="change-theme-button__images" title="Тема" tabindex="0">
+                {% include "svg/theme-light.njk"%}
+                {% include "svg/theme-dark.njk"%}
               </div>
-              <div class="change-theme-button__title">Сменить тему</div>
+              <div class="change-theme-button__title">Тема</div>
             </div>
           </li>
           <li class="header__links-item">
-            <a class="link header__links-item--element" href="/">Главная</a>
+            <div class="link header__links-item--element">
+              <div class="" title="Поиск" tabindex="0">
+                {% include "svg/search.njk"%}
+              </div>
+              <div class="">Поиск</div>
+            </div>
           </li>
           <li class="header__links-item">
-            <a class="link header__links-item--element" href="/authors">Авторы</a>
-          </li>
-          <li class="header__links-item">
-            <a class="link header__links-item--element" href="../">Предыдущая страница</a>
+            <div class="link header__links-item--element">
+              <div class="" title="Профиль" tabindex="0">
+                {% include "svg/profile.njk"%}
+              </div>
+              <div class="">Профиль</div>
+            </div>
           </li>
         </ul>
       </div>
@@ -74,7 +63,7 @@
     <footer class="footer">
       <div class="logo">
         <a class="logo__link" href="/">
-          {% include "logo.svg.njk" %}
+          {% include "svg/logo.njk" %}
         </a>
       </div>
       <div class="footer__links">
