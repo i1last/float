@@ -1,6 +1,6 @@
-let changeThemeButton = document.querySelector('.change-theme-button');
+let themeButton = document.querySelector('.theme-button');
 
-changeThemeButton.addEventListener('click', () => {
+themeButton.addEventListener('click', () => {
   switch (html.getAttribute('theme')) {
     case 'dark':
       localStorage.setItem('theme', 'light');
