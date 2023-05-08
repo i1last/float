@@ -7,7 +7,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!-- links -->
+    <!-- buttons -->
     <link rel="icon" href="/favicon.ico">
     <link rel="stylesheet" href="/assets/css/main.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -19,36 +19,30 @@
   </head>
   <body>
     <header class="header">
-      <div class="left">
-        <div class="header__hamburger-menu hamburger-menu" tabindex="0">{% include "svg/hamburger-menu.njk"%}</div>
-        <div class="logo"><a class="logo__link" href="/">{% include "svg/logo.njk" %}</a></div>
+      <div class="header__left">
+        <div class="header__hamburger-menu" tabindex="0">{% include "svg/hamburger-menu.njk"%}</div>
+        <div class="header__logo"><a class="logo__link" href="/">{% include "svg/logo.njk" %}</a></div>
       </div>
-      <div class="right header__links">
-        <ul class="header__links-list drop-content">
-          <li class="header__links-item">
-            <div class="change-theme-button link header__links-item--element">
-              <div class="change-theme-button__images" title="Тема" tabindex="0">
+      <div class="header__right">
+        <ul class="header__buttons">
+          <li class="header__button">
+              <div class="header__button-image" title="Тема" tabindex="0">
                 {% include "svg/theme-light.njk"%}
                 {% include "svg/theme-dark.njk"%}
               </div>
-              <div class="change-theme-button__title">Тема</div>
-            </div>
+              <div class="header__button-title">Тема</div>
           </li>
-          <li class="header__links-item">
-            <div class="link header__links-item--element">
-              <div class="" title="Поиск" tabindex="0">
+          <li class="header__button">
+              <div class="header__button-image" title="Поиск" tabindex="0">
                 {% include "svg/search.njk"%}
               </div>
-              <div class="">Поиск</div>
-            </div>
+              <div class="header__button-title">Поиск</div>
           </li>
-          <li class="header__links-item">
-            <div class="link header__links-item--element">
-              <div class="" title="Профиль" tabindex="0">
+          <li class="header__button">
+              <div class="header__button-image" title="Профиль" tabindex="0">
                 {% include "svg/profile.njk"%}
               </div>
-              <div class="">Профиль</div>
-            </div>
+              <div class="header__button-title">Войти</div>
           </li>
         </ul>
       </div>
@@ -66,9 +60,9 @@
           {% include "svg/logo.njk" %}
         </a>
       </div>
-      <div class="footer__links">
-        <ul class="footer__links-list">
-          <li class="footer__links-item">
+      <div class="footer__buttons">
+        <ul class="footer__buttons-list">
+          <li class="footer__button">
             <a
               class="footer__link restrange--mauve text--bold"
               href="https://github.com/i1last/integer"
@@ -76,7 +70,7 @@
               Исходный код
             </a>
           </li>
-          <li class="footer__links-item">
+          <li class="footer__button">
             <a
               class="footer__link restrange--teal text--bold"
               href="https://forms.gle/weuyGnz1A4G1TJmp7"
