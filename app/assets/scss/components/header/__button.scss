@@ -1,0 +1,25 @@
+.header__button {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-surface-colored);
+    height: 40px;
+    padding: 0 12px;
+    border-radius: 8px;
+    margin-left: 16px;
+    cursor: pointer;
+
+    &-image {
+        margin-top: 4px;
+        margin-right: 8px;
+    }
+
+    @media screen and (max-width: 600px) {
+        &-title {
+            display: none;
+        }
+        &-image {
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.header__hamburger-button {
+    display: flex;
+    margin-right: 16px;
+    fill: var(--color-black);
+
+    @media screen and (min-width: 601px) {
+        display: none;
+    }
+}
