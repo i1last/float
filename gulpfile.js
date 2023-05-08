@@ -22,6 +22,7 @@ import changed from 'gulp-changed';
 import svgmin from 'gulp-svgmin';
 import multiDest from 'gulp-multi-dest';
 import plumber from 'gulp-plumber'
+import concat from 'gulp-concat';
 
 function svgCompile() {
   return src('app/pages/**/*.svg')
@@ -88,9 +89,10 @@ function jsCompile() {
 }
 
 function scssCompile() {
-  return src('app/assets/scss/main.scss')
+  return src('app/assets/scss/components/desktop/_header.scss')
     .pipe(sourcemaps.init())
     .pipe(sassBulkImporter())
+    .pipe(concat('main.min.scss'))
     .pipe(sass({
       outputStyle: 'compressed'
     }).on('error', sass.logError))
@@ -131,7 +133,7 @@ function filesTransfer() {
 }
 
 task('localSvgCompile', series(localSvgCompile));
-task('test', () => {console.log('test passed');});
+task('test', series(scssCompile));
 task('build', series(svgCompile, rastrCompile, scssCompile, jsCompile, njkCompile, filesTransfer));
 
 task('watch', series('build', function () {
