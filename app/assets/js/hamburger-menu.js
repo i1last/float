@@ -1,16 +1,16 @@
-let hamburgerMenu = document.querySelector('.hamburger-menu');
-let headerLinksList = document.querySelector('.header__links-list')
+let hamburgerMenu = document.querySelector('.header__hamburger-menu');
+let buttons = document.querySelector('.header__buttons')
 
 hamburgerMenu.addEventListener('click', () => {
-  if (headerLinksList.classList.contains('showing')) {
-    headerLinksList.classList.remove('showing');
+  if (buttons.classList.contains('showing')) {
+    buttons.classList.remove('showing');
   } else {
-    headerLinksList.classList.add('showing');
+    buttons.classList.add('showing');
   }
 })
 
 window.addEventListener('click', (event) => {
   if (!event.target.matches('.hamburger-menu')) {
-    headerLinksList.classList.remove('showing');
+    buttons.classList.remove('showing');
     }
 })
