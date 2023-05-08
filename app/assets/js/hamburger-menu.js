@@ -1,16 +1,20 @@
-let hamburgerMenu = document.querySelector('.header__hamburger-menu');
-let buttons = document.querySelector('.header__buttons')
+let hamburgerButton = document.querySelector('.header__hamburger-button');
+let hamburgerMenu = document.querySelector('.hamburger-menu');
+let container = document.querySelector('.container');
 
-hamburgerMenu.addEventListener('click', () => {
-  if (buttons.classList.contains('showing')) {
-    buttons.classList.remove('showing');
+hamburgerButton.addEventListener('click', () => {
+  if (hamburgerMenu.classList.contains('hamburger-menu--showing')) {
+    hamburgerMenu.classList.remove('hamburger-menu--showing');
+    container.style.display = 'inherit';
   } else {
-    buttons.classList.add('showing');
+    hamburgerMenu.classList.add('hamburger-menu--showing');
+    container.style.display = 'none';
   }
 })
 
-window.addEventListener('click', (event) => {
-  if (!event.target.matches('.hamburger-menu')) {
-    buttons.classList.remove('showing');
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 600) {
+        hamburgerMenu.classList.remove('hamburger-menu--showing');
+        container.style.display = 'inherit';
     }
 })
