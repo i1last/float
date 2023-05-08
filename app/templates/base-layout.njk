@@ -20,7 +20,7 @@
   <body>
     <header class="header">
       <div class="header__left">
-        <div class="header__hamburger-menu" tabindex="0">{% include "svg/hamburger-menu.njk"%}</div>
+        <div class="header__hamburger-button" tabindex="0">{% include "svg/hamburger-button.njk"%}</div>
         <div class="header__logo"><a class="logo__link" href="/">{% include "svg/logo.njk" %}</a></div>
       </div>
       <div class="header__right">
@@ -47,13 +47,23 @@
         </ul>
       </div>
     </header>
-    <div class="container">
+    <nav class="hamburger-menu">
+        <ul>
+          <li class="hamburger-menu__item"><a href="#!" class="hamburger-menu__element">Главная</a></li>
+          <li class="hamburger-menu__item"><a href="#!" class="hamburger-menu__element">Расписание</a></li>
+          <li class="hamburger-menu__item"><a href="#!" class="hamburger-menu__element">Справочник</a></li>
+          <li class="hamburger-menu__item"><a href="#!" class="hamburger-menu__element">Для ЕГЭ</a></li>
+          <li class="hamburger-menu__item"><a href="#!" class="hamburger-menu__element">Для ОГЭ</a></li>
+          <li class="hamburger-menu__item"><a href="#!" class="hamburger-menu__element">Для учителей</a></li>
+        </ul>
+      </nav>
+    <main class="container">
       <section class="preview">
-      <div class="title">{% block preview_title %}{% endblock %}</div>
-      <div class="preview__text">{% block preview_text %}{% endblock %}</div>
-    </section>
-    {% block content %}{% endblock %}
-    </div>
+        <div class="title">{% block preview_title %}{% endblock %}</div>
+        <div class="preview__text">{% block preview_text %}{% endblock %}</div>
+      </section>
+      {% block content %}{% endblock %}
+    </main>
     <footer class="footer">
       <div class="logo">
         <a class="logo__link" href="/">
