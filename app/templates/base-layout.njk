@@ -25,10 +25,10 @@
       </div>
       <div class="header__right">
         <ul class="header__buttons">
-          <li class="header__button">
+          <li class="header__button theme-button">
               <div class="header__button-image" title="Тема" tabindex="0">
-                {% include "svg/theme-light.njk"%}
-                {% include "svg/theme-dark.njk"%}
+                {% include "svg/theme-button--light.njk"%}
+                {% include "svg/theme-button--dark.njk"%}
               </div>
               <div class="header__button-title">Тема</div>
           </li>
@@ -81,6 +81,7 @@
         </ul>
       </div>
     </footer>
+    <!-- scripts -->
     {% block scripts %}{% endblock %}
     <script src="/assets/js/hamburger-menu.js"></script>
     <script src="/assets/js/theme-changer.js"></script>
