@@ -1,0 +1,9 @@
+.link {
+    color: var(--color-text);
+    transition: 300ms;
+
+    &:hover {
+      color: var(--color-blueberry) !important;
+      transition: 300ms;
+    }
+  }
