@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 160px;
+    background-color: var(--color-footer);
+
+    &__text {
+        color: var(--color-light-grey) !important;
+        line-height: 24px;
+        font-size: 16px;
+    }
+    &__left {
+        display: flex;
+        align-items: center;
+        margin-left: 36px;
+
+        @media screen and (max-width: 600px) {
+            margin-left: 16px;
+        }
+    }
+    &__right {
+        margin-right: 36px;
+
+        @media screen and (max-width: 600px) {
+            margin-right: 16px;
+        }
+    }
+}

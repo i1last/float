@@ -1,0 +1,14 @@
+.footer {
+    &__links {
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+    }
+    &__link {
+        margin-right: 24px;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
