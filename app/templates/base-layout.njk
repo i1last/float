@@ -15,13 +15,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet"/>
     <!-- title -->
-    <title>{% block title %}{% endblock %}&#8211; integer</title>
+    <title>{% block title %}{% endblock %} &#8211; .float</title>
   </head>
   <body>
     <header class="header">
       <div class="header__left">
         <div class="header__hamburger-button" tabindex="0">{% include "svg/hamburger-button.njk"%}</div>
-        <div class="header__logo"><a class="logo__link" href="/">{% include "svg/logo.njk" %}</a></div>
+        <div class="header__logo"><a class="logo__link" href="/">{% include "svg/header__logo.njk" %}</a></div>
       </div>
       <div class="header__right">
         <ul class="header__buttons">
@@ -59,36 +59,34 @@
       </nav>
     <main class="container">
       <section class="preview">
-        <div class="title">{% block preview_title %}{% endblock %}</div>
-        <div class="preview__text">{% block preview_text %}{% endblock %}</div>
+        <div class="preview__title">{% block preview__title %}{% endblock %}</div>
+        <div class="preview__icon">{% block preview__icon %}{% endblock %}</div>
       </section>
       {% block content %}{% endblock %}
     </main>
     <footer class="footer">
-      <div class="logo">
-        <a class="logo__link" href="/">
-          {% include "svg/logo.njk" %}
-        </a>
+      <div class="footer__left">
+        <div class="footer__logo">
+          <a class="logo__link" href="/">
+            {% include "svg/footer__logo.njk" %}
+          </a>
+        </div>
+        <div class="footer__links">
+          <ul class="footer__links">
+              <li class="footer__link"><a class="link footer__text" href="https://github.com/i1last/i1last.github.io" target="_blank">Исходный код сайта</a></li>
+              <li class="footer__link"><a class="link footer__text" href="mailto:feedback.float@gmail.com" target="_blank">Обратная связь</a></li>
+              <li class="footer__link"><a class="link footer__text" href="https://github.com/i1last/i1last.github.io/blob/main/LICENSE" target="_blank">Лицензия</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer__buttons">
-        <ul class="footer__buttons-list">
-          <li class="footer__button">
-            <a
-              class="footer__link restrange--mauve text--bold"
-              href="https://github.com/i1last/integer"
-              target="_blank">
-              Исходный код
-            </a>
-          </li>
-          <li class="footer__button">
-            <a
-              class="footer__link restrange--teal text--bold"
-              href="https://forms.gle/weuyGnz1A4G1TJmp7"
-              target="_blank">
-              Обратная связь
-            </a>
-          </li>
-        </ul>
+      <div class="footer__right">
+        <div class="footer__copyright">
+          <p class="footer__text">© Рахметов А.Р., 2022-2023 Все права защищены.</p>
+          <p class="footer__text">Любое использование материалов без согласия правообладателя запрещено.</p>
+          <p class="footer__text">По всем вопросам пишите на
+              <a class="link footer__text" href="mailto:feedback.float@gmail.com">feedback.float@gmail.com</a>
+          </p>
+        </div>
       </div>
     </footer>
     <!-- scripts -->
