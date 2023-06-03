@@ -89,7 +89,7 @@ function jsCompile() {
 }
 
 function scssCompile() {
-  return src('app/assets/scss/**/*.scss')
+  return src(['app/assets/scss/reset.scss', 'app/assets/scss/**/*.scss'])
     .pipe(sourcemaps.init())
     .pipe(sassBulkImporter())
     .pipe(concat('main.min.scss'))
