@@ -1,0 +1,23 @@
+.slide {
+    width: 425px;
+    height: 190px;
+    border-radius: 20px;
+    background-color: var(--color-light-grey);
+    transition: 300ms;
+    
+    &:hover {
+        transform: scale(0.97);
+    }
+}
+
+#slide--physics {
+    background-color: var(--color-green);
+}
+
+#slide--russian {
+    background-color: var(--color-brown);
+}
+
+#slide--informatics {
+    background-color: var(--color-blueberry);
+}
