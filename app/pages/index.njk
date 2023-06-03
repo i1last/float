@@ -1,13 +1,67 @@
 {% extends "base-layout.njk" %}
 {% block title %}Главная{% endblock %}
 
-{% block preview_title %}Привет! &#128075;{% endblock %}
-{% block preview_text %}
-  Сайт создан с целью помощи в централизации и систематизации справочной информации, которая используется в ходе обучения
+{% block preview__title %}
+  Развитие!<br>
+  Stonks!<br>
+  Ты!
+{% endblock %}
+{% block preview__icon %}
+  {% include "svg/preview__icon--arrow.njk" %}
+  {% include "svg/preview__icon--logo.njk" %}
 {% endblock %}
 
 {% block content %}
-    <section class="actual">
+  <section class="text-about">
+    <p><span class="text-logo"></span> - это сайт, где ты сможешь найти необходимую тебе информацию и утилиты!</p>
+    <p>Готовишься к ОГЭ, к зачету по физике, а млжет к сочинению по русскому языку? А может ты хочешь перевести км/ч в м/с? Тогда мы точно сможем тебе помочь!</p>
+    <p>Возможно к тебе обращаются на Вы? Для таких посетителей у нас тоже есть полезности! Ищите их в разделе «Для учителей»!</p>
+  </section>
+  <section class="popular-pages">
+    <div class="popular-pages__header">
+      Популярные страницы
+    </div>
+    <div class="popular-pages__content">
+        <ul class="popular-pages__slides">
+            <li class="popular-pages__slide"></li>
+            <li class="popular-pages__slide slide" id="slide--physics">
+                <a class="slide__link" href="#!WIP">
+                    <div class="slide__content">
+                        <div class="slide__title">Физика</div>
+                        <div class="slide__description">Если не учить физику, то вся жизнь будет наполнена чудесами и волшебством</div>
+                        <div class="slide__image">{% include "svg/slide__image--physics.njk" %}</div>
+                    </div>
+                    <div class="slide__reference">Перейти</div>
+                </a>
+            </li>
+            <li class="popular-pages__slide slide" id="slide--russian">
+                <a class="slide__link" href="#!WIP">
+                    <div class="slide__content">
+                        <div class="slide__title">Русский язык</div>
+                        <div class="slide__description">Русский язык - один из богатейших языков в мире, в этом нет никакого сомнения</div>
+                        <div class="slide__image">{% include "svg/slide__image--russian.njk" %}</div>
+                    </div>
+                    <div class="slide__reference">Перейти</div>
+                </a>
+            </li>
+            <li class="popular-pages__slide slide" id="slide--informatics">
+                <a class="slide__link" href="#!WIP">
+                    <div class="slide__content">
+                        <div class="slide__title">Информатика</div>
+                        <div class="slide__description">Кто владеет информацией, тот владеет миром</div>
+                        <div class="slide__image">{% include "svg/slide__image--informatics.njk" %}</div>
+                    </div>
+                    <div class="slide__reference">Перейти</div>
+                </a>
+            </li>
+            <li class="popular-pages__slide"></li>
+        </ul>
+        <button class="popular-pages__slider popular-pages__slider--prev slider" onclick="prev()">{% include "svg/popular-pages__slider--prev.njk" %}</button>
+        <button class="popular-pages__slider popular-pages__slider--next slider" onclick="next()">{% include "svg/popular-pages__slider--next.njk" %}</button>
+    </div>
+    <a class="pupular-pages__see-all" href="#!WIP">Смотреть всё</a>
+  </section>
+    {# <section class="actual">
       <div class="restrange-title restrange--green text--bold">
         Актуальное
       </div>
@@ -55,5 +109,8 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> #}
   {% endblock %}
+{% block scripts %}
+    <script src="/assets/js/slider.js"></script>
+{% endblock %}
