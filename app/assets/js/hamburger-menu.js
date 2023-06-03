@@ -1,4 +1,4 @@
-let hamburgerButton = document.querySelector('.header__hamburger-button');
+const hamburgerButton = document.querySelector('.header__hamburger-button');
 let hamburgerMenu = document.querySelector('.hamburger-menu');
 let container = document.querySelector('.container');
 
