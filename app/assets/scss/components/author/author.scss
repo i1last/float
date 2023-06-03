@@ -1,0 +1,10 @@
+.author {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-radius: 30px;
+    margin-bottom: 48px;
+    font-size: 28px;
+    background-color: var(--color-surface);
+    flex-shrink: 0;
+}

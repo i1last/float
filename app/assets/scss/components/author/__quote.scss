@@ -1,0 +1,11 @@
+.author__quote {
+    margin-left: 96px;
+}
+
+.author__quote::before {
+    content: '\201E';
+}
+
+.author__quote::after {
+    content: '\201C';
+}
