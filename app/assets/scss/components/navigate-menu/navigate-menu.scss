@@ -1,0 +1,21 @@
+.navigate-menu {
+    @media screen and (max-width: 600px) {
+        display: none;
+        height: 100%;
+        font-size: 24px;
+        background-color: var(--color-surface-colored);
+
+        &--showing {
+            display: inherit;
+        }
+    }
+    @media screen and (min-width: 601px) {
+        display: block;
+        position: fixed;
+        top: 112px;
+        left: 128px;
+        background-color: var(--color-surface-colored);
+        border-radius: 9px;
+        width: 197px;
+    }
+}
