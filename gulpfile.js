@@ -20,137 +20,126 @@ import recompress from 'imagemin-jpeg-recompress';
 import pngquant from 'imagemin-pngquant';
 import changed from 'gulp-changed';
 import svgmin from 'gulp-svgmin';
-import multiDest from 'gulp-multi-dest';
 import plumber from 'gulp-plumber'
 import concat from 'gulp-concat';
+import flatten from 'gulp-flatten';
 
-function svgCompile() {
-  return src('app/pages/**/*.svg')
-    .pipe(changed('docs/'))
-    .pipe(changed('app/..SVG/dest/pages'))
-    .pipe(svgmin({
-      plugins: [
-        {
-          name: 'preset-default',
+
+task('test', series(filesTransfer));
+task('build', parallel(svgCompile, rastrCompile, scssCompile, jsCompile, njkCompile, filesTransfer));
+task('watch', series('build', function () {
+    browserSync.init({
+        server: {
+        baseDir: './docs/',
         },
-        'removeComments',
-        'removeEmptyContainers'
-      ]
-    }))
-    .pipe(multiDest(['docs/', 'app/..SVG/dest/pages']))
-}
+        notify: false,
+        logFileChanges: false
+    });
 
-function localSvgCompile() {
-  return src('app/..SVG/src/*.svg')
-    .pipe(changed('app/..SVG/dest/local'))
-    .pipe(svgmin({
-      plugins: [
-        {
-          name: 'preset-default',
-        },
-        'removeComments',
-        'removeEmptyContainers'
-      ]
-    }))
-    .pipe(dest('app/..SVG/dest/local'))
-}
+    watch(['app/**/*.scss'], scssCompile);
+    watch(['app/**/*.js'], jsCompile);
+    watch(['app/**/*.njk'], njkCompile);
 
-function rastrCompile() {
-  return src('app/database/images/**/*.*')
-    .pipe(changed('docs/database/images/'))
-    .pipe(imagemin({interlaced: true, progressive: true, optimizationLevel: 5},
-      [
-        recompress({
-          loops: 6,
-          min: 50,
-          max: 90,
-          quality: 'high',
-          use: [pngquant({
-            quality: [0.8, 1],
-            strip: true,
-            speed: 1})],
-          }),
-        imageminGifsicle(),
-        imageminOptipng()
-      ]))
-    .pipe(plumber())
-    .pipe(dest('docs/database/images/'))
-    .pipe(browserSync.stream());
-}
+    watch(['app/**/*', '!app/**/*.+(njk|html|scss|js)', '!_pacifier'], filesTransfer);
+    watch(['_pacifier'], task('build'));
 
-function jsCompile() {
-  return src('app/assets/js/*.js')
-    .pipe(uglifyEs())
-    .pipe(babel({
-      presets: ['@babel/env']
-    }))
-    .pipe(dest('docs/assets/js/'))
-    .pipe(browserSync.stream());
+    watch(['app/**/*', '_pacifier'], browserSync.reload());
+}));
+
+function njkCompile() {
+    return src('app/pages/**/*.njk')
+        .pipe(nunjucksRender({ path: ['app/templates/'] }))
+        .pipe(htmlmin({
+            collapseWhitespace: true
+        }))
+        .pipe(dest('docs/'))
+        .pipe(browserSync.stream());
 }
 
 function scssCompile() {
-  return src(['app/assets/scss/reset.scss', 'app/assets/scss/**/*.scss'])
-    .pipe(sourcemaps.init())
-    .pipe(sassBulkImporter())
-    .pipe(concat('main.min.scss'))
-    .pipe(sass({
-      outputStyle: 'compressed'
-    }).on('error', sass.logError))
-    .pipe(autoprefixer({
-      overrideBrowserslist: ['last 8 versions'],
-      browsers: [
-        'Android >= 4',
-        'Chrome >= 20',
-        'Firefox >= 24',
-        'Explorer >= 11',
-        'iOS >= 6',
-        'Opera >= 12',
-        'Safari >= 6',
-      ],
-    }))
-    .pipe(cleanCss({
-      level: 2
-    }))
-    .pipe(sourcemaps.write('./'))
-    .pipe(dest('docs/assets/css/'))
-    .pipe(browserSync.stream());
+    return src(['app/assets/important/*.scss', 'app/assets/**/*.scss'])
+        .pipe(sourcemaps.init())
+        .pipe(sassBulkImporter())
+        .pipe(concat('main.min.scss'))
+        .pipe(sass({
+             outputStyle: 'compressed'
+        }).on('error', sass.logError))
+        .pipe(autoprefixer({
+            overrideBrowserslist: ['last 8 versions'],
+            browsers: [
+                'Android >= 4',
+                'Chrome >= 20',
+                'Firefox >= 24',
+                'Explorer >= 11',
+                'iOS >= 6',
+                'Opera >= 12',
+                'Safari >= 6',
+            ],
+        }))
+        .pipe(cleanCss({
+            level: 2
+        }))
+        .pipe(sourcemaps.write('./'))
+        .pipe(dest('docs/assets/css/'))
+        .pipe(browserSync.stream());
 }
 
-function njkCompile() {
-  return src('app/pages/**/*.njk')
-    .pipe(nunjucksRender({ path: ['app/templates/'] }))
-    .pipe(htmlmin({
-      collapseWhitespace: true
-    }))
-    .pipe(dest('docs/'))
-    .pipe(browserSync.stream());
+function jsCompile() {
+    return src('app/assets/**/*.js')
+        .pipe(uglifyEs())
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(flatten())
+        .pipe(dest('docs/assets/js/'))
+        .pipe(browserSync.stream());
+}
+
+function rastrCompile() {
+    return src('app/database/images/**/*.*')
+        .pipe(changed('docs/database/images/'))
+        .pipe(imagemin({interlaced: true, progressive: true, optimizationLevel: 5},
+        [
+            recompress({
+            loops: 6,
+            min: 50,
+            max: 90,
+            quality: 'high',
+            use: [pngquant({
+                quality: [0.8, 1],
+                strip: true,
+                speed: 1})],
+            }),
+            imageminGifsicle(),
+            imageminOptipng()
+        ]))
+        .pipe(plumber())
+        .pipe(dest('docs/database/images/'))
+        .pipe(browserSync.stream());
+}
+
+function svgCompile() {
+    return src('app/pages/**/*.svg')
+        .pipe(changed('docs/'))
+        .pipe(svgmin({
+            plugins: [
+            {
+                name: 'preset-default',
+            },
+            'removeComments',
+            'removeEmptyContainers'
+            ]
+        }))
+        .pipe(dest('docs/'))
 }
 
 function filesTransfer() {
-  return src(['app/pages/**', 'app/database*/**', 'app/assets*/**', '!app/**/*.+(njk|js|scss)', '!app/assets/scss*/**', '!app/database/images/'])
-    .pipe(dest('docs/'))
-    .pipe(browserSync.stream());
+    return src(
+        ['app/pages/**',
+        'app/database*/**',
+        '!app/**/*.+(njk|js|scss)',
+        '!app/database/images/']
+        )
+        .pipe(dest('docs/'))
+        .pipe(browserSync.stream());
 }
-
-task('localSvgCompile', series(localSvgCompile));
-task('test', series(scssCompile));
-task('build', series(svgCompile, rastrCompile, scssCompile, jsCompile, njkCompile, filesTransfer));
-
-task('watch', series('build', function () {
-  browserSync.init({
-    server: {
-      baseDir: './docs/',
-    },
-    notify: false,
-    logFileChanges: false
-  });
-
-  watch(['app/**/*.scss'], scssCompile);
-  watch(['app/**/*.js'], jsCompile);
-  watch(['app/**/*.+(njk|html)'], njkCompile);
-
-  watch(['app/**/*', '!app/**/*.+(njk|html|scss|js)', '!pacifier.md'], filesTransfer);
-  watch(['pacifier.md'], task('build'));
-
-  watch(['app/**/*', 'pacifier.md'], browserSync.reload());
-}));
