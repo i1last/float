@@ -44,16 +44,16 @@
         </ul>
       </div>
     </header>
-    <nav class="hamburger-menu">
-        <ul>
-          <li class="hamburger-menu__item"><a href="#!" class="hamburger-menu__element">Главная</a></li>
-          <li class="hamburger-menu__item"><a href="#!" class="hamburger-menu__element">Расписание</a></li>
-          <li class="hamburger-menu__item"><a href="#!" class="hamburger-menu__element">Справочник</a></li>
-          <li class="hamburger-menu__item"><a href="#!" class="hamburger-menu__element">Для ЕГЭ</a></li>
-          <li class="hamburger-menu__item"><a href="#!" class="hamburger-menu__element">Для ОГЭ</a></li>
-          <li class="hamburger-menu__item"><a href="#!" class="hamburger-menu__element">Для учителей</a></li>
-        </ul>
-      </nav>
+    <nav class="navigate-menu">
+      <ul class="navigate-menu__items">
+        <li class="navigate-menu__item navigate-menu__main-page"><a href="/" class="navigate-menu__link">Главная</a></li>
+        <li class="navigate-menu__item"><a href="/timetable" class="navigate-menu__link">Расписание</a></li>
+        <li class="navigate-menu__item"><a href="/handbook" class="navigate-menu__link">Справочник</a></li>
+        <li class="navigate-menu__item"><a href="/ege" class="navigate-menu__link">Для ЕГЭ</a></li>
+        <li class="navigate-menu__item"><a href="/oge" class="navigate-menu__link">Для ОГЭ</a></li>
+        <li class="navigate-menu__item navigate-menu__for-teachers"><a href="/teacher" class="navigate-menu__link">Для учителей</a></li>
+      </ul>
+    </nav>
     <main class="container">
       <section class="preview">
         <div class="preview__title">{% block preview__title %}{% endblock %}</div>
@@ -88,7 +88,8 @@
     </footer>
     <!-- scripts -->
     {% block scripts %}{% endblock %}
-    <script src="/assets/js/hamburger-menu.js"></script>
     <script src="/assets/js/theme-changer.js"></script>
+    <script src="/assets/js/navigate-menu.js"></script>
+    <script src="/assets/js/navigate-menu-parser.js"></script>
   </body>
 </html>
