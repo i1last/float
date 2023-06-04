@@ -1,3 +1,53 @@
+const tableRequest = document.currentScript.getAttribute('table');
+const sectionRequest = document.currentScript.getAttribute('section');
+const days = [
+    "monday",
+    "monday",
+    "tuesday",
+    "wednesday",
+    "thursday",
+    "friday",
+    "saturday",
+    "monday"
+];
+
+fetch(`/database/tables/${tableRequest}.json`)
+  .then((res) => res.json())
+  .then((json) => {
+    let sections;
+
+    if (sectionRequest == 'all') {
+      sections = Object.keys(json).slice(1);
+    } else if (sectionRequest == 'current') {
+      const currentDayOfWeek = new Date().getDay();
+      const currentHour = new Date().getHours();
+
+      if (currentHour >= 17) {
+        sections = [days[currentDayOfWeek + 1]];
+      } else {
+        sections = [days[currentDayOfWeek]];
+      }
+    } else {
+      if (json[sectionRequest] === undefined) {
+        console.error('sectionRequest Error: section is undefined');
+      } else {
+        sections = [sectionRequest];
+      }
+    }
+
+    let tableDataClasses;
+    switch (tableRequest) {
+      case 'timetable':
+        tableDataClasses = ['table__heading', '', 'table__data-center', 'table__data-center', '']
+        break;
+      case 'definitions':
+        tableDataClasses = ['table__heading', '', 'table__data table__data-width--long', 'table__data table__data-width--short', 'table__data-center']
+        break;
+    }
+
+    generateTables(json, sections, tableDataClasses);
+  });
+
 function createTable(json, section, tableDataClasses) {
   let array = Object.keys(json.header);
 
@@ -41,7 +91,7 @@ function createTable(json, section, tableDataClasses) {
     tbody.appendChild(tr);
   }
 
-  document.querySelector('.tables').appendChild(divContainer);
+  document.querySelector('.js-table-container').appendChild(divContainer);
 }
 
 function generateTables(json, sections, tableDataClasses) {
@@ -58,53 +108,3 @@ function generateTables(json, sections, tableDataClasses) {
     }
   }
 }
-
-const tableRequest = document.currentScript.getAttribute('table');
-const sectionRequest = document.currentScript.getAttribute('section');
-
-fetch(`/database/tables/${tableRequest}.json`)
-  .then((res) => res.json())
-  .then((json) => {
-    let sections;
-
-    if (sectionRequest == 'all') {
-      sections = Object.keys(json).slice(1);
-    } else if (sectionRequest == 'current') {
-      const currentDayOfWeek = new Date().getDay();
-      const currentHour = new Date().getHours();
-      const days = [
-        "monday",
-        "monday",
-        "tuesday",
-        "wednesday",
-        "thursday",
-        "friday",
-        "saturday",
-        "monday"
-      ];
-
-      if (currentHour >= 17) {
-        sections = [days[currentDayOfWeek + 1]];
-      } else {
-        sections = [days[currentDayOfWeek]];
-      }
-    } else {
-      if (json[sectionRequest] === undefined) {
-        console.error('sectionRequest Error: section is undefined');
-      } else {
-        sections = [sectionRequest];
-      }
-    }
-
-    let tableDataClasses;
-    switch (tableRequest) {
-      case 'timetable':
-        tableDataClasses = ['table__heading', '', 'table__data-center', 'table__data-center', '']
-        break;
-      case 'definitions':
-        tableDataClasses = ['table__heading', '', 'table__data table__data-width--long', 'table__data table__data-width--short', 'table__data-center']
-        break;
-    }
-
-    generateTables(json, sections, tableDataClasses);
-  });
