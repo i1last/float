@@ -1,10 +1,8 @@
 .slide {
-    width: 425px;
-    height: 190px;
     border-radius: 20px;
     background-color: var(--color-light-grey);
     transition: 300ms;
-    
+
     &:hover {
         transform: scale(0.97);
     }
@@ -20,4 +18,12 @@
 
 #slide--informatics {
     background-color: var(--color-blueberry);
+}
+
+#slide--fsl {
+    background-color: var(--color-red);
+}
+
+#slide--mathematics {
+    background-color: var(--color-cyan);
 }
