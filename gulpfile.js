@@ -25,7 +25,7 @@ import concat from 'gulp-concat';
 import flatten from 'gulp-flatten';
 
 
-task('test', series(filesTransfer));
+task('test', series(jsCompile));
 task('build', parallel(svgCompile, rastrCompile, scssCompile, jsCompile, njkCompile, filesTransfer));
 task('watch', series('build', function () {
     browserSync.init({
@@ -86,11 +86,13 @@ function scssCompile() {
 
 function jsCompile() {
     return src('app/assets/**/*.js')
+        .pipe(sourcemaps.init())
         .pipe(uglifyEs())
         .pipe(babel({
             presets: ['@babel/env']
         }))
         .pipe(flatten())
+        .pipe(sourcemaps.write('./'))
         .pipe(dest('docs/assets/js/'))
         .pipe(browserSync.stream());
 }
