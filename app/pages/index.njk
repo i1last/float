@@ -7,8 +7,8 @@
   Ты!
 {% endblock %}
 {% block preview__icon %}
-  {% include "svg/preview__icon--arrow.njk" %}
-  {% include "svg/preview__icon--logo.njk" %}
+  {% include "svg/preview__icon--arrow.svg" %}
+  {% include "svg/preview__icon--logo.svg" %}
 {% endblock %}
 
 {% block content %}
@@ -22,40 +22,40 @@
     <div class="popular-pages__content">
         <ul class="popular-pages__slides">
             <li class="popular-pages__slide"></li>
-            <li class="popular-pages__slide slide" id="slide--physics">
-                <a class="slide__link" href="#!WIP">
+            <li class="popular-pages__slide slide slide--popular-pages" id="slide--physics">
+                <a class="slide__link slide__link--popular-pages" href="#!WIP">
                     <div class="slide__content">
-                        <div class="slide__title">Физика</div>
-                        <div class="slide__description">Если не учить физику, то вся жизнь будет наполнена чудесами и волшебством</div>
-                        <div class="slide__image">{% include "svg/slide__image--physics.njk" %}</div>
+                        <div class="slide__title slide__title--popular-pages">Физика</div>
+                        <div class="slide__description slide__description--popular-pages">Если не учить физику, то вся жизнь будет наполнена чудесами и волшебством</div>
+                        <div class="slide__image slide__image--popular-pages">{% include "svg/slide__image--physics.svg" %}</div>
                     </div>
-                    <div class="slide__reference">Перейти</div>
+                    <div class="slide__reference slide__reference--popular-pages">Перейти</div>
                 </a>
             </li>
-            <li class="popular-pages__slide slide" id="slide--russian">
-                <a class="slide__link" href="#!WIP">
+            <li class="popular-pages__slide slide slide--popular-pages" id="slide--russian">
+                <a class="slide__link slide__link--popular-pages" href="#!WIP">
                     <div class="slide__content">
-                        <div class="slide__title">Русский язык</div>
-                        <div class="slide__description">Русский язык - один из богатейших языков в мире, в этом нет никакого сомнения</div>
-                        <div class="slide__image">{% include "svg/slide__image--russian.njk" %}</div>
+                        <div class="slide__title slide__title--popular-pages">Русский язык</div>
+                        <div class="slide__description slide__description--popular-pages">Русский язык - один из богатейших языков в мире, в этом нет никакого сомнения</div>
+                        <div class="slide__image slide__image--popular-pages">{% include "svg/slide__image--russian.svg" %}</div>
                     </div>
-                    <div class="slide__reference">Перейти</div>
+                    <div class="slide__reference slide__reference--popular-pages">Перейти</div>
                 </a>
             </li>
-            <li class="popular-pages__slide slide" id="slide--informatics">
-                <a class="slide__link" href="#!WIP">
+            <li class="popular-pages__slide slide slide--popular-pages" id="slide--informatics">
+                <a class="slide__link slide__link--popular-pages" href="#!WIP">
                     <div class="slide__content">
-                        <div class="slide__title">Информатика</div>
-                        <div class="slide__description">Кто владеет информацией, тот владеет миром</div>
-                        <div class="slide__image">{% include "svg/slide__image--informatics.njk" %}</div>
+                        <div class="slide__title slide__title--popular-pages">Информатика</div>
+                        <div class="slide__description slide__description--popular-pages">Кто владеет информацией, тот владеет миром</div>
+                        <div class="slide__image slide__image--popular-pages">{% include "svg/slide__image--informatics.svg" %}</div>
                     </div>
-                    <div class="slide__reference">Перейти</div>
+                    <div class="slide__reference slide__reference--popular-pages">Перейти</div>
                 </a>
             </li>
             <li class="popular-pages__slide"></li>
         </ul>
-        <button class="popular-pages__slider popular-pages__slider--prev slider" onclick="prev()">{% include "svg/popular-pages__slider--prev.njk" %}</button>
-        <button class="popular-pages__slider popular-pages__slider--next slider" onclick="next()">{% include "svg/popular-pages__slider--next.njk" %}</button>
+        <button class="popular-pages__slider popular-pages__slider--prev slider" onclick="prev()">{% include "svg/popular-pages__slider--prev.svg" %}</button>
+        <button class="popular-pages__slider popular-pages__slider--next slider" onclick="next()">{% include "svg/popular-pages__slider--next.svg" %}</button>
     </div>
     <a class="pupular-pages__see-all" href="#!WIP">Смотреть всё</a>
   </section>
@@ -100,7 +100,7 @@
         </div>
     </div>
   </section>
-  {% endblock %}
+{% endblock %}
 {% block scripts %}
     <script src="/assets/js/slider.js"></script>
 {% endblock %}

@@ -1,8 +1,103 @@
 {% extends "base-layout.njk" %}
 {% block title %}Справочник{% endblock %}
 
-{% block preview_title %}Справочник{% endblock %}
-{% block preview_text %}
+{% block preview__title %}
+  Справочник
+{% endblock %}
+
+{% block content %}
+  <section class="handbook">
+    <ul class="handbook__list">
+      <li class="hanbook__item slide  slide--handbook" id="slide--physics">
+        <a class="slide__link  slide__link--handbook" href="#!WIP">
+          <div class="slide__content">
+            <div class="slide__title slide__title--handbook">Физика</div>
+            <div class="slide__description slide__description--handbook">Если не учить физику, то вся жизнь будет наполнена чудесами и волшебством</div>
+            <div class="slide__image slide__image--handbook">{% include "svg/slide__image--physics.svg" %}</div>
+          </div>
+          <div class="slide__reference slide__reference--handbook">
+            <ul class="slide__reference--list">
+              <li class="slide__reference-item"><object><a href="#!WIP:REF" class="link">Определения</a></object></li>
+              <li class="slide__reference-item"><object><a href="#!WIP:REF" class="link">Карточки</a></object></li>
+              <li class="slide__reference-item"><object><a href="#!WIP:REF" class="link">Формулы</a></object></li>
+            </ul>
+          </div>
+        </a>
+      </li>
+      <li class="hanbook__item slide  slide--handbook" id="slide--russian">
+        <a class="slide__link  slide__link--handbook" href="#!WIP">
+          <div class="slide__content">
+            <div class="slide__title slide__title--handbook">Русский язык</div>
+            <div class="slide__description slide__description--handbook">Русский язык - один из богатейших языков в мире, в этом нет никакого сомнения</div>
+            <div class="slide__image slide__image--handbook">{% include "svg/slide__image--russian.svg" %}</div>
+          </div>
+          <div class="slide__reference slide__reference--handbook">
+            <ul class="slide__reference--list">
+              <li class="slide__reference-item"><object><a href="#!WIP:REF" class="link">Таблицы</a></object></li>
+              <li class="slide__reference-item"><object><a href="#!WIP:REF" class="link">Конспекты</a></object></li>
+            </ul>
+          </div>
+        </a>
+      </li>
+      <li class="hanbook__item slide  slide--handbook" id="slide--informatics">
+        <a class="slide__link  slide__link--handbook" href="#!WIP">
+          <div class="slide__content">
+            <div class="slide__title slide__title--handbook">Информатика</div>
+            <div class="slide__description slide__description--handbook">Кто владеет информацией, тот владеет миром</div>
+            <div class="slide__image slide__image--handbook">{% include "svg/slide__image--informatics.svg" %}</div>
+          </div>
+          <div class="slide__reference slide__reference--handbook">
+            <ul class="slide__reference--list">
+              <li class="slide__reference-item"><object><a href="#!WIP:REF" class="link">Формулы</a></object></li>
+              <li class="slide__reference-item"><object><a href="#!WIP:REF" class="link">Python</a></object></li>
+            </ul>
+          </div>
+        </a>
+      </li>
+      <li class="hanbook__item slide  slide--handbook" id="slide--fsl">
+        <a class="slide__link  slide__link--handbook" href="#!WIP">
+          <div class="slide__content">
+            <div class="slide__title slide__title--handbook">ОБЖ</div>
+            <div class="slide__description slide__description--handbook">Тот, кто уверен в собственной безопасности - абсолютно беззащитен</div>
+            <div class="slide__image slide__image--handbook">{% include "svg/slide__image--fsl.svg" %}</div>
+          </div>
+          <div class="slide__reference slide__reference--handbook">
+            <ul class="slide__reference--list">
+              <li class="slide__reference-item"><object><a href="#!WIP:REF" class="link">Пожар</a></object></li>
+              <li class="slide__reference-item"><object><a href="#!WIP:REF" class="link">Взрыв</a></object></li>
+              <li class="slide__reference-item"><object><a href="#!WIP:REF" class="link">Места эвакуации</a></object></li>
+            </ul>
+          </div>
+        </a>
+      </li>
+      <li class="hanbook__item slide  slide--handbook" id="slide--mathematics">
+        <a class="slide__link  slide__link--handbook" href="#!WIP">
+          <div class="slide__content">
+            <div class="slide__title slide__title--handbook">Математика</div>
+            <div class="slide__description slide__description--handbook">Математика - эта та часть физики, в которой эксперименты очень дешевы</div>
+            <div class="slide__image slide__image--handbook">{% include "svg/slide__image--mathematics.svg" %}</div>
+          </div>
+          <div class="slide__reference slide__reference--handbook">
+            <ul class="slide__reference--list">
+              <li class="slide__reference-item"><object><a href="#!WIP:REF" class="link">Формулы</a></object></li>
+              <li class="slide__reference-item"><object><a href="#!WIP:REF" class="link">Тригонометрия</a></object></li>
+            </ul>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </section>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}
+
+
+{# {% extends "base-layout.njk" %}
+{% block title %}Справочник{% endblock %}
+
+{% block preview__title %}Справочник{% endblock %}
+{% block preview__icon %}
   На данной странице сайта Вы можете обнаружить полезные материалы для каждого
   предмета. Создание каждого справочного материала было под проверкой
   преподавателя.
@@ -60,4 +155,4 @@
       </ul>
     </div>
   </section>
-{% endblock %}
+{% endblock %} #}
