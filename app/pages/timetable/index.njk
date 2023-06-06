@@ -1,0 +1,48 @@
+{% extends "base-layout.njk" %}
+{% block title %}Расписание{% endblock %}
+
+{% block preview__title %}
+  Расписание
+{% endblock %}
+
+{% block content %}
+  <section class="timetable">
+    {# WIP: отложено до момента, когда select не будет заменен на js версию #}
+    {# <div class="timetable__controller">
+        <button class="day-selector table-controller selector" table="timetable">День недели</button>
+        <ul class="selector__list">
+            <li value="monday" class="selector__option">Понедельник</li>
+            <li value="tuesday" class="selector__option">Вторник</li>
+            <li value="wednesday" class="selector__option">Среда</li>
+            <li value="thursday" class="selector__option">Четверг</li>
+            <li value="friday" class="selector__option">Пятница</li>
+            <li value="saturday" class="selector__option">Суббота</li>
+        </ul>
+    </div> #}
+    <div class="timetable__controller">
+      <select class="timetable__day-selector day-selector table-controller selector" table="timetable">
+        <option value="monday" class="selector__option day-selector__day">Понедельник</option>
+        <option value="tuesday" class="selector__option day-selector__day">Вторник</option>
+        <option value="wednesday" class="selector__option day-selector__day">Среда</option>
+        <option value="thursday" class="selector__option day-selector__day">Четверг</option>
+        <option value="friday" class="selector__option day-selector__day">Пятница</option>
+        <option value="saturday" class="selector__option day-selector__day">Суббота</option>
+      </select>
+      <select class="timetable__grade-selector grade-selector table-controller selector" table="timetable">
+        <option value="5" class="selector__option grade-selector__grade">5 класс</option>
+        <option value="6" class="selector__option grade-selector__grade">6 класс</option>
+        <option value="7" class="selector__option grade-selector__grade">7 класс</option>
+        <option value="8" class="selector__option grade-selector__grade">8 класс</option>
+        <option value="9" class="selector__option grade-selector__grade">9 класс</option>
+        <option value="10" class="selector__option grade-selector__grade">10 класс</option>
+        <option value="11" class="selector__option grade-selector__grade">11 класс</option>
+      </select>
+    </div>
+    <div class="timetable__table js-table-container table-container"></div>
+  </section>
+{% endblock %}
+{% block scripts %}
+  <script src="/assets/js/timetable-day-autoselecter.js"></script>
+  <script src="/assets/js/table-builder.js"></script>
+  <script src="/assets/js/table-listener.js"></script>
+{% endblock %}
