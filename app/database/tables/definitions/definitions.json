@@ -1,11 +1,4 @@
 {
-  "header": {
-    "number": "№",
-    "word": "Слово",
-    "definition": "Определение",
-    "example": "Пример",
-    "page": "Страница"
-  },
   "mechanics": [
     ["Механика"],
     [
