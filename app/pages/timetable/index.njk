@@ -7,18 +7,6 @@
 
 {% block content %}
   <section class="timetable">
-    {# WIP: отложено до момента, когда select не будет заменен на js версию #}
-    {# <div class="timetable__controller">
-        <button class="day-selector table-controller selector" table="timetable">День недели</button>
-        <ul class="selector__list">
-            <li value="monday" class="selector__option">Понедельник</li>
-            <li value="tuesday" class="selector__option">Вторник</li>
-            <li value="wednesday" class="selector__option">Среда</li>
-            <li value="thursday" class="selector__option">Четверг</li>
-            <li value="friday" class="selector__option">Пятница</li>
-            <li value="saturday" class="selector__option">Суббота</li>
-        </ul>
-    </div> #}
     <div class="timetable__controller">
       <select class="timetable__day-selector day-selector table-controller selector" table="timetable">
         <option value="monday" class="selector__option day-selector__day">Понедельник</option>
