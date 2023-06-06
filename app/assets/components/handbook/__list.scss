@@ -1,0 +1,6 @@
+.handbook__list {
+    display: grid;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-columns: repeat(2,minmax(0,1fr))
+}
