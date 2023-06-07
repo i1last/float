@@ -96,7 +96,7 @@ function buildTable(jsonTable, jsonHeader, section, classes) {
         }
 
         let iData = 0;
-        for (const data of columnOrderKey) {
+        for (const key of columnOrderKey) {
             let td = document.createElement('td');
 
             if (classes[iData] != '') td.classList.add(...classes[iData]);
@@ -110,7 +110,12 @@ function buildTable(jsonTable, jsonHeader, section, classes) {
                     td.classList.add('table__data--border-left');
             }
 
-            td.innerText = row[data];
+            let data = (row[key].toString()
+                .replace(/<a l=/g, '<a class="link link--hover-darken link--hover-red table__item" target="_blank" href=')
+                .replace(/<d s='(.*?)'>(.*?)<\/d>/g, '<details class="details table__item"><summary class="details__summary">$1</summary>$2</details>')
+                .replace(/<p>(.*?)<\/p>/g, '<p class="table__item">$1</p>')
+                );
+            td.innerHTML = data;
             tr.appendChild(td);
             iData++;
         }
