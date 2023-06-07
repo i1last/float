@@ -1,8 +1,41 @@
 {% extends "base-layout.njk" %}
+{% block title %}Физика: конспекты{% endblock %}
+
+{% block preview__title %}
+  Конспекты по физике
+{% endblock %}
+
+{% block content %}
+  <section class="synopses synopses--physics slides js-list-container">
+    {# <ul class="synopses__list slides__list">
+      <li class="synopses__item slide slide--medium bg--blueberry">
+        <a class="slide__link slide__link--p-large" href="/handbook/physics/synopses">
+          <div class="slide__title slide__title--fz-normal slide__title--mb-normal">Карточка 1</div>
+          <div class="slide__description slide__description--fz-normal slide__description--maw-medium">Понятие о механическом движении. Равнопеременное движение</div>
+          <div class="slide__image slide__download download-aside">
+            <h3 class="download-aside__title">Скачать</h3>
+            <ul class="download-aside__list">
+              <li><object><a class="download-aside__download-item bg--green" href="/database/handbook/physics/synopses/#!WIP:CARD" download>pdf</a></object></li>
+              <li><object><a class="download-aside__download-item bg--brown" href="/database/handbook/physics/synopses/#!WIP:CARD" download>svg</a></object></li>
+            </ul>
+          </div>
+        </a>
+      </li>
+    </ul> #}
+  </section>
+{% endblock %}
+
+{% block scripts %}
+  <script src="/assets/js/synopses-loader--physics.js"></script>
+{% endblock %}
+
+
+
+{# {% extends "base-layout.njk" %}
 {% block title %}Физика: Конспекты{% endblock %}
 
-{% block preview_title %}Конспекты{% endblock %}
-{% block preview_text %}
+{% block preview__title %}Конспекты{% endblock %}
+{% block preview__icon %}
   Все карточки по физике и дополнения к ним. Вы можете скачать любую карточку в
   удобном для Вас формате: pdf, png, svg
 {% endblock %}
@@ -91,4 +124,4 @@
 {% block scripts %}
   <script src="/assets/js/drop-menu.js"></script>
   <script src="/assets/js/open-image.js"></script>
-{% endblock %}
+{% endblock %} #}
