@@ -1,11 +1,19 @@
 .header {
     display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 100vw;
+    z-index: 1000;
     justify-content: space-between;
     align-items: center;
     height: 60px;
     background-color: var(--color-header);
-    margin-bottom: 52px;
+    transition: 300ms;
 
+    &--hidden {
+        transform: translateY(-100%);
+    }
     &__left {
         display: flex;
         align-items: center;
