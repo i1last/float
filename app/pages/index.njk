@@ -14,55 +14,55 @@
 {% block content %}
   <section class="text-about">
     <p><span class="text-logo"></span> - это сайт, где ты сможешь найти необходимую тебе информацию и утилиты!</p>
-    <p>Готовишься к ОГЭ, к зачету по физике, а млжет к сочинению по русскому языку? А может ты хочешь перевести км/ч в м/с? Тогда мы точно сможем тебе помочь!</p>
+    <p>Готовишься к ОГЭ, к зачету по физике, а может к сочинению по русскому языку? А может ты хочешь перевести км/ч в м/с? Тогда мы точно сможем тебе помочь!</p>
     <p>Возможно к тебе обращаются на Вы? Для таких посетителей у нас тоже есть полезности! Ищите их в разделе «Для учителей»!</p>
   </section>
   <section class="popular-pages">
     <h2 class="popular-pages__header">Популярные страницы</h2>
     <div class="popular-pages__content">
-        <ul class="popular-pages__slides">
-            <li class="popular-pages__slide"></li>
-            <li class="popular-pages__slide slide slide--small bg--green">
-                <a class="slide__link slide__link--p20" href="/handbook/physics/">
-                    <div class="slide__content">
-                        <div class="slide__title slide__title--fz19 slide__reference--mb8">Физика</div>
-                        <div class="slide__description slide__description--fz12 slide__description--maw247">Если не учить физику, то вся жизнь будет наполнена чудесами и волшебством</div>
-                        <div class="slide__image slide__image--wh100">{% include "svg/slide__image--physics.svg" %}</div>
-                    </div>
-                    <div class="slide__reference slide__reference--mt32 slide__reference--fz11">Перейти</div>
-                </a>
-            </li>
-            <li class="popular-pages__slide slide slide--small bg--brown">
-                <a class="slide__link slide__link--p20" href="#!WIP">
-                    <div class="slide__content">
-                        <div class="slide__title slide__title--fz19 slide__reference--mb8">Русский язык</div>
-                        <div class="slide__description slide__description--fz12 slide__description--maw247">Русский язык - один из богатейших языков в мире, в этом нет никакого сомнения</div>
-                        <div class="slide__image slide__image--wh100">{% include "svg/slide__image--russian.svg" %}</div>
-                    </div>
-                    <div class="slide__reference slide__reference--mt32 slide__reference--fz11">Перейти</div>
-                </a>
-            </li>
-            <li class="popular-pages__slide slide slide--small bg--blueberry">
-                <a class="slide__link slide__link--p20" href="#!WIP">
-                    <div class="slide__content">
-                        <div class="slide__title slide__title--fz19 slide__reference--mb8">Информатика</div>
-                        <div class="slide__description slide__description--fz12 slide__description--maw247">Кто владеет информацией, тот владеет миром</div>
-                        <div class="slide__image slide__image--wh100">{% include "svg/slide__image--informatics.svg" %}</div>
-                    </div>
-                    <div class="slide__reference slide__reference--mt32 slide__reference--fz11">Перейти</div>
-                </a>
-            </li>
-            <li class="popular-pages__slide"></li>
-        </ul>
-        <button class="popular-pages__slider popular-pages__slider--prev slider" onclick="prev()">{% include "svg/popular-pages__slider--prev.svg" %}</button>
-        <button class="popular-pages__slider popular-pages__slider--next slider" onclick="next()">{% include "svg/popular-pages__slider--next.svg" %}</button>
+      <ul class="popular-pages__slides">
+        <li class="popular-pages__slide"></li>
+        <li class="popular-pages__slide slide slide--small bg--green">
+          <a class="slide__link slide__link--p-small" href="/handbook/physics">
+            <div class="slide__content">
+              <div class="slide__title slide__title--fz-small slide__reference--mb8">Физика</div>
+              <div class="slide__description slide__description--fz-small slide__description--maw-small">Если не учить физику, то вся жизнь будет наполнена чудесами и волшебством</div>
+              <div class="slide__image slide__image--wh-small">{% include "svg/slide__image--physics.svg" %}</div>
+            </div>
+            <div class="slide__reference slide__reference--mt-small slide__reference--fz-small">Перейти</div>
+          </a>
+        </li>
+        <li class="popular-pages__slide slide slide--small bg--brown">
+          <a class="slide__link slide__link--p-small" href="/handbook/russian">
+            <div class="slide__content">
+              <div class="slide__title slide__title--fz-small slide__reference--mb8">Русский язык</div>
+              <div class="slide__description slide__description--fz-small slide__description--maw-small">Русский язык - один из богатейших языков в мире, в этом нет никакого сомнения</div>
+              <div class="slide__image slide__image--wh-small">{% include "svg/slide__image--russian.svg" %}</div>
+            </div>
+            <div class="slide__reference slide__reference--mt-small slide__reference--fz-small">Перейти</div>
+          </a>
+        </li>
+        <li class="popular-pages__slide slide slide--small bg--blueberry">
+          <a class="slide__link slide__link--p-small" href="/handbook/informatics">
+            <div class="slide__content">
+              <div class="slide__title slide__title--fz-small slide__reference--mb8">Информатика</div>
+              <div class="slide__description slide__description--fz-small slide__description--maw-small">Кто владеет информацией, тот владеет миром</div>
+              <div class="slide__image slide__image--wh-small">{% include "svg/slide__image--informatics.svg" %}</div>
+            </div>
+            <div class="slide__reference slide__reference--mt-small slide__reference--fz-small">Перейти</div>
+          </a>
+        </li>
+        <li class="popular-pages__slide"></li>
+      </ul>
+      <button class="popular-pages__slider popular-pages__slider--prev slider" onclick="prev()">{% include "svg/popular-pages__slider--prev.svg" %}</button>
+      <button class="popular-pages__slider popular-pages__slider--next slider" onclick="next()">{% include "svg/popular-pages__slider--next.svg" %}</button>
     </div>
-    <a class="pupular-pages__see-all" href="/handbook">Смотреть всё</a>
+    <a class="pupular-pages__see-all" href="/handbook">Смотреть все</a>
   </section>
   <section class="authors">
     <h1 class="authors__title">Авторы проекта</h1>
     <div class="authors__supervisor author">
-        <div class="author__avatar author__avatar--mr32"><img src="/database/images/authors/supervisor.svg" alt="failed to load image..."></div>
+        <div class="author__avatar author__avatar--mr32"><img src="/database/main/supervisor.svg" alt="failed to load image..."></div>
         <div class="author__about">
             <div class="author__name">Нилова Юлия Николаевна</div>
             <div class="author__post">Куратор проекта</div>
@@ -71,14 +71,14 @@
     </div>
     <div class="authors__seniors">
         <div class="author author__senior">
-            <div class="author__avatar author__avatar--mr32"><img src="/database/images/authors/albert.png" alt="failed to load image..."></div>
+            <div class="author__avatar author__avatar--mr32"><img src="/database/main/albert.png" alt="failed to load image..."></div>
             <div class="author__about">
                 <div class="author__name">Альберт</div>
                 <div class="author__post">Главный разработчик</div>
             </div>
         </div>
         <div class="author author__senior">
-            <div class="author__avatar author__avatar--mr32"><img src="/database/images/authors/semen.png" alt="failed to load image..."></div>
+            <div class="author__avatar author__avatar--mr32"><img src="/database/main/semen.png" alt="failed to load image..."></div>
             <div class="author__about">
                 <div class="author__name">Семен</div>
                 <div class="author__post">Главный менеджер</div>
@@ -87,15 +87,15 @@
     </div>
     <div class="authors__middles">
         <div class="author author__middle">
-            <div class="author__avatar author__avatar--mr16"><img src="/database/images/authors/jaroslav.svg" alt="failed to load image..."></div>
+            <div class="author__avatar author__avatar--mr16"><img src="/database/main/jaroslav.svg" alt="failed to load image..."></div>
             <div class="author__name">Ярослав</div>
         </div>
         <div class="author author__middle">
-            <div class="author__avatar author__avatar--mr16"><img src="/database/images/authors/nikolay.svg" alt="failed to load image..."></div>
+            <div class="author__avatar author__avatar--mr16"><img src="/database/main/nikolay.svg" alt="failed to load image..."></div>
             <div class="author__name">Николай</div>
         </div>
         <div class="author author__middle">
-            <div class="author__avatar author__avatar--mr16"><img src="/database/images/authors/andrey.svg" alt="failed to load image..."></div>
+            <div class="author__avatar author__avatar--mr16"><img src="/database/main/andrey.svg" alt="failed to load image..."></div>
             <div class="author__name">Андрей</div>
         </div>
     </div>
