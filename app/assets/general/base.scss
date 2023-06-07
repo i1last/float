@@ -23,20 +23,9 @@ p {
     line-height: 1.2;
 }
 
-.container {
-    width: 1168px;
-    margin: auto;
-    min-height: 80vh;
+details summary::-webkit-details-marker {
+    display: none;
 }
-
-.text-logo::before {
-    content: 'float';
-    font-family: 'JetBrains Mono';
-    font-style: italic;
-    letter-spacing: -6px;
-    font-size: 32px;
-}
-
-.icon {
-    color: var(--color-text);
+summary {
+    list-style: none;
 }
