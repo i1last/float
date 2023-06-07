@@ -6,7 +6,7 @@
         "number": 1,
         "word": "Механическое движение",
         "definition": "Изменение положения тела или частей тела в пространстве относительно других тел с течением времени",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"https://youtu.be/cSGrSpcySwg\">Видео-пример</a>",
+        "example": "<a l='https://youtu.be/cSGrSpcySwg'>Видео-пример</a>",
         "page": 11
       },
       {
@@ -20,35 +20,35 @@
         "number": 3,
         "word": "Поступательное движение",
         "definition": "Движение, при котором любой отрезок, соединяющий любые 2 точки тела, остается параллельным самому себе",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"./?part=images&image=translational-motion.svg\">Фото-пример</a><a class=\"link\" target=\"_blank\" href=\"https://youtu.be/C1yGNCPw7BU?t=35\">Видео-пример (0:35 - 1:33)</a>",
+        "example": "<a l='./?image=translational-motion.svg'>Фото-пример</a><a l='https://youtu.be/C1yGNCPw7BU?t=35'>Видео-пример (0:35 - 1:33)</a>",
         "page": 57
       },
       {
         "number": 4,
         "word": "Материальная точка",
         "definition": "Тело, размерами и формой которого можно принебречь в условиях рассматриваемой задачи",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"https://youtu.be/I74KVICy2a8\">Видео-пример</a>",
+        "example": "<a l='https://youtu.be/I74KVICy2a8'>Видео-пример</a>",
         "page": 13
       },
       {
         "number": 5,
         "word": "Система отсчета",
         "definition": "Совокупность тела отсчета, системы координат и часов",
-        "example": "<details><summary>Тело отсчета</summary>Тело, относительно которого рассматривается движение</details><a class=\"link\" target=\"_blank\" href=\"https://youtu.be/AezsVxOo3Ws\">Видео-пример</a>",
+        "example": "<d s='Тело отсчета'>Тело, относительно которого рассматривается движение</d><a l='https://youtu.be/AezsVxOo3Ws'>Видео-пример</a>",
         "page": 13
       },
       {
         "number": 6,
         "word": "Перемещение",
         "definition": "Вектор, проведенный из начального положения точки в её конечное положение",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"https://youtu.be/YoXiUSQUITY\">Видео-пример</a>",
+        "example": "<a l='https://youtu.be/YoXiUSQUITY'>Видео-пример</a>",
         "page": 18
       },
       {
         "number": 7,
         "word": "Траектория",
         "definition": "Линия, по которой точка движется в пространстве",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"https://youtube.com/shorts/wALASaiXzMw?feature=share\">Видео-пример</a>",
+        "example": "<a l='https://youtube.com/shorts/wALASaiXzMw?feature=share'>Видео-пример</a>",
         "page": 18
       },
       {
@@ -62,7 +62,7 @@
         "number": 9,
         "word": "Скорость равномерного прямолинейного движения",
         "definition": "Векторная величина, равная отношению перемещения тела к промежутку времени, в течение которого это перемещение произошло",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"./?part=images&image=formula--speed.svg\">Формула</a>",
+        "example": "<a l='./?image=formula--speed.svg'>Формула</a>",
         "page": 21
       },
       {
@@ -97,63 +97,63 @@
         "number": 14,
         "word": "Криволинейное движение",
         "definition": "Движение, при котором линия траектории кривая",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"https://youtu.be/Gpy2EXaMsEo\">Видео-пример</a>",
+        "example": "<a l='https://youtu.be/Gpy2EXaMsEo'>Видео-пример</a>",
         "page": 18
       },
       {
         "number": 15,
         "word": "Период обращения",
         "definition": "Время, за которое тело совершает один полный оборот",
-        "example": "<details><summary>Пример</summary>Земля делает полный оборот вокруг Солнца за 365 суток</details><a class=\"link\" target=\"_blank\" href=\"https://youtu.be/v_GrdqfOFig\">Видео-пример</a>",
+        "example": "<d s='Пример'>Земля делает полный оборот вокруг Солнца за 365 суток</d><a l='https://youtu.be/v_GrdqfOFig'>Видео-пример</a>",
         "page": 59
       },
       {
         "number": 16,
         "word": "Частота обращения",
         "definition": "Число полных оборотов за единицу времени",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"https://youtu.be/v_GrdqfOFig\">Видео-пример</a>",
+        "example": "<a l='https://youtu.be/v_GrdqfOFig'>Видео-пример</a>",
         "page": 59
       },
       {
-        "number": "17",
+        "number": 17,
         "word": "Первый закон Ньютона",
         "definition": "Существуют системы отсчета, называемые инерциальными, относительно которых тело движется прямолинейно и равномерно, если на него не действуют другие тела",
-        "example": "<details><summary>ИСО</summary>Инерциальная система отсчета (ИСО) – система отсчёта, в которой все свободные тела движутся прямолинейно и равномерно либо покоятся</details><a class=\"link\" target=\"_blank\" href=\"https://youtu.be/03jGtr_dA4g?t=59\">Видео-пример</a>",
+        "example": "<d s='ИСО'>Инерциальная система отсчета (ИСО) – система отсчёта, в которой все свободные тела движутся прямолинейно и равномерно либо покоятся</d><a l='https://youtu.be/03jGtr_dA4g?t=59'>Видео-пример</a>",
         "page": 71
       },
       {
         "number": 18,
         "word": "Свойство инертности",
         "definition": "Свойство тел по-разному изменять скорость под действием одной и той же силы",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"https://youtu.be/saL2Kb8y270\">Видео-пример</a>",
+        "example": "<a l='https://youtu.be/saL2Kb8y270'>Видео-пример</a>",
         "page": 69
       },
       {
         "number": 19,
         "word": "Второй закон Ньютона",
         "definition": "Ускорение тела прямо пропорционально силе, действующей на него, и обратно пропорционально его массе",
-        "example": "<details><summary>Прямая пропорциональность</summary>Это зависимость между 2 величинами, при которой <b>увеличение одной</b> из них приводит к <b>увеличению другой</b> во столько же раз и наоборот</details> <details><summary>Обратная пропорциональность</summary>Это зависимость между 2 величинами, при которой <b>увеличение одной</b> из них приводит к <b>уменьшению другой</b> во столько же раз и наоборот</details> <a class=\"link\" target=\"_blank\" href=\"https://youtu.be/ljdSgWepkzU?t=173\">Видео-пример</a>",
+        "example": "<d s='Прямая пропорциональность'>Это зависимость между 2 величинами, при которой <b>увеличение одной</b> из них приводит к <b>увеличению другой</b> во столько же раз и наоборот</d> <d s='Обратная пропорциональность'>Это зависимость между 2 величинами, при которой <b>увеличение одной</b> из них приводит к <b>уменьшению другой</b> во столько же раз и наоборот</d>  <a l='https://youtu.be/ljdSgWepkzU?t=173'>Видео-пример</a>",
         "page": 75
       },
       {
         "number": 20,
         "word": "Масса",
         "definition": "Физическая величина, характеризующая инертность тела",
-        "example": "<p>Масса – это сложность изменения скорости тела. Чем тяжелее тело, тем сложнее его ускорить или замедлить</p> <a class=\"link\" target=\"_blank\" href=\"https://youtu.be/LZHzd7oLkyw\">Видео-пример</a>",
+        "example": "<p>Масса – это сложность изменения скорости тела. Чем тяжелее тело, тем сложнее его ускорить или замедлить</p> <a l='https://youtu.be/LZHzd7oLkyw'>Видео-пример</a>",
         "page": 74
       },
       {
         "number": 21,
         "word": "Сила",
         "definition": "Векторная физическая величина, которая является мерой воздействия на данное тело со стороны других тел или полей",
-        "example": "<details><summary>Скалярная величина</summary>Величина, не имеющая направления</details> <details><summary>Векторная величина</summary>Величина, имеющая направление</details> <a class=\"link\" target=\"_blank\" href=\"https://youtu.be/ygDsGszS6w8?t=15\">Видео-пример</a>",
+        "example": "<d s='Скалярная величина'>Величина, не имеющая направления</d> <d s='Векторная величина'>Величина, имеющая направление</d> <a l='https://youtu.be/ygDsGszS6w8?t=15'>Видео-пример</a>",
         "page": 67
       },
       {
         "number": 22,
         "word": "Третий закон Ньютона",
         "definition": "Силы, с которыми тела взаимодействуют друг на друга, равны по модулю и направлены по одной прямой в противоположные стороны",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"https://youtu.be/ig3_QfQ5wDM?t=18\">Видео-пример</a>",
+        "example": "<a l='https://youtu.be/ig3_QfQ5wDM?t=18'>Видео-пример</a>",
         "page": 84
       },
       {
@@ -167,28 +167,28 @@
         "number": 24,
         "word": "Закон Гука",
         "definition": "При упругой деформации растяжения или сжатия модуль силы упругости прямо пропорционален модулю изменения длины тела",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"./images/formula--law-hook.svg\">Формула</a> <a class=\"link\" target=\"_blank\" href=\"https://youtu.be/hrmzxjdg4Mw?t=10\">Видео-пример</a>",
+        "example": "<a l='./images/formula--law-hook.svg'>Формула</a> <a l='https://youtu.be/hrmzxjdg4Mw?t=10'>Видео-пример</a>",
         "page": 108
       },
       {
         "number": 25,
         "word": "Закон всемирного тяготения",
         "definition": "Сила взаимного притяжения двух тел прямо пропорциональна произведению масс этих тел и обратно пропорционально квадрату расстояния между ними",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"./images/formula--law-universal-gravitation.svg\">Формула</a> <a class=\"link\" target=\"_blank\" href=\"https://youtu.be/R6lKFbM9FzQ\">Видео-пример</a>",
+        "example": "<a l='./images/formula--law-universal-gravitation.svg'>Формула</a> <a l='https://youtu.be/R6lKFbM9FzQ'>Видео-пример</a>",
         "page": 92
       },
       {
         "number": 26,
         "word": "Гравитационная постоянная",
         "definition": "Физическая постоянная, определяющая силу гравитационного взаимодействия",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"./images/formula--const-gravitation.svg\">Формула</a>",
+        "example": "<a l='./images/formula--const-gravitation.svg'>Формула</a>",
         "page": 93
       },
       {
         "number": 27,
         "word": "Вес тела",
         "definition": "Сила, с которой тело воздействует на точку опоры",
-        "example": "<details><summary>Разница между весом и массой</summary>Масса – это килограммы, а вес – это ньютоны. Масса является параметром тела, когда как вес является силой, с которой это тело давит своей массой на точку опоры</details>",
+        "example": "<d s='Разница между весом и массой'>Масса – это килограммы, а вес – это ньютоны. Масса является параметром тела, когда как вес является силой, с которой это тело давит своей массой на точку опоры</d>",
         "page": 105
       },
       {
@@ -202,63 +202,63 @@
         "number": 29,
         "word": "Сила трения покоя",
         "definition": "Сила трения, действующая между двумя телами, неподвижными относительно друг друга",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"https://youtu.be/ePIjBipAs40\">Видео-пример</a>",
+        "example": "<a l='https://youtu.be/ePIjBipAs40'>Видео-пример</a>",
         "page": 113
       },
       {
         "number": 30,
         "word": "Импульс тела",
         "definition": "Векторная физическая величина, равная произведению массы тела на его скорость",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"./images/formula--impulse.svg\">Формула</a>",
+        "example": "<a l='./images/formula--impulse.svg'>Формула</a>",
         "page": 123
       },
       {
         "number": 31,
         "word": "Замкнутая система тел",
         "definition": "Система физических тел, у которых отсутствует взаимодействие с внешними телами",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"https://youtu.be/2e74rqtlc5Q\">Видео-пример</a>",
+        "example": "<a l='https://youtu.be/2e74rqtlc5Q'>Видео-пример</a>",
         "page": ""
       },
       {
         "number": 32,
         "word": "Закон сохранения импульса",
         "definition": "Если внешние силы отсутствуют или сумма их сил равна нулю, то импульс сохраняется",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"https://youtu.be/cHWJr0PufIg?t=10\">Видео-пример</a>",
+        "example": "<a l='https://youtu.be/cHWJr0PufIg?t=10'>Видео-пример</a>",
         "page": 125
       },
       {
         "number": 33,
         "word": "Реактивное движение",
         "definition": "Движение, которое возникает при отделении от тела некоторой его части с определённой скоростью",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"https://youtu.be/Y-hvDuw-5wQ\">Видео-пример</a>",
+        "example": "<a l='https://youtu.be/Y-hvDuw-5wQ'>Видео-пример</a>",
         "page": 126
       },
       {
         "number": 34,
         "word": "Работа постоянной силы",
         "definition": "Физическая величина, равная произведению модуля силы, перемещения и косинуса угла между ними",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"./images/formula--work.svg\">Формула</a>",
+        "example": "<a l='./images/formula--work.svg'>Формула</a>",
         "page": 131
       },
       {
         "number": 35,
         "word": "Теорема о кинетической энергии",
         "definition": "Изменение кинетической энергии тела равно равнодействующей всех сил, действующих на тело",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"https://youtu.be/pOPtjKzhaKg\">Видео-пример</a>",
+        "example": "<a l='https://youtu.be/pOPtjKzhaKg'>Видео-пример</a>",
         "page": ""
       },
       {
         "number": 36,
         "word": "Кинетическая энергия тела",
         "definition": "Способность находящегося в движении тела совершать работу",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"https://youtu.be/en4PFcTnC80?t=10\">Видео-пример</a>",
+        "example": "<a l='https://youtu.be/en4PFcTnC80?t=10'>Видео-пример</a>",
         "page": 135
       },
       {
         "number": 37,
         "word": "Потенциальная энергия тела",
         "definition": "Энергия взаимодействия тел или частей тела",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"https://youtu.be/nqVBE5jAjY8\">Видео-пример</a>",
+        "example": "<a l='https://youtu.be/nqVBE5jAjY8'>Видео-пример</a>",
         "page": 143
       },
       {
@@ -279,42 +279,42 @@
         "number": 40,
         "word": "Мощность",
         "definition": "Количество работы за единицу времени",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"./images/formula--work.svg\">Формула</a>",
+        "example": "<a l='./images/formula--work.svg'>Формула</a>",
         "page": 133
       },
       {
         "number": 41,
         "word": "Коэффициент полезного действия (КПД)",
         "definition": "Равен проценту отношения работы полезной от работы затраченной",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"https://skysmart.ru/articles/physics/koefficient-poleznogo-dejstviya-kpd\">SkySmart – сайт</a> <a class=\"link\" target=\"_blank\" href=\"./images/formula--kpd.svg\">Формула</a>",
+        "example": "<a l='https://skysmart.ru/articles/physics/koefficient-poleznogo-dejstviya-kpd'>SkySmart – сайт</a> <a l='./images/formula--kpd.svg'>Формула</a>",
         "page": ""
       },
       {
         "number": 42,
         "word": "Закон Бернулли",
         "definition": "Чем больше скорость потока жидкости в трубе, тем меньше давление и наоборот",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"https://youtu.be/wYlnzjuKp9E\">Видео-пример</a>",
+        "example": "<a l='https://youtu.be/wYlnzjuKp9E'>Видео-пример</a>",
         "page": ""
       },
       {
         "number": 43,
         "word": "Колебательная система",
         "definition": "Система тел, способная совершать колебания",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"https://youtu.be/9Gf9Q9XwFF8?t=135\">Видео-пример</a>",
+        "example": "<a l='https://youtu.be/9Gf9Q9XwFF8?t=135'>Видео-пример</a>",
         "page": ""
       },
       {
         "number": 44,
         "word": "Математический маятник",
         "definition": "Материальная точка, подвешенная на длинной невесомой и нерастяжимой нити",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"https://youtu.be/9Gf9Q9XwFF8?t=379\">Видео-пример</a>",
+        "example": "<a l='https://youtu.be/9Gf9Q9XwFF8?t=379'>Видео-пример</a>",
         "page": ""
       },
       {
         "number": 45,
         "word": "Вынужденные колебания",
         "definition": "Колебания, которые совершает система под действием внешних сил",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"https://youtu.be/9Gf9Q9XwFF8?t=194\">Видео-пример</a>",
+        "example": "<a l='https://youtu.be/9Gf9Q9XwFF8?t=194'>Видео-пример</a>",
         "page": ""
       },
       {
@@ -349,26 +349,26 @@
         "number": 50,
         "word": "Давление",
         "definition": "Физическая величина, равная отношению силы к площади воздействия",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"./images/formula--pressure.svg\">Формула</a> <a class=\"link\" target=\"_blank\" href=\"https://youtu.be/tQpjz9x-o0Y?t=10\">Видео-пример</a>",
+        "example": "<a l='./images/formula--pressure.svg'>Формула</a> <a l='https://youtu.be/tQpjz9x-o0Y?t=10'>Видео-пример</a>",
         "page": ""
       },
       {
         "number": 51,
         "word": "Закон Паскаля",
         "definition": "Давление, производимое на ж/г, передается в любую точку без изменений во всех направлениях",
-        "example": "<details><summary>Ж/Г</summary>Жидкость или газ</details><a class=\"link\" target=\"_blank\" href=\"https://youtu.be/FchBsT92IyE\">Видео-пример</a>",
+        "example": "<d s='Ж/Г'>Жидкость или газ</d><a l='https://youtu.be/FchBsT92IyE'>Видео-пример</a>",
         "page": ""
       },
       {
         "number": 52,
         "word": "Закон Архимеда",
         "definition": "На тело, погружённое в ж/г, действует выталкивающая сила, равная весу вытесненной этим телом ж/г",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"https://youtu.be/BLlPqPZ3n0Q\">Видео-пример</a>",
+        "example": "<a l='https://youtu.be/BLlPqPZ3n0Q'>Видео-пример</a>",
         "page": ""
       }
     ]
   ],
-  "mkt": [
+  "ktg": [
     ["Молекулярная физика, термодинамика, электростатика"],
     [
       {
@@ -403,7 +403,7 @@
         "number": 5,
         "word": "Один моль (постоянная Авогадро)",
         "definition": "Количество вещества, в котором содержится столько же частиц, сколько содержится атомов в 12г углерода (C)",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"./images/formula--avagadro.svg\">Формула</a>",
+        "example": "<a l='./images/formula--avagadro.svg'>Формула</a>",
         "page": ""
       },
       {
@@ -431,7 +431,7 @@
         "number": 9,
         "word": "Давление идеального газа",
         "definition": "Давление идеального газа пропорционально произведению концентрации молекул на их среднюю кинетическую энергию",
-        "example": "<a class=\"link\" target=\"_blank\" href=\"./images/formula--pressure-id-gaz.svg\">Формула</a>",
+        "example": "<a l='./images/formula--pressure-id-gaz.svg'>Формула</a>",
         "page": ""
       },
       {
@@ -480,7 +480,7 @@
         "number": 16,
         "word": "Насыщенный пар",
         "definition": "Пар, находящийся в динамическом равновесии со своей жидкостью",
-        "example": "<details><summary>Динамическое равновесие</summary>Это состояние, при котором число молекул, покидающих поверхность жидкости за единицу времени, будет равно числу молекул, возвратившихся за то же время обратно в жидкость</details>",
+        "example": "<d s='Динамическое равновесие'>Это состояние, при котором число молекул, покидающих поверхность жидкости за единицу времени, будет равно числу молекул, возвратившихся за то же время обратно в жидкость</d>",
         "page": 226
       },
       {
@@ -570,8 +570,8 @@
       {
         "number": 29,
         "word": "Второй закон термодинамики",
-        "definition": "<p><span class=\"mono\">1 формулировка: </span>Невозможно перевести тепло от более холодного тела к более горячему без внешних воздействий на систему</p> <p><span class=\"mono\">2 формулировка: </span>В изолированной системе энтропия либо остается неизменной, либо возрастает</p>",
-        "example": "<details><summary>Энтропия</summary>Мера вероятности пребывания системы в данном состоянии (для более хорошего понимания настоятельно рекомендуется посмотреть видео-примеры)</details><a class=\"link\" target=\"_blank\" href=\"https://youtu.be/Is79OTuNrGw?t=167\">Видео-пример энтропии</a>",
+        "definition": "<p><span class='mono'>1 формулировка: </span>Невозможно перевести тепло от более холодного тела к более горячему без внешних воздействий на систему</p> <p><span class='mono'>2 формулировка: </span>В изолированной системе энтропия либо остается неизменной, либо возрастает</p>",
+        "example": "<d s='Энтропия'>Мера вероятности пребывания системы в данном состоянии (для более хорошего понимания настоятельно рекомендуется посмотреть видео-примеры)</d><a l='https://youtu.be/Is79OTuNrGw?t=167'>Видео-пример энтропии</a>",
         "page": 265
       },
       {
@@ -1083,7 +1083,7 @@
       }
     ]
   ],
-  "fluctuationsWaves": [
+  "oscillationWaves": [
     ["Колебания и волны"],
     [
       {
