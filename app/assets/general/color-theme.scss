@@ -17,6 +17,7 @@ html {
     --color-header: var(--color-green);
     --color-footer: var(--color-dark-grey);
     --color-surface: var(--color-light-grey);
+    --color-surface-negative: var(--color-dark-grey);
     --color-surface-colored: var(--color-green-light);
     --color-text: var(--color-black);
   }
@@ -25,6 +26,7 @@ html {
     --color-header: var(--color-grey);
     --color-footer: var(--color-black);
     --color-surface: var(--color-dark-grey);
+    --color-surface-negative: var(--color-light-grey);
     --color-surface-colored: var(--color-dark-grey);
     --color-text: var(--color-light-grey);
   }
