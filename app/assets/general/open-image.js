@@ -3,9 +3,8 @@ const params = new URL(url).search;
 
 if (params) {
   const pathname = url.pathname;
-  const part = new URL(url).searchParams.get('part');
   const image = new URL(url).searchParams.get('image').replace(' ', '+');
-  const src = `${pathname}${part ? `${part}/` : ''}${image}`;
+  const src = `/database/images${pathname}${image}`;
 
   let html = document.createElement('html');
   let head = document.createElement('head');
