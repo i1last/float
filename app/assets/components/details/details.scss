@@ -1,0 +1,13 @@
+.details {
+    border: 2px solid var(--color-surface-negative);
+    border-radius: 8px;
+    padding: .5em .5em 0;
+    transition: 150ms;
+
+    &[open] {
+        padding: .5em;
+    }
+    &:hover {
+        transform: scale(0.97);
+    }
+}
