@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html theme="dark" lang="ru">
   <head>
-    <!-- script -->
+    <!-- script and favicon -->
+    <link class="js-favicon" rel="icon" href="/favicon--light.svg" type="image/svg+xml">
     <script src="/assets/js/set-theme.js"></script>
     <!-- metadata -->
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!-- link -->
-    <link rel="icon" href="/favicon.ico">
     <link rel="stylesheet" href="/assets/css/main.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -21,7 +21,7 @@
     <header class="header">
       <div class="header__left">
         <div class="header__hamburger-button" tabindex="0">{% include "svg/hamburger-button.svg"%}</div>
-        <div class="header__logo"><a class="logo__link" href="/">{% include "svg/header__logo.svg" %}</a></div>
+        <div class="header__logo"><a class="header__logo logo__link" href="/">{% include "svg/logo-text.svg" %}</a></div>
       </div>
       <div class="header__right">
         <ul class="header__buttons">
@@ -64,8 +64,8 @@
     <footer class="footer">
       <div class="footer__left">
         <div class="footer__logo">
-          <a class="logo__link" href="/">
-            {% include "svg/footer__logo.svg" %}
+          <a class="footer__logo logo__link" href="/">
+            {% include "svg/logo-text.svg" %}
           </a>
         </div>
         <div class="footer__links">
