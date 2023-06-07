@@ -1,5 +1,5 @@
-<h1 align="center">
-    <img src="./.github/assets/logo--light.svg">
+<h1 align="center" style="color: #B1E3B6 !important;">
+    <img src="./.github/assets/logo-text.svg">
 </h1>
 <p align="center">
     <i align="center">Сайт ориентирован на школу ГБОУ 501 города Санкт-Петербург</i>
