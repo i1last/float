@@ -1,0 +1,18 @@
+.download-aside__download-item {
+    display: flex;
+    width: 99px;
+    height: 32px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    color: var(--color-black);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'JetBrains Mono';
+    align-items: center;
+    justify-content: center;
+    transition: 150ms;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
