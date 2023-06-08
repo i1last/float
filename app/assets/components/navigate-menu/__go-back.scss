@@ -1,0 +1,16 @@
+.navigate-menu__go-back {
+    position: relative;
+    padding-left: 28px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 13px;
+        background-image: url("/database/images/navigate-menu__go-back.svg");
+        background-repeat: no-repeat;
+        left: 16px;
+        top: 14px;
+        transition: 300ms;
+    }
+}
