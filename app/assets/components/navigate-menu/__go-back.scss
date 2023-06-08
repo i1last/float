@@ -11,6 +11,11 @@
         background-repeat: no-repeat;
         left: 16px;
         top: 14px;
-        transition: 300ms;
+    }
+}
+
+html[theme='dark'] {
+    .navigate-menu__go-back::before {
+        filter: invert(100%);
     }
 }
