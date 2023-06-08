@@ -6,14 +6,14 @@
     top: 38%;
     border: none;
     border-radius: 50%;
-    background-color: var(--color-light-grey);
+    background-color: var(--color-dark-white);
     color: var(--color-black);
     transition: 300ms;
     cursor: pointer;
 
     &:hover {
         background-color: var(--color-black);
-        color: var(--color-light-grey);
+        color: var(--color-dark-white);
     }
 }
 
