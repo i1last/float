@@ -2,7 +2,9 @@ let scrollable = document.querySelectorAll('.scrollable');
 let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > lastScroll) {
+    const scrolled = window.scrollY;
+
+    if (scrolled > 44 && scrolled > lastScroll) {
         scrollable.forEach((elem) => {
             elem.classList.add('scrollable--hidden');
         });
@@ -11,5 +13,5 @@ window.addEventListener('scroll', () => {
             elem.classList.remove('scrollable--hidden');
         });
     }
-    lastScroll = window.scrollY;
+    lastScroll = scrolled;
 });
