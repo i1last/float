@@ -9,6 +9,7 @@
     background-color: var(--color-dark-white);
     color: var(--color-black);
     transition: 300ms;
+    transition-property: background-color, color;
     cursor: pointer;
 
     &:hover {

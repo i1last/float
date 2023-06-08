@@ -10,7 +10,7 @@
     margin-bottom: 16px;
     text-align: center;
     cursor: pointer;
-    transition: 50ms;
+    transition: transform 50ms;
 
     &:hover {
         transform: scale(1.05);

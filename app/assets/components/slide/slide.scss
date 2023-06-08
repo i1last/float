@@ -1,7 +1,7 @@
 .slide {
     border-radius: 20px;
     background-color: var(--color-dark-white);
-    transition: 300ms;
+    transition: transform 300ms;
 
     &:hover {
         transform: scale(0.97);

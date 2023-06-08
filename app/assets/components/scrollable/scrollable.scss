@@ -1,5 +1,5 @@
 .scrollable {
-    transition: 300ms ease-out;
+    transition: transform 300ms ease-out;
 
     &--hidden {
         transform: translateY(-96px);

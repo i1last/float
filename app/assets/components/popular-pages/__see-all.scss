@@ -1,4 +1,4 @@
-.pupular-pages__see-all {
+.popular-pages__see-all {
     display: block;
     margin: 0 auto;
     padding: 20px 52px;
@@ -8,6 +8,7 @@
     max-width: fit-content;
     font-size: 17px;
     transition: 300ms;
+    transition-property: background-color, color;
 
     &:hover {
         background-color: var(--color-black);

@@ -10,7 +10,7 @@
     font-family: 'JetBrains Mono';
     align-items: center;
     justify-content: center;
-    transition: 150ms;
+    transition: transform 150ms;
 
     &:hover {
         transform: scale(1.05);
