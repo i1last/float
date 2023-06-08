@@ -9,11 +9,7 @@
     align-items: center;
     height: 60px;
     background-color: var(--color-header);
-    transition: 300ms;
-
-    &--hidden {
-        transform: translateY(-100%);
-    }
+    
     &__left {
         display: flex;
         align-items: center;

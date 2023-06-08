@@ -18,7 +18,7 @@
     <title>{% block title %}{% endblock %}</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header scrollable">
       <div class="header__left">
         <div class="header__hamburger-button" tabindex="0">{% include "svg/hamburger-button.svg"%}</div>
         <div class="header__logo"><a class="header__logo logo__link" href="/">{% include "svg/logo-text.svg" %}</a></div>
@@ -44,7 +44,7 @@
         </ul>
       </div>
     </header>
-    <nav class="navigate-menu">
+    <nav class="navigate-menu scrollable">
       <ul class="navigate-menu__items">
         <li class="navigate-menu__item navigate-menu__main-page"><a href="/" class="navigate-menu__link">Главная</a></li>
         <li class="navigate-menu__item"><a href="/timetable" class="navigate-menu__link">Расписание</a></li>
@@ -91,7 +91,7 @@
     {% block scripts %}{% endblock %}
     <script src="/assets/js/scroll-listener.js"></script>
     <script src="/assets/js/theme-changer.js"></script>
-    <script src="/assets/js/navigate-menu.js"></script>
+    <script src="/assets/js/navigate-menu-opener.js"></script>
     <script src="/assets/js/navigate-menu-parser.js"></script>
   </body>
 </html>
