@@ -1,4 +1,4 @@
-const themeButton = document.querySelector('#theme-button--click-area');
+const themeButton = document.querySelector('.js-theme-button-click-area');
 
 themeButton.addEventListener('click', () => {
   switch (html.getAttribute('theme')) {

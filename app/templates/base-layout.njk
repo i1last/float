@@ -26,23 +26,18 @@
       </div>
       <div class="header__right">
         <ul class="header__buttons">
-          <li class="header__button" id="theme-button--click-area">
-              <div class="theme-button header__button-image" id="theme-button" title="Тема" tabindex="0">
+          <li class="js-theme-button-click-area">
+              <div class="header__button header__button-image theme-button" id="theme-button" title="Тема" tabindex="0">
                 {% include "svg/theme-button--light.svg" %}
                 {% include "svg/theme-button--dark.svg" %}
               </div>
           </li>
           <li>
-            <a class="header__button" style="color: var(--color-text);" href="/search">
+            <a class="header__button" href="/search">
               <div class="search-button header__button-image" id="search-button" title="Поиск" tabindex="0">
                 {% include "svg/search.svg" %}
               </div>
             </a>
-          </li>
-          <li class="header__button">
-              <div class="profile-button header__button-image" id="profile-button" title="Профиль" tabindex="0">
-                {% include "svg/profile.svg" %}
-              </div>
           </li>
         </ul>
       </div>
