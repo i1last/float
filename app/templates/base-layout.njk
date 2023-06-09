@@ -42,25 +42,29 @@
         </ul>
       </div>
     </header>
-    <nav class="navigate-menu scrollable">
-      <ul class="navigate-menu__items">
-        <li class="navigate-menu__item navigate-menu__go-back"><a href="../" class="navigate-menu__link">Вернуться назад</a></li>
-      </ul>
-      <ul class="navigate-menu__items">
-        <li class="navigate-menu__item navigate-menu__main-page"><a href="/" class="navigate-menu__link">Главная</a></li>
-        <li class="navigate-menu__item"><a href="/timetable" class="navigate-menu__link">Расписание</a></li>
-        <li class="navigate-menu__item"><a href="/handbook" class="navigate-menu__link">Справочник</a></li>
-        <li class="navigate-menu__item"><a href="/ege" class="navigate-menu__link">Для ЕГЭ</a></li>
-        <li class="navigate-menu__item"><a href="/oge" class="navigate-menu__link">Для ОГЭ</a></li>
-        <li class="navigate-menu__item"><a href="/teacher" class="navigate-menu__link">Для учителей</a></li>
-      </ul>
-    </nav>
     <main class="container">
-      <section class="preview">
-        <div class="preview__title">{% block preview__title %}{% endblock %}</div>
-        <div class="preview__icon">{% block preview__icon %}{% endblock %}</div>
-      </section>
-      {% block content %}{% endblock %}
+      <div class="container__navigate">
+        <nav class="navigate-menu scrollable">
+          <ul class="navigate-menu__items">
+            <li class="navigate-menu__item navigate-menu__go-back"><a href="../" class="navigate-menu__link">Вернуться назад</a></li>
+          </ul>
+          <ul class="navigate-menu__items">
+            <li class="navigate-menu__item navigate-menu__main-page"><a href="/" class="navigate-menu__link">Главная</a></li>
+            <li class="navigate-menu__item"><a href="/timetable" class="navigate-menu__link">Расписание</a></li>
+            <li class="navigate-menu__item"><a href="/handbook" class="navigate-menu__link">Справочник</a></li>
+            <li class="navigate-menu__item"><a href="/ege" class="navigate-menu__link">Для ЕГЭ</a></li>
+            <li class="navigate-menu__item"><a href="/oge" class="navigate-menu__link">Для ОГЭ</a></li>
+            <li class="navigate-menu__item"><a href="/teacher" class="navigate-menu__link">Для учителей</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container__content">
+        <section class="preview">
+          <div class="preview__title">{% block preview__title %}{% endblock %}</div>
+          <div class="preview__icon">{% block preview__icon %}{% endblock %}</div>
+        </section>
+        {% block content %}{% endblock %}
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__left">

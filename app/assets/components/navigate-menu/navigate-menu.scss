@@ -1,6 +1,4 @@
 .navigate-menu {
-
-
     @media screen and (max-width: 600px) {
         display: none;
         height: 100%;
@@ -11,10 +9,10 @@
         }
     }
     @media screen and (min-width: 601px) {
-        display: block;
-        position: fixed;
-        top: 112px;
-        left: 128px;
+        position: sticky;
+        top: 92px;
+        flex-shrink: 0;
+        margin-left: -197px - 52px;
         width: 197px;
     }
 }

@@ -5,7 +5,7 @@ let container = document.querySelector('.container');
 hamburgerButton.addEventListener('click', () => {
   if (navigateMenu.classList.contains('navigate-menu--showing')) {
     navigateMenu.classList.remove('navigate-menu--showing');
-    container.style.display = 'inherit';
+    container.style.display = '';
   } else {
     navigateMenu.classList.add('navigate-menu--showing');
     container.style.display = 'none';
@@ -15,6 +15,6 @@ hamburgerButton.addEventListener('click', () => {
 window.addEventListener('resize', () => {
     if (window.innerWidth >= 600) {
         navigateMenu.classList.remove('navigate-menu--showing');
-        container.style.display = 'inherit';
+        container.style.display = '';
     }
 })
