@@ -1,26 +1,12 @@
 html {
     &[theme='dark'] {
-        .theme-button {
-            &--dark {
-                display: inherit;
-            }
-            &--light {
+        .theme-button--light {
                 display: none;
             }
-        }
     }
     &[theme='light'] {
-        .theme-button {
-            &--light {
-                display: inherit;
-            }
-            &--dark {
+        .theme-button--dark {
                 display: none;
             }
-        }
     }
-}
-
-#theme-button {
-    margin-top: 0;
 }

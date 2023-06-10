@@ -1,10 +1,13 @@
 .header__hamburger-button {
-    display: flex;
     margin-right: 16px;
-    fill: var(--color-black);
     cursor: pointer;
+    transition: transform 50ms;
 
-    @media screen and (min-width: 601px) {
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    @media screen and (min-width: 1712px) {
         display: none;
     }
 }

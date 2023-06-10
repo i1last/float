@@ -2,24 +2,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 160px;
     background-color: var(--color-footer);
     margin-top: 52px;
+    padding: 56px 36px;
 
     &__left {
         display: flex;
         align-items: center;
-        margin-left: 36px;
+    }
 
-        @media screen and (max-width: 600px) {
-            margin-left: 16px;
+    @media screen and (max-width: 1299px) {
+        display: flex;
+        flex-direction: column;
+        padding: 36px;
+
+        &__right {
+            margin-top: 52px;
+            text-align: center;
         }
     }
-    &__right {
-        margin-right: 36px;
-
-        @media screen and (max-width: 600px) {
-            margin-right: 16px;
+    @media screen and (max-width: 399px) {
+        &__left {
+            justify-content: space-between;
+            width: 100%;
         }
     }
 }

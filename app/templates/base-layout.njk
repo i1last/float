@@ -27,13 +27,13 @@
       <div class="header__right">
         <ul class="header__buttons">
           <li class="js-theme-button-click-area">
-              <div class="header__button header__button-image theme-button" id="theme-button" title="Тема" tabindex="0">
+              <div class="surface-button header__button-image theme-button" id="theme-button" title="Тема" tabindex="0">
                 {% include "svg/theme-button--light.svg" %}
                 {% include "svg/theme-button--dark.svg" %}
               </div>
           </li>
           <li>
-            <a class="header__button" href="/search">
+            <a class="surface-button" href="/search">
               <div class="search-button header__button-image" id="search-button" title="Поиск" tabindex="0">
                 {% include "svg/search.svg" %}
               </div>
@@ -45,10 +45,10 @@
     <main class="container">
       <div class="container__navigate">
         <nav class="navigate-menu scrollable">
-          <ul class="navigate-menu__items">
+          <ul class="navigate-menu__list">
             <li class="navigate-menu__item navigate-menu__go-back"><a href="../" class="navigate-menu__link">Вернуться назад</a></li>
           </ul>
-          <ul class="navigate-menu__items">
+          <ul class="navigate-menu__list">
             <li class="navigate-menu__item navigate-menu__main-page"><a href="/" class="navigate-menu__link">Главная</a></li>
             <li class="navigate-menu__item"><a href="/timetable" class="navigate-menu__link">Расписание</a></li>
             <li class="navigate-menu__item"><a href="/handbook" class="navigate-menu__link">Справочник</a></li>
@@ -68,18 +68,14 @@
     </main>
     <footer class="footer">
       <div class="footer__left">
-        <div class="footer__logo">
-          <a class="footer__logo logo__link" href="/">
-            {% include "svg/logo-text.svg" %}
-          </a>
-        </div>
-        <div class="footer__links">
-          <ul class="footer__links">
-              <li class="footer__link"><a class="link link--hover-blueberry footer__text" href="https://github.com/i1last/i1last.github.io" target="_blank">Исходный код сайта</a></li>
-              <li class="footer__link"><a class="link link--hover-blueberry footer__text" href="mailto:feedback.float@gmail.com" target="_blank">Обратная связь</a></li>
-              <li class="footer__link"><a class="link link--hover-blueberry footer__text" href="https://github.com/i1last/i1last.github.io/blob/main/LICENSE" target="_blank">Лицензия</a></li>
-          </ul>
-        </div>
+        <a class="footer__logo logo__link" href="/">
+          {% include "svg/logo-text.svg" %}
+        </a>
+        <ul class="footer__links">
+            <li class="footer__link"><a class="link link--hover-blueberry footer__text" href="https://github.com/i1last/i1last.github.io" target="_blank">Исходный код сайта</a></li>
+            <li class="footer__link"><a class="link link--hover-blueberry footer__text" href="mailto:feedback.float@gmail.com" target="_blank">Обратная связь</a></li>
+            <li class="footer__link"><a class="link link--hover-blueberry footer__text" href="https://github.com/i1last/i1last.github.io/blob/main/LICENSE" target="_blank">Лицензия</a></li>
+        </ul>
       </div>
       <div class="footer__right">
         <div class="footer__copyright">
@@ -91,12 +87,12 @@
         </div>
       </div>
     </footer>
-
     <!-- scripts -->
     {% block scripts %}{% endblock %}
     <script src="/assets/js/scroll-listener.js"></script>
-    <script src="/assets/js/theme-changer.js"></script>
-    <script src="/assets/js/navigate-menu-opener.js"></script>
     <script src="/assets/js/navigate-menu-parser.js"></script>
+    <script src="/assets/js/theme-changer.js"></script>
+    <script src="/assets/js/animate.js"></script>
+    <script src="/assets/js/menu-opener.js"></script>
   </body>
 </html>
