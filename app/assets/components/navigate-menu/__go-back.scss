@@ -5,12 +5,13 @@
     &::before {
         content: "";
         position: absolute;
-        width: 20px;
-        height: 13px;
-        background-image: url("/database/images/navigate-menu__go-back.svg");
+        width: 24px;
+        height: 24px;
+        background-image: url("/database/images/arrow--left.svg");
         background-repeat: no-repeat;
-        left: 16px;
-        top: 14px;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 
