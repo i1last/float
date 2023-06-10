@@ -5,7 +5,15 @@
     height: 198px;
     width: 198px;
     border-radius: 15px;
-    background-color: var(--color-red);
+    background-color: var(--color-grey);
     font-family: 'JetBrains Mono';
     font-size: 20px;
+}
+
+.author__avatar--mr-small {
+    margin-right: 16px;
+}
+
+.author__avatar--mr-normal {
+    margin-right: 32px;
 }
