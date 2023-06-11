@@ -182,10 +182,8 @@ $ yarn run test  # данный таск используется для отл�
 <h3>Работа с gulpfile.js</h3>
 <p>
   <code>gulpfile.js</code> содержит в себе следующие функции:
-  <code>
-    svgCompile, rastrCompile, scssCompile, jsCompile,
-    njkCompile, filesTransfer
-  </code><br>
+  svgCompile, rastrCompile, scssCompile, jsCompile,
+  njkCompile, filesTransfer
 </p>
 <details><summary>Подробнее о каждой функции</summary>
     <ol>
