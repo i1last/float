@@ -64,6 +64,6 @@ function removeMenu() {
         }
     }).then(() => {
         body.style.overflow = '';
-        body.removeChild(menu);
+        if (body.contains(menu)) body.removeChild(menu);
     })
 }
