@@ -121,8 +121,8 @@ function rastrCompile() {
 }
 
 function svgCompile() {
-    return src('app/pages/**/*.svg')
-        .pipe(changed('docs/'))
+    return src('app/database/pages/**/*.svg')
+        .pipe(changed('docs/database/pages/'))
         .pipe(svgmin({
             plugins: [
             {
@@ -132,7 +132,7 @@ function svgCompile() {
             'removeEmptyContainers'
             ]
         }))
-        .pipe(dest('docs/'))
+        .pipe(dest('docs/database/pages/'))
 }
 
 function filesTransfer() {
