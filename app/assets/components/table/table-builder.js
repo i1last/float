@@ -77,7 +77,7 @@ function buildTable(jsonTable, jsonHeader, section, classes) {
     let thead = document.createElement('thead');
     let tbody = document.createElement('tbody');
 
-    table.classList.add('table');
+    table.classList.add('table', 'text--p-small');
     table.appendChild(thead);
     table.appendChild(tbody);
 
