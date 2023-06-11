@@ -1,11 +1,17 @@
 .author__quote {
     margin-left: 96px;
-}
 
-.author__quote::before {
-    content: '\201E';
-}
+    &::before {
+        content: '\201E';
+    }
+    &::after {
+        content: '\201C';
+    }
 
-.author__quote::after {
-    content: '\201C';
+    @media screen and (max-width: 949px) {
+        margin-left: 48px;
+    }
+    @media screen and (max-width: 854px) {
+        display: none;
+    }
 }

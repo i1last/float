@@ -1,19 +1,32 @@
 .author__avatar {
     display: flex;
+    flex-shrink: 0;
     align-items: center;
     text-align: center;
-    height: 198px;
-    width: 198px;
     border-radius: 15px;
     background-color: var(--color-grey);
     font-family: 'JetBrains Mono';
     font-size: 20px;
-}
+    height: 200px;
+    width: 200px;
 
-.author__avatar--mr-small {
-    margin-right: 16px;
-}
+    &--mr-small {
+        margin-right: 16px;
+    }
+    &--mr-normal {
+        margin-right: 32px;
+    }
 
-.author__avatar--mr-normal {
-    margin-right: 32px;
+    @media screen and (max-width: 949px) {
+        height: 150px;
+        width: 150px;
+        
+        &--mr-small {
+            margin-right: 0;
+        }
+    }
+    @media screen and (max-width: 549px) {
+        height: 98px;
+        width: 98px;
+    }
 }

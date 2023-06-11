@@ -1,3 +1,10 @@
 .author__senior {
-    width: 568px;
+    width: calc(50% - (32px / 2));
+
+    @media screen and (max-width: 1079px) {
+        width: calc(50% - (16px / 2));
+    }
+    @media screen and (max-width: 949px) {
+        width: 100%;
+    }
 }

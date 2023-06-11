@@ -1,4 +1,11 @@
 .authors__seniors {
     display: flex;
     gap: 32px;
+
+    @media screen and (max-width: 1079px) {
+        gap: 16px;
+    }
+    @media screen and (max-width: 949px) {
+        flex-direction: column;
+    }
 }

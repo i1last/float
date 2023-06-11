@@ -1,3 +1,12 @@
 .author__middle {
-    width: 368px;
+    width: calc(33.334% - (32px * 2 / 3));
+
+    @media screen and (max-width: 1168px) {
+        width: calc(33.334% - (16px * 2 / 3));
+        flex-direction: column;
+        gap: 8px;
+    }
+    @media screen and (max-width: 949px) {
+        width: 33.334vw !important;
+    }
 }
