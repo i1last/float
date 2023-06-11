@@ -1,7 +1,17 @@
 .container {
     display: flex;
-    padding-top: 112px;
-    width: 1168px;
     margin: 0 auto;
     min-height: 90vh;
+    padding-top: calc(60px + 52px);
+    width: 1168px;
+
+    @media screen and (max-width: 1199px) {
+        width: calc(100vw - 32px);
+    }
+    @media screen and (max-width: 1079px) {
+        padding-top: calc(60px + 36px);
+    }
+    @media screen and (max-width: 549px) {
+        width: calc(100vw - 16px);
+    }
 }
