@@ -1,0 +1,10 @@
+.text--p-small {
+    font-size: 24px;
+
+    @media screen and (max-width: 399px) {
+        font-size: 20px;
+    }
+    @media screen and (max-width: 349px) {
+        font-size: 16px;
+    }
+}
