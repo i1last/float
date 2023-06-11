@@ -1,0 +1,25 @@
+.slide {
+    border-radius: 20px;
+    background-color: var(--color-dark-white);
+    transition: transform 300ms;
+    overflow: hidden;
+
+    &:hover {
+        transform: scale(0.97);
+    }
+}
+
+.slide--large {
+    width: 100%;
+    height: 256px;
+}
+
+.slide--medium {
+    width: 100%;
+    height: 154px;
+}
+
+.slide--small {
+    width: 425px;
+    height: 190px;
+}

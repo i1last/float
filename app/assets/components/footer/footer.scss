@@ -1,0 +1,30 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-footer);
+    margin-top: 52px;
+    padding: 56px 36px;
+
+    &__left {
+        display: flex;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 1299px) {
+        display: flex;
+        flex-direction: column;
+        padding: 36px;
+
+        &__right {
+            margin-top: 52px;
+            text-align: center;
+        }
+    }
+    @media screen and (max-width: 399px) {
+        &__left {
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+}

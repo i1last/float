@@ -1,94 +1,16 @@
 {% extends "base-layout.njk" %}
-{% block title %}Физика: Конспекты{% endblock %}
+{% block title %}Физика: конспекты{% endblock %}
 
-{% block preview_title %}Конспекты{% endblock %}
-{% block preview_text %}
-  Все карточки по физике и дополнения к ним. Вы можете скачать любую карточку в
-  удобном для Вас формате: pdf, png, svg
+{% block preview__title %}
+  Конспекты по физике
 {% endblock %}
 
 {% block content %}
-  <section class="10-grade">
-    <div class="restrange-title restrange--green">10 класс</div>
-    <div class="buttons">
-      <ul class="buttons__list buttons__list--columns--3">
-        <li>
-          {% set image = "10-1" %}
-          {% set name %}Карточка {{ image }}{% endset %}
-          {% include "card-button.njk" %}
-        </li>
-        <li>
-          {% set image = "10-2" %}
-          {% set name %}Карточка {{ image }}{% endset %}
-          {% include "card-button.njk" %}
-        </li>
-        <li>
-          {% set image = "10-3" %}
-          {% set name %}Карточка {{ image }}{% endset %}
-          {% include "card-button.njk" %}
-        </li>
-        <li>
-          {% set image = "10-4" %}
-          {% set name %}Карточка {{ image }}{% endset %}
-          {% include "card-button.njk" %}
-        </li>
-        <li>
-          {% set image = "10-5" %}
-          {% set name %}Карточка {{ image }}{% endset %}
-          {% include "card-button.njk" %}
-        </li>
-        <li>
-          {% set image = "10-6+7" %}
-          {% set name %}Карточка {{ image }}{% endset %}
-          {% include "card-button.njk" %}
-        </li>
-        <li>
-          {% set image = "10-8+9" %}
-          {% set name %}Карточка {{ image }}{% endset %}
-          {% include "card-button.njk" %}
-        </li>
-        <li>
-          {% set image = "10-10-1" %}
-          {% set name %}Карточка {{ image }}{% endset %}
-          {% include "card-button.njk" %}
-        </li>
-        <li>
-          {% set image = "10-10-2" %}
-          {% set name %}Карточка {{ image }}{% endset %}
-          {% include "card-button.njk" %}
-        </li>
-        <li>
-          {% set image = "10-11" %}
-          {% set name %}Карточка {{ image }}{% endset %}
-          {% include "card-button.njk" %}
-        </li>
-        <li>
-          {% set image = "10-12" %}
-          {% set name %}Карточка {{ image }}{% endset %}
-          {% include "card-button.njk" %}
-        </li>
-        <li>
-          {% set image = "10-13" %}
-          {% set name %}Карточка {{ image }}{% endset %}
-          {% include "card-button.njk" %}
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class="11-grade">
-    <div class="restrange-title restrange--yellow">11 класс</div>
-    <div class="buttons">
-      <ul class="buttons__list buttons__list--columns--3">
-        <li>
-          <a class="buttons__list-item button button--row-content" href="#!">
-            Здесь ничего нет!
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
+  <section class="synopses synopses--physics slides js-list-container"></section>
 {% endblock %}
+
 {% block scripts %}
-  <script src="/assets/js/drop-menu.js"></script>
-  <script src="/assets/js/open-image.js"></script>
+  <script src="/assets/js/synopses-loader--physics.js"></script>
+  <script src="/assets/js/image-opener.js"></script>
+  <script src="/assets/js/download-aside-opener.js"></script>
 {% endblock %}

@@ -1,0 +1,21 @@
+.selector {
+    padding: 16px;
+    background-color: var(--color-surface-colored);
+    border-radius: 12px;
+    border: none;
+    color: var(--color-text);
+    appearance: none;
+    margin-right: 8px;
+    margin-bottom: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 50ms;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    @media screen and (max-width: 949px) {
+        padding: 12px;
+    }
+}

@@ -1,0 +1,26 @@
+.preview__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &--arrow {
+        position: relative;
+
+        @media screen and (max-width: 1079px) {
+            width: 90%;
+        }
+        @media screen and (max-width: 959px) {
+            width: fit-content;
+            height: 80%;
+        }
+        @media screen and (max-width: 749px) {
+            right: 8vw;
+            top: 2vw;
+            transform: scale(1.2);
+        }
+        @media screen and (max-width: 649px) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.menu__close-button {
+    margin: 24px 24px 0 !important;
+    padding-left: (4px + 24px) + 8px !important;
+    user-select: none;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 8px;
+        right: 4px;
+        background-image: url('/database/images/collapse--left.svg');
+        background-repeat: no-repeat;
+    }
+}

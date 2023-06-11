@@ -1,0 +1,13 @@
+.authors__middles {
+    display: flex;
+    gap: 32px;
+
+    @media screen and (max-width: 1168px) {
+        gap: 16px;
+    }
+    @media screen and (max-width: 549px) {
+        gap: 0;
+        column-gap: 8px;
+        row-gap: 16px;
+    }
+}

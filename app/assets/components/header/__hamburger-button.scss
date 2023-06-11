@@ -1,0 +1,13 @@
+.header__hamburger-button {
+    margin-right: 16px;
+    cursor: pointer;
+    transition: transform 50ms;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    @media screen and (min-width: 1712px) {
+        display: none;
+    }
+}

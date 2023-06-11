@@ -1,0 +1,10 @@
+.slides__list {
+    display: grid;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media screen and (max-width: 849px) {
+        grid-template-columns: 1fr;
+    }
+}

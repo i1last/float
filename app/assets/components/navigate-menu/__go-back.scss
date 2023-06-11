@@ -1,0 +1,22 @@
+.navigate-menu__go-back {
+    position: relative;
+    padding-left: 28px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background-image: url("/database/images/arrow--left.svg");
+        background-repeat: no-repeat;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+html[theme='dark'] {
+    .navigate-menu__go-back::before {
+        filter: invert(100%);
+    }
+}

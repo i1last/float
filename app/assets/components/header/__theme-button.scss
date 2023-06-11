@@ -1,0 +1,12 @@
+html {
+    &[theme='dark'] {
+        .theme-button--light {
+                display: none;
+            }
+    }
+    &[theme='light'] {
+        .theme-button--dark {
+                display: none;
+            }
+    }
+}

@@ -1,11 +1,12 @@
 {% extends "base-layout.njk" %}
-{% block title %}Ошибка!{% endblock %}
+{% block title %}404!{% endblock %}
+
+{% block preview__title %}
+  Упс! Не удалось найти страницу...
+{% endblock %}
+
 {% block content %}
-  <section class="error">
-    <div class="error__title">404</div>
-    <div class="error__text">
-      Здесь ничего нет!
-      <a class="error__text--link link" href="/">Вернуться на главную</a>
-    </div>
-  </section>
+  <p class="error">
+    <a href="/" class="link link--hover-red">Давайте вернемся обратно!</a>
+  </p>
 {% endblock %}

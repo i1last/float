@@ -1,0 +1,19 @@
+.navigate-menu {
+    display: block;
+    position: sticky;
+    top: 92px;
+    flex-shrink: 0;
+    margin-left: -197px - 52px;
+    width: 197px;
+
+    &--showing {
+        display: block !important;
+        transform: none !important;
+    }
+
+    @media screen and (max-width: 1711px) {
+        display: none;
+        height: 100%;
+        font-size: 24px;
+    }
+}

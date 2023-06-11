@@ -1,124 +1,98 @@
 <!DOCTYPE html>
 <html theme="dark" lang="ru">
   <head>
-    <!-- scripts -->
+    <!-- script and favicon -->
+    <link class="js-favicon" rel="icon" href="/favicon--light.svg" type="image/svg+xml">
     <script src="/assets/js/set-theme.js"></script>
-
     <!-- metadata -->
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-    <!-- links -->
-    <link rel="icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/assets/css/main.css"/>
+    <meta name="google-site-verification" content="WMa-AZJ-bPuhkDQ9YOJ22BwQOdu1Y6cH5qRQRBym638" />
+    <!-- link -->
+    <link rel="stylesheet" href="/assets/css/main.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
-      rel="stylesheet"/>
-    <link
-    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
-      rel="stylesheet"/>
-
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <!-- title -->
-    <title>
-      {% block title %}{% endblock %}
-      &#8211; integer</title>
+    <title>float &#8211; {% block title %}{% endblock %}</title>
   </head>
   <body>
-    <header class="header">
-      <div class="logo">
-        <a class="logo__link" href="/">
-          {% include "logo.svg.njk" %}
-        </a>
+    <header class="header scrollable">
+      <div class="header__left">
+        <div class="header__hamburger-button" tabindex="0">{% include "svg/hamburger-button.svg"%}</div>
+        <div class="header__logo"><a class="header__logo logo__link" href="/">{% include "svg/logo-text.svg" %}</a></div>
       </div>
-      <div class="header__links">
-        <div class="header__hamburger-menu hamburger-menu" tabindex="0">
-          <svg
-            class="hamburger-menu__img hamburger-menu"
-            height="28px"
-            viewbox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              class="hamburger-menu"
-              d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z
-                M28,14H4c-1.104,0-2,0.896-2,2
-                s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z
-                M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2
-                S29.104,22,28,22z"/>
-          </svg>
-        </div>
-        <ul class="header__links-list drop-content">
-          <li class="header__links-item">
-            <div class="change-theme-button link header__links-item--element">
-              <div class="change-theme-button__images" title="Сменить тему" tabindex="0">
-                <svg
-                  class="change-theme-button__image change-theme-button__image--dark"
-                  height="20px"
-                  viewbox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 2c-1.82 0-3.53.5-5 1.35C7.99 5.08 10 8.3 10 12s-2.01 6.92-5 8.65C6.47 21.5
-                  8.18 22 10 22c5.52 0 10-4.48 10-10S15.52 2 10 2z"/>
-                </svg>
-                <svg
-                  class="change-theme-button__image change-theme-button__image--light"
-                  height="20px"
-                  viewbox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4
-                  15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18V6c3.31 0 6 2.69 6 6s-2.69 6-6 6z"/>
-                </svg>
+      <div class="header__right">
+        <ul class="header__buttons">
+          <li class="js-theme-button-click-area">
+              <div class="surface-button header__button-image theme-button" id="theme-button" title="Тема" tabindex="0">
+                {% include "svg/theme-button--light.svg" %}
+                {% include "svg/theme-button--dark.svg" %}
               </div>
-              <div class="change-theme-button__title">Сменить тему</div>
-            </div>
           </li>
-          <li class="header__links-item">
-            <a class="link header__links-item--element" href="/">Главная</a>
-          </li>
-          <li class="header__links-item">
-            <a class="link header__links-item--element" href="/authors">Авторы</a>
-          </li>
-          <li class="header__links-item">
-            <a class="link header__links-item--element" href="../">Предыдущая страница</a>
+          <li>
+            <a class="surface-button" href="/search">
+              <div class="search-button header__button-image" id="search-button" title="Поиск" tabindex="0">
+                {% include "svg/search.svg" %}
+              </div>
+            </a>
           </li>
         </ul>
       </div>
     </header>
-    <section class="preview">
-      <div class="title">{% block preview_title %}{% endblock %}</div>
-      <div class="preview__text">{% block preview_text %}{% endblock %}</div>
-    </section>
-    {% block content %}{% endblock %}
-    <footer class="footer">
-      <div class="logo">
-        <a class="logo__link" href="/">
-          {% include "logo.svg.njk" %}
-        </a>
+    <main class="container">
+      <div class="container__navigate">
+        <nav class="navigate-menu scrollable">
+          <ul class="navigate-menu__list">
+            <li class="navigate-menu__item navigate-menu__go-back"><a href="../" class="navigate-menu__link">Вернуться назад</a></li>
+          </ul>
+          <ul class="navigate-menu__list">
+            <li class="navigate-menu__item navigate-menu__main-page"><a href="/" class="navigate-menu__link">Главная</a></li>
+            <li class="navigate-menu__item"><a href="/timetable" class="navigate-menu__link">Расписание</a></li>
+            <li class="navigate-menu__item"><a href="/handbook" class="navigate-menu__link">Справочник</a></li>
+            <li class="navigate-menu__item"><a href="/ege" class="navigate-menu__link">Для ЕГЭ</a></li>
+            <li class="navigate-menu__item"><a href="/oge" class="navigate-menu__link">Для ОГЭ</a></li>
+            <li class="navigate-menu__item"><a href="/teacher" class="navigate-menu__link">Для учителей</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="footer__links">
-        <ul class="footer__links-list">
-          <li class="footer__links-item">
-            <a
-              class="footer__link restrange--mauve text--bold"
-              href="https://github.com/i1last/integer"
-              target="_blank">
-              Исходный код
-            </a>
-          </li>
-          <li class="footer__links-item">
-            <a
-              class="footer__link restrange--teal text--bold"
-              href="https://forms.gle/weuyGnz1A4G1TJmp7"
-              target="_blank">
-              Обратная связь
-            </a>
-          </li>
+      <div class="container__content">
+        <section class="preview">
+          <div class="preview__title text--h1">{% block preview__title %}{% endblock %}</div>
+          <div class="preview__icon">{% block preview__icon %}{% endblock %}</div>
+        </section>
+        {% block content %}{% endblock %}
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__left">
+        <a class="footer__logo logo__link" href="/">
+          {% include "svg/logo-text.svg" %}
+        </a>
+        <ul class="footer__links">
+            <li class="footer__link"><a class="link link--hover-blueberry footer__text" href="https://github.com/i1last/i1last.github.io" target="_blank">Исходный код сайта</a></li>
+            <li class="footer__link"><a class="link link--hover-blueberry footer__text" href="mailto:feedback.float@gmail.com" target="_blank">Обратная связь</a></li>
+            <li class="footer__link"><a class="link link--hover-blueberry footer__text" href="https://github.com/i1last/i1last.github.io/blob/main/LICENSE" target="_blank">Лицензия</a></li>
         </ul>
       </div>
+      <div class="footer__right">
+        <div class="footer__copyright">
+          <p class="footer__text">© Рахметов А.Р., 2022-2023 Все права защищены.</p>
+          <p class="footer__text">Любое использование материалов без согласия правообладателя запрещено.</p>
+          <p class="footer__text">По всем вопросам пишите на
+              <a class="link link--hover-blueberry footer__text" href="mailto:feedback.float@gmail.com">feedback.float@gmail.com</a>
+          </p>
+        </div>
+      </div>
     </footer>
-    {% block scripts %}{% endblock %}
-    <script src="/assets/js/hamburger-menu.js"></script>
+    <!-- scripts -->
+    <script src="/assets/js/scroll-listener.js"></script>
+    <script src="/assets/js/navigate-menu-parser.js"></script>
     <script src="/assets/js/theme-changer.js"></script>
+    <script src="/assets/js/animate.js"></script>
+    <script src="/assets/js/menu-opener.js"></script>
+    {% block scripts %}{% endblock %}
   </body>
 </html>

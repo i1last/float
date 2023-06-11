@@ -1,39 +1,27 @@
 {% extends "base-layout.njk" %}
-{% block title %}Физика: Определения{% endblock %}
+{% block title %}Физика: определения{% endblock %}
 
-{% block preview_title %}Определения{% endblock %}
-{% block preview_text %}
-  Определения по физике. Здесь расположены таблицы с определениями для физики,
-  которые построены с упором на понимание
+{% block preview__title %}
+  Определения по физике
 {% endblock %}
 
 {% block content %}
-  {% include "up-button.njk" %}
-  <section class="table-of-contents">
-    <div class="title">Оглавление</div>
-    <div class="table-of-contents__content">
-      <ol class="table-of-contents__list">
-        <li class="table-of-contents__list-item">
-          <a class="link" href="#mechanics">Механика</a>
-        </li>
-        <li class="table-of-contents__list-item">
-          <a class="link" href="#mkt">Молекулярная физика, термодинамика, электростатика</a>
-        </li>
-        <li class="table-of-contents__list-item">
-          <a class="link" href="#directСurrent">Постоянный ток</a>
-        </li>
-        <li class="table-of-contents__list-item">
-          <a class="link" href="#magneticField">Магнитное поле</a>
-        </li>
-        <li class="table-of-contents__list-item">
-          <a class="link" href="#fluctuationsWaves">Колебания и волны</a>
-        </li>
-      </ol>
+  <section class="definitions">
+    <div class="definitions__controller">
+      <select class="definitions__section-selector section-selector table-controller selector text--p-small" table="definitions">
+        <option value="mechanics" class="selector__option">Механика</option>
+        <option value="ktg" class="selector__option">МКТ</option>
+        <option value="directСurrent" class="selector__option">Постоянный ток</option>
+        <option value="magneticField" class="selector__option">Магнитные поля</option>
+        <option value="oscillationWaves" class="selector__option">Колебания и волны</option>
+      </select>
     </div>
+    <div class="timetable__table js-table-container table-container"></div>
   </section>
-  <section class="tables"></section>
 {% endblock %}
+
 {% block scripts %}
-  <script src="/assets/js/get-table.js" table="definitions" section="all"></script>
-  <script src="/assets/js/open-image.js"></script>
+  <script src="/assets/js/image-opener.js"></script>
+  <script src="/assets/js/table-builder.js"></script>
+  <script src="/assets/js/table-listener.js"></script>
 {% endblock %}

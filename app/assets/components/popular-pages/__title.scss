@@ -1,0 +1,10 @@
+.popular-pages__title {
+    margin: 0 auto 64px;
+    text-align: center;
+    max-width: fit-content;
+    color: var(--color-white);
+
+    @media screen and (max-width: 449px) {
+        width: 90%;
+    }
+}

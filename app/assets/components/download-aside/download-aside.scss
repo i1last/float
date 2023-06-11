@@ -1,0 +1,13 @@
+.download-aside {
+    display: block !important;
+    position: relative;
+    height: 100%;
+    width: 145px;
+    background-color: var(--color-dark-grey);
+    border-radius: 20px;
+    padding: 24px 22px;
+
+    @media screen and (max-width: 459px) {
+        right: -145px !important;
+    }
+}

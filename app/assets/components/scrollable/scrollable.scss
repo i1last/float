@@ -1,0 +1,7 @@
+.scrollable {
+    transition: transform 300ms ease-out;
+
+    &--hidden {
+        transform: translateY(-60px);
+    }
+}

@@ -1,0 +1,10 @@
+.table__item {
+    display: block;
+    margin-top: 12px;
+    font-size: inherit;
+    max-width: fit-content;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}

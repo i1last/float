@@ -1,0 +1,11 @@
+.table__head {
+    padding: 20px;
+    font-weight: 500;
+    background-color: var(--color-surface);
+    vertical-align: middle;
+    text-align: center;
+
+    @media screen and (max-width: 699px) {
+        padding: 12px;
+    }
+}

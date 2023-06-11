@@ -1,0 +1,27 @@
+.header__button-image {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-top: -1px;
+
+    &::after {
+        margin-left: 8px;
+
+        @media screen and (max-width: 449px) {
+            content: '' !important;
+            margin-left: 0;
+        }
+    }
+}
+
+.search-button::after {
+    content: 'Поиск';
+}
+
+.theme-button::after {
+    content: 'Тема';
+}
+
+.profile-button::after {
+    content: 'Войти';
+}

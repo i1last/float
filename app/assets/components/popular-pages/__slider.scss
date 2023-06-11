@@ -1,0 +1,28 @@
+.popular-pages__slider {
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    padding: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-dark-white);
+    color: var(--color-black);
+    transition: 300ms;
+    transition-property: background-color, color;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--color-black);
+        color: var(--color-dark-white);
+    }
+}
+
+.popular-pages__slider--prev {
+    left: 24px;
+}
+
+.popular-pages__slider--next {
+    right: 24px;
+}
