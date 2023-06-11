@@ -1,7 +1,16 @@
 .popular-pages {
-    margin: 120px auto;
-    width: 1168px;
     background-color: var(--color-dark-grey);
     border-radius: 20px;
     padding: 64px 0px 40px;
+    margin: 120px auto;
+    width: 100%;
+
+    @media screen and (max-width: 799px) {
+        margin: 60px auto;
+    }
+    @media screen and (max-width: 549px) {
+        width: 100vw;
+        margin-left: -8px;
+        border-radius: 0;
+    }
 }
