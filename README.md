@@ -1,33 +1,3 @@
-<!-- style -->
-<style>
-  h2 {
-    margin-top: 36px;
-  }
-  h3 {
-    margin-top: 24px;
-    margin-bottom: 8px;
-  }
-  ol {
-    margin-top: -5px;
-  }
-  details {
-    margin-bottom: 8px;
-  }
-  .avatar {
-    display: flex;
-    align-items: center;
-    margin-bottom: 4px;
-  }
-  .avatar__link {
-    margin-right: 8px;
-    flex-shrink: 0;
-  }
-  .avatar__image {
-    border-radius: 4px;
-  }
-</style>
-
-<!-- content -->
 <h1 align="center"><img src="./.github/assets/logo-text.svg"></h1>
 <p align="center">
   <i align="center">
