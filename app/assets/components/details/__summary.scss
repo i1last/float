@@ -1,7 +1,7 @@
 .details__summary {
     position: relative;
     margin: -.5em -.5em 0;
-    padding: .5em .5em .5em 1.5em;
+    padding: .5em .5em .5em 1.6em;
     user-select: none;
     cursor: pointer;
 
@@ -13,9 +13,11 @@
         height: 16px;
         background-image: url("/database/images/marker.svg");
         background-repeat: no-repeat;
-        left: .5em;
-        top: .75em;
+        left: .4em;
+        top: 50%;
+        transform: translateY(-50%);
         transition: transform 300ms;
+        transform-origin: 51% 30%;
     }
 }
 
