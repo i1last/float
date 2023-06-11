@@ -3,4 +3,8 @@
     grid-gap: 12px 20px;
     grid-template-columns: 1fr auto;
     grid-template-rows: min-content 1fr;
+
+    @media screen and (max-width: 399px) {
+        grid-template-columns: none;
+    }
 }

@@ -1,5 +1,9 @@
 .slide__description--maw-medium {
     max-width: 334px;
+
+    @media screen and (max-width: 549px) {
+        max-width: 280px;
+    }
 }
 
 .slide__description--maw-small {
