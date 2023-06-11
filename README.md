@@ -29,9 +29,9 @@
 
 <h2>🙋‍♂️ О создателях и поддержке</h2>
 <h3>🧙‍♂️ Куратор проекта</h3>
-<div class="avatar">
-  <a class="avatar__link" href="http://www.kirov.spb.ru/sc/501/index.php?option=com_contact&task=view&contact_id=7&Itemid=30">
-    <img class="avatar__image" src="./.github/assets/supervisor.png" title="Нилова Юлия Николаевна" width="80" height="80">
+<div>
+  <a href="http://www.kirov.spb.ru/sc/501/index.php?option=com_contact&task=view&contact_id=7&Itemid=30">
+    <img src="./.github/assets/supervisor.png" title="Нилова Юлия Николаевна" width="80" height="80">
   </a>
   <p>
     <a href="http://www.kirov.spb.ru/sc/501/index.php?option=com_contact&task=view&contact_id=7&Itemid=30">
@@ -45,36 +45,36 @@
 
 
 <h3>🧟‍♂️ Основатели проекта; старшие разработчики</h3>
-<div class="avatar">
-  <a class="avatar__link" href="https://github.com/i1last">
-    <img class="avatar__image" src="https://avatars.githubusercontent.com/u/90155905?v=4" title="Альберт" width="65" height="65">
+<div>
+  <a href="https://github.com/i1last">
+    <img src="https://avatars.githubusercontent.com/u/90155905?v=4" title="Альберт" width="65" height="65">
   </a>
   <p>Альберт &#8211; главный разработчик</p>
 </div>
-<div class="avatar">
-  <a class="avatar__link" href="https://github.com/Semvt">
-    <img class="avatar__image" src="https://avatars.githubusercontent.com/u/93983380?v=4" title="Семен" width="65" height="65">
+<div>
+  <a href="https://github.com/Semvt">
+    <img src="https://avatars.githubusercontent.com/u/93983380?v=4" title="Семен" width="65" height="65">
   </a>
   <p>Семён &#8211; главный менеджер</p>
 </div>
 
 
 <h3>👳‍♂️ Средние разработчики</h3>
-<div class="avatar">
-  <a class="avatar__link" href="https://github.com/Zlik12">
-    <img class="avatar__image" src="https://avatars.githubusercontent.com/u/135515776?v=4" title="Ярослав" width="50" height="50">
+<div>
+  <a href="https://github.com/Zlik12">
+    <img src="https://avatars.githubusercontent.com/u/135515776?v=4" title="Ярослав" width="50" height="50">
   </a>
   <p>Ярослав</p>
 </div>
-<div class="avatar">
-  <a class="avatar__link" href="https://github.com/GAY-SLAVE">
-    <img class="avatar__image" src="https://avatars.githubusercontent.com/u/134802217?v=4" title="Николай" width="50" height="50">
+<div>
+  <a href="https://github.com/GAY-SLAVE">
+    <img src="https://avatars.githubusercontent.com/u/134802217?v=4" title="Николай" width="50" height="50">
   </a>
   <p>Николай</p>
 </div>
-<div class="avatar">
-  <a class="avatar__link" href="https://github.com/andrix7777777">
-    <img class="avatar__image" src="https://avatars.githubusercontent.com/u/71929141?v=4" title="Андрей" width="50" height="50">
+<div>
+  <a href="https://github.com/andrix7777777">
+    <img src="https://avatars.githubusercontent.com/u/71929141?v=4" title="Андрей" width="50" height="50">
   </a>
   <p>Андрей</p>
 </div>
