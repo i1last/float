@@ -53,15 +53,23 @@ function createTable(tableRequest) {
 
     let jsonTable;
     let jsonHeader;
-    fetch(`/database/tables/${tableParams.tablePath}`).then((res) => res.json()).then((json) => {
+    fetch(`/database/tables/${tableParams.tablePath}`).then(res => res.json()).then(json => {
         jsonTable = json;
-        fetch(`/database/tables/${tableParams.headerPath}`).then((res) => res.json()).then((json) => {
+        fetch(`/database/tables/${tableParams.headerPath}`).then(res => res.json()).then(json => {
             jsonHeader = json;
-            document.querySelector('.js-table-container').innerHTML = (
-                buildTable(jsonTable, jsonHeader, tableParams.section, tableParams.classes).outerHTML
-            );
+            innerResult(buildTable(jsonTable, jsonHeader, tableParams.section, tableParams.classes).outerHTML);
+        }).catch(err => {
+            if (err.message == 'JSON.parse: unexpected end of data at line 1 column 1 of the JSON data') innerResult(`Произошла ошибка при загрузке таблицы: Таблица не найдена`);
+            else innerResult(`Произошла ошибка при загрузке таблицы: ${err}`);
         });
+    }).catch(err => {
+        if (err.message == 'JSON.parse: unexpected end of data at line 1 column 1 of the JSON data') innerResult(`Произошла ошибка при загрузке таблицы: Таблица не найдена`);
+        else innerResult(`Произошла ошибка при загрузке таблицы: ${err}`);
     });
+}
+
+function innerResult(callback) {
+    document.querySelector('.js-table-container').innerHTML = callback;
 }
 
 function buildTable(jsonTable, jsonHeader, section, classes) {
