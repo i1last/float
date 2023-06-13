@@ -23,10 +23,11 @@ import svgmin from 'gulp-svgmin';
 import plumber from 'gulp-plumber'
 import concat from 'gulp-concat';
 import flatten from 'gulp-flatten';
+import sitemap from 'gulp-sitemap';
 
 
 task('test', series(jsCompile));
-task('build', parallel(svgCompile, rastrCompile, scssCompile, jsCompile, njkCompile, filesTransfer));
+task('build', parallel(svgCompile, rastrCompile, scssCompile, jsCompile, njkCompile, filesTransfer, generateSitemap));
 task('watch', series('build', function () {
     browserSync.init({
         server: {
@@ -45,6 +46,12 @@ task('watch', series('build', function () {
 
     watch(['app/**/*', '_pacifier'], browserSync.reload());
 }));
+
+function generateSitemap() {
+    return src('docs/**/*.html', { read: false })
+        .pipe(sitemap({ siteUrl: 'https://i1last.github.io' }))
+        .pipe(dest('docs/'))
+}
 
 function njkCompile() {
     return src('app/pages/**/*.njk')
