@@ -3,6 +3,7 @@
     background-color: var(--color-dark-white);
     transition: transform 300ms;
     overflow: hidden;
+    user-select: none;
 
     &:hover {
         transform: scale(0.97);
