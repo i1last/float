@@ -18,7 +18,11 @@ for (const list of menu.children) {
     menuContent.appendChild(list);
 
     for (const item of list.children) {
-        item.className = 'menu__item surface-button bg--blueberry';
+        item.className = 'menu__item';
+        
+        for (const link of item.children) {
+            link.className = 'menu__link surface-button bg--blueberry';
+        };
     };
 };
 
