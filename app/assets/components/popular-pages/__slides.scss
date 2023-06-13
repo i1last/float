@@ -1,5 +1,12 @@
 .popular-pages__slides {
     display: flex;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: scroll;
     gap: 12px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
