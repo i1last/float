@@ -1,0 +1,43 @@
+{% extends "base-layout.njk" %}
+{% block title %}Физика: учебники{% endblock %}
+
+{% block preview__title %}
+  Учебники по физике 
+{% endblock %}
+
+{% block content %}
+  <section class="slides">
+    <ul class="slides__list">
+      <li class="slide slide--medium bg--red">
+        <a href="/database/pages/handbook/physics/textbooks/physics-textbook__10-grade__myakishev--2014.pdf" class="slide__link slide__link--p-large">
+          <div class="slide__title slide__title--fz-normal slide__title--mb-normal">Физика 10 класс (2014 год)</div>
+          <div class="slide__description slide__description--fz-normal slide__description--maw-medium">Учебник по физике за 10 класс 2014 года издания от авторов: Мякишев, Буховцев, Чаругин</div>
+          <div id="js-download-aside--0" class="slide__image slide__download download-aside">
+            <object><a href="#!" class="download-aside__open" js-download-aside-id="0">Скачать</a></object>
+            <h3 class="download-aside__title">Скачать</h3>
+            <ul class="download-aside__list">
+              <li><object><a href="/database/pages/handbook/physics/textbooks/physics-textbook__10-grade__myakishev--2014.pdf" class="download-aside__download-item bg--green" download="">pdf</a></object></li>
+            </ul>
+          </div>
+        </a>
+      </li>
+      <li class="slide slide--medium bg--red">
+        <a href="/database/pages/handbook/physics/textbooks/physics-textbook__11-grade__myakishev--2019.pdf" class="slide__link slide__link--p-large">
+          <div class="slide__title slide__title--fz-normal slide__title--mb-normal">Физика 11 класс (2019 год)</div>
+          <div class="slide__description slide__description--fz-normal slide__description--maw-medium">Учебник по физике за 11 класс 2019 года издания от авторов: Мякишев, Буховцев, Чаругин</div>
+          <div id="js-download-aside--1" class="slide__image slide__download download-aside">
+            <object><a href="#!" class="download-aside__open" js-download-aside-id="0">Скачать</a></object>
+            <h3 class="download-aside__title">Скачать</h3>
+            <ul class="download-aside__list">
+              <li><object><a href="/database/pages/handbook/physics/textbooks/physics-textbook__11-grade__myakishev--2019.pdf" class="download-aside__download-item bg--green" download="">pdf</a></object></li>
+            </ul>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </section>
+{% endblock %}
+
+{% block scripts %}
+  <script src="/assets/js/download-aside-opener.js"></script>
+{% endblock %}
