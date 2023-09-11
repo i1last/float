@@ -1,12 +1,21 @@
 {% extends "base-layout.njk" %}
-{% block title %}Учитель{% endblock %}
+{% block title %}Для учителей{% endblock %}
 
 {% block preview__title %}
-  Учитель
+  Для учителей
 {% endblock %}
 
 {% block content %}
-  {% include "components/wip.njk" %}
+  <section class="slides">
+    <ul class="slides__list">
+      <li class="slide slide--medium bg--cyan">
+        <a href="/teacher/timetable-builder" class="slide__link slide__link--p-large">
+          <div class="slide__title slide__title--fz-normal slide__title--mb-normal">Автоматическое составление расписания</div>
+          <div class="slide__description slide__description--fz-normal slide__description--maw-large">Скачать программу для составления расписания</div>
+        </a>
+      </li>
+  </ul>
+  </section>
 {% endblock %}
 
 {% block scripts %}

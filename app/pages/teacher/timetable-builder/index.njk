@@ -1,0 +1,29 @@
+{% extends "base-layout.njk" %}
+{% block title %}Для учителей: автоматическое расписание{% endblock %}
+
+{% block preview__title %}
+  Автоматическое расписание
+{% endblock %}
+
+{% block content %}
+  <section class="slides">
+    <ul class="slides__list">
+      <li class="slide slide--medium bg--red">
+        <a href="https://www.asctimetables.com/" class="slide__link slide__link--p-large">
+          <div class="slide__title slide__title--fz-normal slide__title--mb-normal">ascTimetables DEMO</div>
+          <div class="slide__description slide__description--fz-normal slide__description--maw-medium">Это демо-версия программы ascTimeTables. *В демо-версии нельзя распечатать расписание</div>
+          <div id="js-download-aside--0" class="slide__image slide__download download-aside">
+            <object><a href="#!" class="download-aside__open" js-download-aside-id="0">Скачать</a></object>
+            <h3 class="download-aside__title">Скачать</h3>
+            <ul class="download-aside__list">
+              <li><object><a href="https://www.asctimetables.com/download/aScTimeTables_2024_19_1.exe" class="download-aside__download-item bg--green" download="">exe</a></object></li>
+            </ul>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </section>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}
