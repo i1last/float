@@ -1,16 +1,19 @@
 .selector {
     padding: 16px;
-    background-color: var(--color-surface-colored);
     border-radius: 12px;
     border: none;
-    color: var(--color-text);
-    appearance: none;
     margin-right: 8px;
     margin-bottom: 16px;
     text-align: center;
     max-width: 300px;
     cursor: pointer;
     transition: transform 50ms;
+    appearance: none;
+    color: var(--color-text);
+    background-color: var(--color-surface-colored);
+    background-repeat: no-repeat;
+    background-position-x: 5%;
+    background-position-y: 50%;
 
     &:hover {
         transform: scale(1.05);
@@ -19,4 +22,12 @@
     @media screen and (max-width: 949px) {
         padding: 12px;
     }
+}
+
+html[theme="dark"] .selector {
+    background-image: url(/database/images/marker--light.svg);
+}
+
+html[theme="light"] .selector {
+    background-image: url(/database/images/marker--dark.svg);
 }
