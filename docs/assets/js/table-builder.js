@@ -8,8 +8,8 @@ function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol 
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 var classes = {
-  timetable: [["table__head"], ["table__data"], ["table__data", "table__data--center", "table__data--no-wrap"], ["table__data", "table__data--center", "table__data--no-wrap"], ["table__data"]],
-  definitions: [["table__head"], ["table__data"], ["table__data", "table__data--long-width"], ["table__data", "table__data--short-width"], ["table__data", "table__data--center"]]
+  timetable: [["table__head", "text--p-small"], ["table__data", "text--p-small"], ["table__data", "table__data--center", "table__data--no-wrap", "text--p-small"], ["table__data", "table__data--center", "table__data--no-wrap", "text--p-small"], ["table__data"]],
+  definitions: [["table__head", "text--p-small"], ["table__data", "text--p-small"], ["table__data", "table__data--long-width", "text--p-small"], ["table__data", "table__data--short-width", "text--p-small"], ["table__data", "table__data--center", "text--p-small"]]
 };
 function createTable(e) {
   var t, a, l;
