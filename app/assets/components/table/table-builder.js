@@ -3,18 +3,18 @@
 //////////////////////////////////////////////////
 const classes = {
     timetable: [
-        ['table__head'],
-        ['table__data'],
-        ['table__data', 'table__data--center', 'table__data--no-wrap'],
-        ['table__data', 'table__data--center', 'table__data--no-wrap'],
+        ['table__head', 'text--p-small'],
+        ['table__data', 'text--p-small'],
+        ['table__data', 'table__data--center', 'table__data--no-wrap', 'text--p-small'],
+        ['table__data', 'table__data--center', 'table__data--no-wrap', 'text--p-small'],
         ['table__data']
     ],
     definitions: [
-        ['table__head'],
-        ['table__data'],
-        ['table__data', 'table__data--long-width'],
-        ['table__data', 'table__data--short-width'],
-        ['table__data', 'table__data--center']
+        ['table__head', 'text--p-small'],
+        ['table__data', 'text--p-small'],
+        ['table__data', 'table__data--long-width', 'text--p-small'],
+        ['table__data', 'table__data--short-width', 'text--p-small'],
+        ['table__data', 'table__data--center', 'text--p-small']
     ]
 };
 
