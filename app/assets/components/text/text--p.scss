@@ -1,10 +1,10 @@
 .text--p-normal {
     font-size: 36px;
 
-    @media screen and (max-width: 399px) {
+    @media screen and (max-width: 449px) {
         font-size: 28px;
     }
-    @media screen and (max-width: 369px) {
+    @media screen and (max-width: 399px) {
         font-size: 20px;
     }
 }
@@ -12,10 +12,10 @@
 .text--p-small {
     font-size: 24px;
 
-    @media screen and (max-width: 399px) {
+    @media screen and (max-width: 449px) {
         font-size: 20px;
     }
-    @media screen and (max-width: 369px) {
+    @media screen and (max-width: 399px) {
         font-size: 16px;
     }
 }
