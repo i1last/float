@@ -61,12 +61,6 @@
 
 <h3>👳‍♂️ Средние разработчики</h3>
 <div>
-  <a href="https://github.com/Zlik12">
-    <img src="https://avatars.githubusercontent.com/u/135515776?v=4" title="Ярослав" width="50" height="50">
-  </a>
-  <p>Ярослав</p>
-</div>
-<div>
   <a href="https://github.com/GAY-SLAVE">
     <img src="https://avatars.githubusercontent.com/u/134802217?v=4" title="Николай" width="50" height="50">
   </a>
