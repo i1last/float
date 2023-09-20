@@ -46,10 +46,10 @@ function createTable(e) {
     }).then(function (e) {
       l = e, innerResult(buildTable(a, l, t.section, t.classes).outerHTML);
     })["catch"](function (e) {
-      "JSON.parse: unexpected end of data at line 1 column 1 of the JSON data" == e.message ? innerResult("Произошла ошибка при загрузке таблицы: Таблица не найдена") : innerResult("\u041F\u0440\u043E\u0438\u0437\u043E\u0448\u043B\u0430 \u043E\u0448\u0438\u0431\u043A\u0430 \u043F\u0440\u0438 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0435 \u0442\u0430\u0431\u043B\u0438\u0446\u044B: ".concat(e));
+      e.message.includes("JSON.parse") ? innerResult("Произошла ошибка при загрузке таблицы: Таблица не найдена") : innerResult("\u041F\u0440\u043E\u0438\u0437\u043E\u0448\u043B\u0430 \u043E\u0448\u0438\u0431\u043A\u0430 \u043F\u0440\u0438 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0435 \u0442\u0430\u0431\u043B\u0438\u0446\u044B: ".concat(e));
     });
   })["catch"](function (e) {
-    "JSON.parse: unexpected end of data at line 1 column 1 of the JSON data" == e.message ? innerResult("Произошла ошибка при загрузке таблицы: Таблица не найдена") : innerResult("\u041F\u0440\u043E\u0438\u0437\u043E\u0448\u043B\u0430 \u043E\u0448\u0438\u0431\u043A\u0430 \u043F\u0440\u0438 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0435 \u0442\u0430\u0431\u043B\u0438\u0446\u044B: ".concat(e));
+    e.message.includes("JSON.parse") ? innerResult("Произошла ошибка при загрузке таблицы: Таблица не найдена") : innerResult("\u041F\u0440\u043E\u0438\u0437\u043E\u0448\u043B\u0430 \u043E\u0448\u0438\u0431\u043A\u0430 \u043F\u0440\u0438 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0435 \u0442\u0430\u0431\u043B\u0438\u0446\u044B: ".concat(e));
   });
 }
 function innerResult(e) {
@@ -77,14 +77,14 @@ function buildTable(e, t, a, l) {
   } finally {
     _iterator.f();
   }
-  var o = 0;
+  var i = 0;
   var _iterator2 = _createForOfIteratorHelper(e[a][1]),
     _step2;
   try {
     for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
       var _t2 = _step2.value;
       var _e3 = document.createElement("tr");
-      if (_e3.classList.add("table__row"), 0 === o) _e3.classList.add("table__row--border-bottom");else _e3.classList.add("table__row--border-top");
+      if (_e3.classList.add("table__row"), 0 === i) _e3.classList.add("table__row--border-bottom");else _e3.classList.add("table__row--border-top");
       var _a2 = 0;
       var _iterator3 = _createForOfIteratorHelper(r),
         _step3;
@@ -110,7 +110,7 @@ function buildTable(e, t, a, l) {
       } finally {
         _iterator3.f();
       }
-      d.appendChild(_e3), o++;
+      d.appendChild(_e3), i++;
     }
   } catch (err) {
     _iterator2.e(err);
