@@ -1,0 +1,313 @@
+{
+    "monday": [
+      ["Понедельник"],
+      [
+        {
+          "number": 1,
+          "lesson": "Разговоры о важном",
+          "class": 415,
+          "time": "9:00 - 9:45",
+          "teacher":""
+        },
+        {
+          "number": 2,
+          "lesson": "Биология",
+          "class": 408,
+          "time": "9:55 - 10:40",
+          "teacher":""
+        },
+        {
+          "number": 3,
+          "lesson": "История",
+          "class": 406,
+          "time": "11:00 - 11:45",
+          "teacher":""
+        },
+        {
+          "number": 4,
+          "lesson": "Математика",
+          "class": 305,
+          "time": "12:05 - 12:50",
+          "teacher":""
+        },
+        {
+          "number": 5,
+          "lesson": "Математика",
+          "class": 305,
+          "time": "13:05 - 13:50",
+          "teacher": ""
+        },
+        {
+          "number": 6,
+          "lesson": "Физкультура",
+          "class": "-",
+          "time": "14:00 - 14:45",
+          "teacher": ""
+        },
+        {
+          "number": 7,
+          "lesson": "Физкультура",
+          "class": "-",
+          "time": "14:55 - 15:40",
+          "teacher": ""
+        }
+      ]
+    ],
+    "tuesday": [
+      ["Вторник"],
+      [
+        {
+          "number": 1,
+          "lesson": "История",
+          "class": 406,
+          "time": "9:00 - 9:45",
+          "teacher":""
+        },
+        {
+          "number": 2,
+          "lesson": "История",
+          "class": 406,
+          "time": "9:55 - 10:40",
+          "teacher": ""
+        },
+        {
+          "number": 3,
+          "lesson": "Русский",
+          "class": 316,
+          "time": "11:00 - 11:45",
+          "teacher": ""
+        },
+        {
+          "number": 4,
+          "lesson": "Литература",
+          "class": 316,
+          "time": "12:05 - 12:50",
+          "teacher": ""
+        },
+        {
+          "number": 5,
+          "lesson": "ОБЖ",
+          "class": 406,
+          "time": "13:05 - 13:50",
+          "teacher": ""
+        },
+        {
+          "number": 6,
+          "lesson": "Биология",
+          "class": 408,
+          "time": "14:00 - 14:45",
+          "teacher": ""
+        }
+      ]
+    ],
+    "wednesday": [
+      ["Среда"],
+      [
+        {
+          "number": 1,
+          "lesson": "Математика",
+          "class": 307,
+          "time": "9:00 - 9:45",
+          "teacher": ""
+        },
+        {
+          "number": 2,
+          "lesson": "Математика",
+          "class": 307,
+          "time": "9:55 - 10:40",
+          "teacher": ""
+        },
+        {
+          "number": 3,
+          "lesson": "Английский",
+          "class": "306 / 308",
+          "time": "11:00 - 11:45",
+          "teacher": ""
+        },
+        {
+          "number": 4,
+          "lesson": "Информатика",
+          "class": "314 / 315",
+          "time": "12:05 - 12:50",
+          "teacher": ""
+        },
+        {
+          "number": 5,
+          "lesson": "Информатика",
+          "class": "314 / 315",
+          "time": "13:05 - 13:50",
+          "teacher": ""
+        },
+        {
+          "number": 6,
+          "lesson": "Физика",
+          "class": 412,
+          "time": "14:00 - 14:45",
+          "teacher": ""
+        },
+        {
+          "number": 7,
+          "lesson": "Литература",
+          "class": 316,
+          "time": "14:55 - 15:40+",
+          "teacher": ""
+        }
+      ]
+    ],
+    "thursday": [
+      ["Четверг"],
+      [
+        {
+          "number": 1,
+          "lesson": "Информатика",
+          "class": "314 / 315",
+          "time": "9:00 - 9:45",
+          "teacher": ""
+        },
+        {
+          "number": 2,
+          "lesson": "Информатика",
+          "class": "314 / 315",
+          "time": "9:55 - 10:40",
+          "teacher": ""
+        },
+        {
+          "number": 3,
+          "lesson": "Литература",
+          "class": 316,
+          "time": "11:00 - 11:45",
+          "teacher": ""
+        },
+        {
+          "number": 4,
+          "lesson": "Химия",
+          "class": 410,
+          "time": "12:05 - 12:50",
+          "teacher": ""
+        },
+        {
+          "number": 5,
+          "lesson": "Русский",
+          "class": 316,
+          "time": "13:05 - 13:50",
+          "teacher": ""
+        },
+        {
+          "number": 6,
+          "lesson": "Русский",
+          "class": 316,
+          "time": "14:00 - 14:45",
+          "teacher": ""
+        },
+        {
+          "number": 7,
+          "lesson": "Физкультура",
+          "class": "-",
+          "time": "14:55 - 15:40",
+          "teacher": ""
+        }
+      ]
+    ],
+    "friday": [
+      ["Пятница"],
+      [
+        {
+          "number": 1,
+          "lesson": "География",
+          "class": 417,
+          "time": "9:00 - 9:45",
+          "teacher": ""
+        },
+        {
+          "number": 2,
+          "lesson": "География",
+          "class": 412,
+          "time": "9:55 - 10:40",
+          "teacher": ""
+        },
+        {
+          "number": 3,
+          "lesson": "Физика",
+          "class": 412,
+          "time": "11:00 - 11:45",
+          "teacher": ""
+        },
+        {
+          "number": 4,
+          "lesson": "Английский",
+          "class": "306 / 308",
+          "time": "12:05 - 12:50",
+          "teacher": ""
+        },
+        {
+          "number": 5,
+          "lesson": "Английский",
+          "class": "306 / 308",
+          "time": "13:05 - 13:50",
+          "teacher": ""
+        },
+        {
+          "number": 6,
+          "lesson": "Математика",
+          "class": 307,
+          "time": "14:00 - 14:45",
+          "teacher": ""
+        },
+        {
+          "number": 7,
+          "lesson": "Математика",
+          "class": 307,
+          "time": "14:55 - 15:40+",
+          "teacher": ""
+        }
+      ]
+    ],
+    "saturday": [
+      ["Суббота"],
+      [
+        {
+          "number": 1,
+          "lesson": "-",
+          "class": "-",
+          "time": "",
+          "teacher": ""
+        },
+        {
+          "number": 2,
+          "lesson": "Черчение",
+          "class": "408",
+          "time": "",
+          "teacher": ""
+        },
+        {
+          "number": 3,
+          "lesson": "Физика",
+          "class": "412",
+          "time": "",
+          "teacher": ""
+        },
+        {
+          "number": 4,
+          "lesson": "Химия",
+          "class": "410",
+          "time": "",
+          "teacher": ""
+        },
+        {
+          "number": 4,
+          "lesson": "Обществознание",
+          "class": "415",
+          "time": "",
+          "teacher": ""
+        },
+        {
+          "number": 5,
+          "lesson": "",
+          "class": "-",
+          "time": "",
+          "teacher": ""
+        }
+      ]
+    ]
+  }
+  

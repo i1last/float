@@ -22,7 +22,7 @@ function createTable(e) {
         }).toLowerCase();
       "current" == _e && (_e = "sunday" != _l ? _l : "monday"), t = {
         headerPath: "timetables/header.json",
-        tablePath: "timetables/".concat(_a, "/timetable.json"),
+        tablePath: "timetables/timetable-".concat(_a, ".json"),
         section: _e,
         classes: classes.timetable,
         grade: _a
