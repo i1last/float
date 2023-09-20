@@ -59,11 +59,11 @@ function createTable(tableRequest) {
             jsonHeader = json;
             innerResult(buildTable(jsonTable, jsonHeader, tableParams.section, tableParams.classes).outerHTML);
         }).catch(err => {
-            if (err.message == 'JSON.parse: unexpected end of data at line 1 column 1 of the JSON data') innerResult(`Произошла ошибка при загрузке таблицы: Таблица не найдена`);
+            if (err.message.includes('JSON.parse')) innerResult(`Произошла ошибка при загрузке таблицы: Таблица не найдена`);
             else innerResult(`Произошла ошибка при загрузке таблицы: ${err}`);
         });
     }).catch(err => {
-        if (err.message == 'JSON.parse: unexpected end of data at line 1 column 1 of the JSON data') innerResult(`Произошла ошибка при загрузке таблицы: Таблица не найдена`);
+        if (err.message.includes('JSON.parse')) innerResult(`Произошла ошибка при загрузке таблицы: Таблица не найдена`);
         else innerResult(`Произошла ошибка при загрузке таблицы: ${err}`);
     });
 }
