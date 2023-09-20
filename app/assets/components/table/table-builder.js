@@ -32,7 +32,7 @@ function createTable(tableRequest) {
 
             tableParams = {
                 headerPath: 'timetables/header.json',
-                tablePath: `timetables/${gradeRequest}/timetable.json`,
+                tablePath: `timetables/timetable-${gradeRequest}.json`,
                 section: dayRequest,
                 classes: classes.timetable,
                 grade: gradeRequest
