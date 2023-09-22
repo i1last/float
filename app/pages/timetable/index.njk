@@ -9,6 +9,7 @@
   <section class="timetable">
     <div class="timetable__controller">
       <select class="timetable__day-selector day-selector table-controller selector text--p-small" table="timetable">
+        <option value="current" class="selector__option">Сегодня</option>
         <option value="monday" class="selector__option">Понедельник</option>
         <option value="tuesday" class="selector__option">Вторник</option>
         <option value="wednesday" class="selector__option">Среда</option>
@@ -29,14 +30,13 @@
         <option value="9a" class="selector__option grade-selector__grade">9А</option>
         <option value="9b" class="selector__option grade-selector__grade">9Б</option>
         <option value="10a" class="selector__option grade-selector__grade">10А</option>
-        <option value="11a" class="selector__option grade-selector__grade" default>11А</option>
+        <option value="11a" class="selector__option grade-selector__grade" selected>11А</option>
       </select>
     </div>
     <div class="timetable__table js-table-container table-container"></div>
   </section>
 {% endblock %}
 {% block scripts %}
-  <script src="/assets/js/timetable-day-autoselecter.js"></script>
   <script src="/assets/js/table-builder.js"></script>
   <script src="/assets/js/table-listener.js"></script>
 {% endblock %}
