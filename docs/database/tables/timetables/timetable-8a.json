@@ -5,50 +5,43 @@
         {
           "number": 1,
           "lesson": "Разговоры о важном",
-          "class": 415,
+          "class": 417,
           "time": "9:00 - 9:45",
           "teacher":""
         },
         {
           "number": 2,
-          "lesson": "Биология",
-          "class": 408,
+          "lesson": "Русский",
+          "class": 311,
           "time": "9:55 - 10:40",
           "teacher":""
         },
         {
           "number": 3,
-          "lesson": "История",
-          "class": 406,
+          "lesson": "Литература",
+          "class": 311,
           "time": "11:00 - 11:45",
           "teacher":""
         },
         {
           "number": 4,
-          "lesson": "Математика",
-          "class": 305,
+          "lesson": "Обществознание",
+          "class": 415,
           "time": "12:05 - 12:50",
           "teacher":""
         },
         {
           "number": 5,
-          "lesson": "Математика",
-          "class": 305,
+          "lesson": "История",
+          "class": 406,
           "time": "13:05 - 13:50",
           "teacher": ""
         },
         {
           "number": 6,
-          "lesson": "Физкультура",
-          "class": "-",
+          "lesson": "История",
+          "class": 406,
           "time": "14:00 - 14:45",
-          "teacher": ""
-        },
-        {
-          "number": 7,
-          "lesson": "Физкультура",
-          "class": "-",
-          "time": "14:55 - 15:40",
           "teacher": ""
         }
       ]
@@ -58,44 +51,58 @@
       [
         {
           "number": 1,
-          "lesson": "История",
-          "class": 406,
+          "lesson": "Биология",
+          "class": 408,
           "time": "9:00 - 9:45",
           "teacher":""
         },
         {
           "number": 2,
-          "lesson": "История",
-          "class": 406,
+          "lesson": "Русский",
+          "class": 311,
           "time": "9:55 - 10:40",
           "teacher": ""
         },
         {
           "number": 3,
-          "lesson": "Русский",
-          "class": 316,
+          "lesson": "ОБЖ",
+          "class": 406,
           "time": "11:00 - 11:45",
           "teacher": ""
         },
         {
           "number": 4,
-          "lesson": "Литература",
-          "class": 316,
+          "lesson": "География",
+          "class": 417,
           "time": "12:05 - 12:50",
           "teacher": ""
         },
         {
           "number": 5,
-          "lesson": "ОБЖ",
-          "class": 406,
+          "lesson": "Математика",
+          "class": 307,
           "time": "13:05 - 13:50",
           "teacher": ""
         },
         {
           "number": 6,
-          "lesson": "Биология",
-          "class": 408,
+          "lesson": "Математика",
+          "class": 307,
           "time": "14:00 - 14:45",
+          "teacher": ""
+        },
+        {
+          "number": 7,
+          "lesson": "Физкультура",
+          "class": "-",
+          "time": "14:55 - 15:40+",
+          "teacher": ""
+        },
+        {
+          "number": 8,
+          "lesson": "Физкультура",
+          "class": "-",
+          "time": "",
           "teacher": ""
         }
       ]
@@ -105,51 +112,44 @@
       [
         {
           "number": 1,
-          "lesson": "Математика",
-          "class": 307,
+          "lesson": "Физкультура",
+          "class": "-",
           "time": "9:00 - 9:45",
           "teacher": ""
         },
         {
           "number": 2,
-          "lesson": "Математика",
-          "class": 307,
+          "lesson": "Русский",
+          "class": 311,
           "time": "9:55 - 10:40",
           "teacher": ""
         },
         {
           "number": 3,
           "lesson": "Английский",
-          "class": "306 / 308",
+          "class": "210 / 312",
           "time": "11:00 - 11:45",
           "teacher": ""
         },
         {
           "number": 4,
-          "lesson": "Информатика",
-          "class": "314 / 315",
+          "lesson": "Физика",
+          "class": 412,
           "time": "12:05 - 12:50",
           "teacher": ""
         },
         {
           "number": 5,
-          "lesson": "Информатика",
-          "class": "314 / 315",
+          "lesson": "Математика",
+          "class": 417,
           "time": "13:05 - 13:50",
           "teacher": ""
         },
         {
           "number": 6,
-          "lesson": "Физика",
-          "class": 412,
+          "lesson": "Математика",
+          "class": 417,
           "time": "14:00 - 14:45",
-          "teacher": ""
-        },
-        {
-          "number": 7,
-          "lesson": "Литература",
-          "class": 316,
-          "time": "14:55 - 15:40",
           "teacher": ""
         }
       ]
@@ -159,52 +159,52 @@
       [
         {
           "number": 1,
-          "lesson": "Информатика",
-          "class": "314 / 315",
+          "lesson": "Биология",
+          "class": 408,
           "time": "9:00 - 9:45",
           "teacher": ""
         },
         {
           "number": 2,
-          "lesson": "Информатика",
-          "class": "314 / 315",
+          "lesson": "Математика",
+          "class": 307,
           "time": "9:55 - 10:40",
           "teacher": ""
         },
         {
           "number": 3,
-          "lesson": "Литература",
-          "class": 316,
+          "lesson": "Химия",
+          "class": 410,
           "time": "11:00 - 11:45",
           "teacher": ""
         },
         {
           "number": 4,
-          "lesson": "Химия",
-          "class": 410,
+          "lesson": "География",
+          "class": 417,
           "time": "12:05 - 12:50",
           "teacher": ""
         },
         {
           "number": 5,
-          "lesson": "Русский",
-          "class": 316,
+          "lesson": "Музыка",
+          "class": 405,
           "time": "13:05 - 13:50",
           "teacher": ""
         },
         {
           "number": 6,
-          "lesson": "Русский",
-          "class": 316,
+          "lesson": "Информатика",
+          "class": "306 / 312",
           "time": "14:00 - 14:45",
           "teacher": ""
         },
         {
-          "number": 7,
-          "lesson": "Физкультура",
-          "class": "-",
-          "time": "14:55 - 15:40",
-          "teacher": ""
+            "number": 7,
+            "lesson": "Информатика",
+            "class": "306 / 312",
+            "time": "14:55 - 15:40+",
+            "teacher": ""
         }
       ]
     ],
@@ -213,51 +213,44 @@
       [
         {
           "number": 1,
-          "lesson": "География",
-          "class": 417,
+          "lesson": "Информатика",
+          "class": "306 / 315",
           "time": "9:00 - 9:45",
           "teacher": ""
         },
         {
           "number": 2,
-          "lesson": "География",
-          "class": 417,
+          "lesson": "Информатика",
+          "class": "306 / 315",
           "time": "9:55 - 10:40",
           "teacher": ""
         },
         {
           "number": 3,
-          "lesson": "Физика",
-          "class": 412,
+          "lesson": "Английский",
+          "class": "210 / 312",
           "time": "11:00 - 11:45",
           "teacher": ""
         },
         {
           "number": 4,
           "lesson": "Английский",
-          "class": "306 / 308",
+          "class": "210 / 312",
           "time": "12:05 - 12:50",
           "teacher": ""
         },
         {
           "number": 5,
-          "lesson": "Английский",
-          "class": "306 / 308",
+          "lesson": "Математика",
+          "class": 305,
           "time": "13:05 - 13:50",
           "teacher": ""
         },
         {
           "number": 6,
-          "lesson": "Математика",
-          "class": 307,
+          "lesson": "Литература",
+          "class": "311",
           "time": "14:00 - 14:45",
-          "teacher": ""
-        },
-        {
-          "number": 7,
-          "lesson": "Математика",
-          "class": 307,
-          "time": "14:55 - 15:40+",
           "teacher": ""
         }
       ]
@@ -274,20 +267,13 @@
         },
         {
           "number": 2,
-          "lesson": "Черчение",
-          "class": 408,
+          "lesson": "",
+          "class": "",
           "time": "",
           "teacher": ""
         },
         {
           "number": 3,
-          "lesson": "Физика",
-          "class": 412,
-          "time": "",
-          "teacher": ""
-        },
-        {
-          "number": 4,
           "lesson": "Химия",
           "class": 410,
           "time": "",
@@ -295,8 +281,22 @@
         },
         {
           "number": 4,
-          "lesson": "Обществознание",
-          "class": 415,
+          "lesson": "Физика",
+          "class": 412,
+          "time": "",
+          "teacher": ""
+        },
+        {
+          "number": 4,
+          "lesson": "Черчение",
+          "class": 408,
+          "time": "",
+          "teacher": ""
+        },
+        {
+          "number": 5,
+          "lesson": "Черчение",
+          "class": 408,
           "time": "",
           "teacher": ""
         }
