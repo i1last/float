@@ -21,7 +21,7 @@ if (params) {
         @media not print {
             :root {color: #eee;}
             img.transparent {color: #222; background: hsl(0,0%,90%) url("chrome://global/skin/media/imagedoc-lightnoise.png");}
-            img {text-align: center; position: absolute; inset: 0; margin: auto;}
+            img {margin: auto; height: 100vh;}
             img.overflowingVertical {margin-top: 0;}
             .completeRotation {transition: transform 0.3s ease 0s;}
         }
