@@ -1,12 +1,64 @@
 {% extends "base-layout.njk" %}
-{% block title %}Поиск{% endblock %}
+{% block title %}Карта{% endblock %}
 
 {% block preview__title %}
-  Поиск
+  Карта сайта
 {% endblock %}
 
 {% block content %}
-  {% include "components/wip.njk" %}
+<div class="site-map">
+  <ul class="list">
+    <li class="list__item text--p-small">
+      <a class="link link--no-underline link--hover-blueberry" class="link link--hover-blueberry footer__text" target="_blank" href="../">Главная</a>
+      <ul class="list">
+        <li class="list__item text--p-small"><a class="link link--no-underline link--hover-blueberry" href="../timetable/">Расписание</a></li>
+        <li class="list__item text--p-small">
+          <a class="link link--no-underline link--hover-blueberry" href="../handbook/">Справочник</a>
+          <ul class="list">
+            <li class="list__item text--p-small list--mt">
+              <a class="link link--no-underline link--hover-blueberry" href="../handbook/physics/">Физика</a>
+              <ul class="list">
+                <li class="list__item text--p-small"><a class="link link--no-underline link--hover-blueberry" href="../handbook/physics/definitions">Определения</a></li>
+                <li class="list__item text--p-small"><a class="link link--no-underline link--hover-blueberry" href="../handbook/physics/synopses">Конспекты</a></li>
+                <li class="list__item text--p-small"><a class="link link--no-underline link--hover-blueberry" href="../handbook/physics/textbooks">Учебники</a></li>
+                <li class="list__item text--p-small"><a class="link link--no-underline link--hover-blueberry" href="../handbook/physics/tabular-data">Табличные данные</a></li>
+              </ul>
+            </li>
+            <li class="list__item text--p-small list--mt">
+              <a class="link link--no-underline link--hover-blueberry" href="../handbook/informatics">Информатика</a>
+              <ul class="list">
+                <li class="list__item text--p-small"><a class="link link--no-underline link--hover-blueberry" href="../handbook/informatics/formulas">Формулы</a></li>
+                <li class="list__item text--p-small"><a class="link link--no-underline link--hover-blueberry" href="../handbook/informatics/useful">Полезное</a></li>
+                <li class="list__item text--p-small"><a class="link link--no-underline link--hover-blueberry" href="../handbook/informatics/python">Python</a></li>
+              </ul>
+            </li>
+            <li class="list__item text--p-small list--mt">
+              <a class="link link--no-underline link--hover-blueberry" href="../handbook/russian">Русский язык</a>
+            </li>
+            <li class="list__item text--p-small list--mt">
+              <a class="link link--no-underline link--hover-blueberry" href="../handbook/fsl">ОБЖ</a>
+              <ul class="list">
+                <li class="list__item text--p-small"><a class="link link--no-underline link--hover-blueberry" href="../handbook/fsl/first-aid">Первая помощь</a></li>
+              </ul>
+            </li>
+            <li class="list__item text--p-small list--mt">
+              <a class="link link--no-underline link--hover-blueberry" href="../handbook/mathematics">Математика</a>
+            </li>
+          </ul>
+        </li>
+        <li class="list__item text--p-small list--mt">
+          <a class="link link--no-underline link--hover-blueberry" href="../teacher/">Для учителей</a>
+          <ul class="list">
+            <li class="list__item text--p-small"><a class="link link--no-underline link--hover-blueberry" href="../teacher/timetable-builder/">Автоматическое расписание</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="list__item text--p-small list--mt"><a class="link link--no-underline link--hover-blueberry" href="https://github.com/i1last/i1last.github.io">Исходный код сайта</a></li>
+    <li class="list__item text--p-small"><a class="link link--no-underline link--hover-blueberry" href="mailto:feedback.float@gmail.com">Обратная связь</a></li>
+    <li class="list__item text--p-small"><a class="link link--no-underline link--hover-blueberry" href="https://github.com/i1last/i1last.github.io/blob/main/LICENSE">Лицензия</a></li>
+  </ul>
+</div>
 {% endblock %}
 
 {% block scripts %}
