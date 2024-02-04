@@ -1,0 +1,11 @@
+.list {
+  padding-left: 40px;
+  list-style-type: revert;
+
+  @media screen and (max-width: 519px) {
+    padding-left: 20px;
+  }
+  @media screen and (max-width: 319px) {
+    padding-left: 12px;
+  }
+}
