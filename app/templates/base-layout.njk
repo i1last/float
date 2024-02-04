@@ -38,7 +38,7 @@
           </li>
           <li>
             <a class="surface-button" href="/search">
-              <div class="search-button header__button-image" id="search-button" title="Поиск" tabindex="0">
+              <div class="search-button header__button-image" id="search-button" title="Карта" tabindex="0">
                 {% include "svg/search.svg" %}
               </div>
             </a>
@@ -52,20 +52,21 @@
           <ul class="navigate-menu__list">
             <li class="navigate-menu__item navigate-menu__go-back"><a href="../" class="navigate-menu__link">Вернуться назад</a></li>
           </ul>
-          <ul class="navigate-menu__list">
+          <ul class="navigate-menu__list"> 
             <li class="navigate-menu__item navigate-menu__main-page"><a href="/" class="navigate-menu__link">Главная</a></li>
             <li class="navigate-menu__item"><a href="/timetable" class="navigate-menu__link">Расписание</a></li>
             <li class="navigate-menu__item"><a href="/handbook" class="navigate-menu__link">Справочник</a></li>
-            <li class="navigate-menu__item"><a href="/ege" class="navigate-menu__link">Для ЕГЭ</a></li>
-            <li class="navigate-menu__item"><a href="/oge" class="navigate-menu__link">Для ОГЭ</a></li>
             <li class="navigate-menu__item"><a href="/teacher" class="navigate-menu__link">Для учителей</a></li>
           </ul>
         </nav>
       </div>
       <div class="container__content">
         <section class="preview">
-          <div class="preview__title text--h1">{% block preview__title %}{% endblock %}</div>
-          <div class="preview__icon">{% block preview__icon %}{% endblock %}</div>
+          <div class="preview__flex-container">
+            <div class="preview__title text--h1">{% block preview__title %}{% endblock %}</div>
+            <div class="preview__icon">{% block preview__icon %}{% endblock %}</div>
+          </div>
+          <div class="preview__description text--h5">{% block preview__description %}{% endblock %}</div>
         </section>
         {% block content %}{% endblock %}
       </div>
@@ -83,8 +84,8 @@
       </div>
       <div class="footer__right">
         <div class="footer__copyright">
-          <p class="footer__text">© Рахметов А.Р., 2022-2023 Все права защищены.</p>
-          <p class="footer__text">Любое использование материалов без согласия правообладателя запрещено.</p>
+          <p class="footer__text">© Рахметов Альберт Рафаилович, 2022. Все права защищены.</p>
+          <p class="footer__text">Любое использование материалов без согласия правообладателей запрещено.</p>
           <p class="footer__text">По всем вопросам пишите на
               <a class="link link--hover-blueberry footer__text" href="mailto:feedback.float@gmail.com">feedback.float@gmail.com</a>
           </p>
