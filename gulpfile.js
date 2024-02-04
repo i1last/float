@@ -49,7 +49,7 @@ task('watch', series('build', function () {
 
 function generateSitemap() {
     return src('docs/**/*.html', { read: false })
-        .pipe(sitemap({ siteUrl: 'https://i1last.github.io' }))
+        .pipe(sitemap({ siteUrl: 'https://i1last.github.io/float' }))
         .pipe(dest('docs/'))
 }
 
