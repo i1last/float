@@ -1,13 +1,13 @@
 .link {
-    color: var(--color-text);
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: 300ms;
-    transition-property: background-size, color;
+  color: var(--color-text);
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 25% 1px;
+  transition: 300ms;
+  transition-property: background-size, color;
 
-    &:hover {
-        background-size: 100% 2px;
-    }
+  &:hover {
+    background-size: 100% 2px !important;
   }
+}
