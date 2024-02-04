@@ -6,7 +6,39 @@
 {% endblock %}
 
 {% block content %}
-  {% include "components/wip.njk" %}
+<section class="tabular-data table-container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th class="table__head math__text">Формула</th>
+        <th class="table__head math__text">Название</th>
+        <th class="table__head math__text">Описание</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table__row table__row--border-bottom">
+        <td class="table__data table__data--center table__data--no-wrap table__data--border-left">N = 2 <span class="math__degree">i</span></td>
+        <td class="table__data table__data--center table__data--no-wrap table__data--border-left">Формула Хартли</td>
+        <td class="table__data table__data--center table__data--no-wrap table__data--border-left">N - кол-во букв в алфавите; i - информационный вес символа (бит)</td>
+      </tr>
+      <tr class="table__row table__row--border-bottom">
+        <td class="table__data table__data--center table__data--no-wrap table__data--border-left">V = K <span class="math__multiply"></span> i</td>
+        <td class="table__data table__data--center table__data--no-wrap table__data--border-left">Информационный объём сообщения</td>
+        <td class="table__data table__data--center table__data--no-wrap table__data--border-left">I = информационный оьъём сообщения (бит); K = кол-во символов в сообщении;<br>i - информационный вес символа (бит)</td>
+      </tr>
+      <tr class="table__row table__row--border-bottom">
+        <td class="table__data table__data--center table__data--no-wrap table__data--border-left">V = x <span class="math__multiply"></span> y <span class="math__multiply"></span> i</td>
+        <td class="table__data table__data--center table__data--no-wrap table__data--border-left">Объём изображения</td>
+        <td class="table__data table__data--center table__data--no-wrap table__data--border-left">V = объём изображения (бит);<br>x <span class="math__multiply"></span> y = разрешение изображения / кол-во пикселей в изображении;<br>i - глубина цвета (бит)</td>
+      </tr>
+      <tr class="table__row table__row--border-bottom">
+        <td class="table__data table__data--center table__data--no-wrap table__data--border-left">V = k <span class="math__multiply"></span> (f <span class="math__multiply"></span> i <span class="math__multiply"></span> T)</td>
+        <td class="table__data table__data--center table__data--no-wrap table__data--border-left">Объём аудиофайла</td>
+        <td class="table__data table__data--center table__data--no-wrap table__data--border-left">V = объём аудиофайла (бит); k = моно (1), стерео (2), квадро (4);<br>f = частота дискретизации (Гц, измерения в секунду); i - глубина кодирования (бит);<br>T = длительность (секунд)</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 {% endblock %}
 
 {% block scripts %}

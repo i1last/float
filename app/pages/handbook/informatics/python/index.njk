@@ -1,0 +1,62 @@
+{% extends "base-layout.njk" %}
+{% block title %}Инфоратика: Python{% endblock %}
+
+{% block preview__title %}
+  Полезные алгоритмы 
+{% endblock %}
+{% block preview__description %}
+{% endblock %}
+
+{% block content %}
+<section class="algorithms">
+  <div class="algorithms__item">
+    <h1 class="text--h2">Перевод из 10 систему счисления</h1>
+    <p class="text--p-small">Может перевести число из десятичной системы счисления в системы счисления от 2 до 36 включительно</p>
+    <pre><code class="code language-python">import string 
+def tox(number, base):
+    alph = string.printable 
+    result = ''
+
+    while number:
+        result = alph[number % base] + result
+        number //= base 
+
+    return result</code></pre> 
+  </div>
+  <hr>
+  <div class="algorithms__item">
+    <h1 class="text--h2">Перевод в 10 систему счисления</h1>
+    <p class="text--p-small">Может перевести число из системы счисления от 2 до 36 включительно в десятичную</p>
+    <pre><code class="code language-python">int('16FAB', 16) # from hex to dec</code></pre> 
+  </div>
+  <hr>
+  <div class="algorithms__item">
+    <h1 class="text--h2">Алгоритм черепашки</h1>
+    <p class="text--p-small">Поможет в решении задач с черепашкой</p>
+    <pre><code class="code language-python">from turtle import *  # Чтобы `forward()` вместо `t.forward()` 
+tracer(0)  # Удаляет все анимации, теперь черепашка будет рисовать мгновенно
+k = 15  # Коэффициент масштаба, чтобы было видно лучше. Использовать в командах на перемещение (`forward`, `backward`, `goto`)
+lt(90)  # Скорее всего по условию задания черепашка должна смотреть вверх, а в turtle она по умолчанию смотрела вправо, поэтому поворачиваем её
+
+# === Алгоритм из задания ===
+# Сокращения команд:
+# lt == left  
+# rt == right 
+# fd == forward 
+# bk == backward 
+
+up()  # Поднимаем хвость, чтобы нарисовать все точки
+d = 20  # Возможно 20 точек во все стороны не хватит, поэтому лучше вывести это в отдельную переменную, чтобы редактировать 1 число вместо 4
+for x in range(-d, d):
+    for y in range(-d, d):
+        goto(x * k, y * k)  # Перемещаемся на координаты и не забываем умножить на коэффициент
+        dot(3, 'gray')  # Ставим точку размером в 3 пикселя и серым цветом (с таким цветом проще всего их считать)
+update()  # Обновляем полотно, чтобы отобразились все точки и линии (нужно из-за `tracer`)
+done()  # Эта команда не позволит автоматически закрыться окну с черепашкой</code></pre> 
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+  <script src="/assets/js/prism.js"></script>
+{% endblock %}
