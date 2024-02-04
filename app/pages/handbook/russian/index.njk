@@ -4,25 +4,15 @@
 {% block preview__title %}
   Русский язык
 {% endblock %}
+{% block preview__description %}
+  © Рахметов Альберт Рафаилович, Вторушин Семён Андреевич, 2022. Все права защищены.<br>
+{% endblock %}
 
 {% block content %}
-  <section class="slides">
-    <ul class="slides__list">
-      <li class="slides__item slide slide--medium bg--brown">
-        <a class="slide__link slide__link--p-large" href="/handbook/russian/tables">
-          <div class="slide__title slide__title--fz-normal slide__title--mb-normal">Таблицы</div>
-          <div class="slide__description slide__description--fz-normal slide__description--maw-large">Таблицы паронимов, ударений, фонетики и многого другого</div>
-        </a>
-      </li>
-      <li class="slides__item slide slide--medium bg--red">
-        <a class="slide__link slide__link--p-large" href="/handbook/russian/synopses">
-          <div class="slide__title slide__title--fz-normal slide__title--mb-normal">Конспекты</div>
-          <div class="slide__description slide__description--fz-normal slide__description--maw-large">Конспекты всей школьной программы, отсортированные по классам</div>
-        </a>
-      </li>
-    </ul>
-  </section>
+  <section class="synopses slides js-list-container"></section>
 {% endblock %}
 
 {% block scripts %}
+  <script src="/assets/js/synopses-loader--russian.js"></script>
+  <script src="/assets/js/download-aside-opener.js"></script>
 {% endblock %}

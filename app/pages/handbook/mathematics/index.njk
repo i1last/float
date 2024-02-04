@@ -4,10 +4,16 @@
 {% block preview__title %}
   Математика
 {% endblock %}
+{% block preview__description %}
+  © Зубарев Николай Александрович, 2022. Все права защищены.<br>
+{% endblock %}
 
 {% block content %}
-  {% include "components/wip.njk" %}
+  <section class="synopses slides js-list-container"></section>
 {% endblock %}
 
 {% block scripts %}
+  <script src="/assets/js/synopses-loader--mathematics.js"></script>
+  <script src="/assets/js/image-opener.js"></script>
+  <script src="/assets/js/download-aside-opener.js"></script>
 {% endblock %}
