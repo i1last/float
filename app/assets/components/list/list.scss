@@ -1,6 +1,6 @@
 .list {
   padding-left: 40px;
-  list-style-type: revert;
+  list-style-type: unset;
 
   @media screen and (max-width: 519px) {
     padding-left: 20px;
