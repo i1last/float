@@ -1,69 +1,82 @@
 .text--h1 {
-    font-weight: 500;
-    font-size: 64px;
-    line-height: 77px;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 77px;
 
-    @media screen and (max-width: 1079px) {
-        font-size: 52px;
-        line-height: 65px;
-    }
-    @media screen and (max-width: 519px) {
-        font-size: 48px;
-        line-height: 53.5px;
-    }
-    @media screen and (max-width: 399px) {
-        font-size: 40px;
-        line-height: 53.5px;
-    }
-    @media screen and (max-width: 349px) {
-        font-size: 36px;
-    }
+  @media screen and (max-width: 1079px) {
+    font-size: 52px;
+    line-height: 65px;
+  }
+  @media screen and (max-width: 519px) {
+    font-size: 48px;
+    line-height: 53.5px;
+  }
+  @media screen and (max-width: 399px) {
+    font-size: 40px;
+    line-height: 53.5px;
+  }
+  @media screen and (max-width: 349px) {
+    font-size: 36px;
+  }
 }
 
 .text--h2 {
-    font-size: 52px;
-    font-weight: 600;
+  font-size: 52px;
+  font-weight: 600;
 
-    @media screen and (max-width: 949px) {
-        font-size: 48px;
-    }
-    @media screen and (max-width: 749px) {
-        font-size: 44px;
-    }
-    @media screen and (max-width: 599px) {
-        font-size: 40px;
-    }
-    @media screen and (max-width: 399px) {
-        font-size: 36px;
-    }
-    @media screen and (max-width: 349px) {
-        font-size: 32px;
-    }
+  @media screen and (max-width: 949px) {
+    font-size: 48px;
+  }
+  @media screen and (max-width: 749px) {
+    font-size: 44px;
+  }
+  @media screen and (max-width: 599px) {
+    font-size: 40px;
+  }
+  @media screen and (max-width: 399px) {
+    font-size: 36px;
+  }
+  @media screen and (max-width: 349px) {
+    font-size: 32px;
+  }
 }
 
 .text--h3 {
-    font-size: 40px;
-    font-weight: 500;
+  font-size: 40px;
+  font-weight: 500;
 
-    @media screen and (max-width: 499px) {
-        font-size: 36px;
-    }
-    @media screen and (max-width: 399px) {
-        font-size: 32px;
-    }
-    @media screen and (max-width: 349px) {
-        font-size: 28px;
-    }
+  @media screen and (max-width: 499px) {
+    font-size: 36px;
+  }
+  @media screen and (max-width: 399px) {
+    font-size: 32px;
+  }
+  @media screen and (max-width: 349px) {
+    font-size: 28px;
+  }
 }
 
 .text--h4 {
-    font-size: 28px;
-    font-weight: 500;
+  font-size: 28px;
+  font-weight: 500;
 
-    @media screen and (max-width: 399px) {
-        font-size: 24px;
-    }
-    @media screen and (max-width: 349px) {
-        font-size: 20px;
-    }
+  @media screen and (max-width: 399px) {
+    font-size: 24px;
+  }
+  @media screen and (max-width: 349px) {
+    font-size: 20px;
+  }
+}
+
+.text--h5 {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.2;
+
+  @media screen and (max-width: 449px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 399px) {
+    font-size: 14px;
+  }
 }
