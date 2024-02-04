@@ -1,0 +1,47 @@
+[
+    {
+        "grade": 10,
+        "card": 1,
+        "description": "TEST DESCR"
+    },
+    {
+        "grade": 10,
+        "card": 3,
+        "description": "TEST DESCR"
+    },
+    {
+        "grade": 10,
+        "card": 6,
+        "description": "TEST DESCR"
+    },
+    {
+        "grade": 10,
+        "card": 7,
+        "description": "TEST DESCR"
+    },
+    {
+        "grade": 10,
+        "card": 8,
+        "description": "TEST DESCR"
+    },
+    {
+        "grade": 10,
+        "card": 9,
+        "description": "TEST DESCR"
+    },
+    {
+        "grade": 10,
+        "card": 10,
+        "description": "TEST DESCR"
+    },
+    {
+        "grade": 10,
+        "card": 11,
+        "description": "TEST DESCR"
+    },
+    {
+        "grade": 10,
+        "card": 12,
+        "description": "TEST DESCR"
+    }
+]
