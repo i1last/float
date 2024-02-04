@@ -1,11 +1,12 @@
 .authors__seniors {
-    display: flex;
-    gap: 32px;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(2, 1fr);
 
-    @media screen and (max-width: 1079px) {
-        gap: 16px;
-    }
-    @media screen and (max-width: 949px) {
-        flex-direction: column;
-    }
+  @media screen and (max-width: 1079px) {
+    gap: 16px;
+  }
+  @media screen and (max-width: 949px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
