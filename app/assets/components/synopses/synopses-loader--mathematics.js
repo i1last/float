@@ -5,7 +5,7 @@ ul.classList.add('synopses__list', 'slides__list');
 
 let cards;
 const req = new XMLHttpRequest();
-req.open('GET', '/database/pages/handbook/mathematics/cards.json', false);
+req.open('GET', '/float/database/pages/handbook/mathematics/cards.json', false);
 req.addEventListener('load', () => {
     cards = JSON.parse(req.response)
 });

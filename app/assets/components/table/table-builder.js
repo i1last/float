@@ -65,11 +65,11 @@ function createTable(tableRequest) {
 
   let jsonTable;
   let jsonHeader;
-  fetch(`/database/tables/${tableParams.tablePath}`)
+  fetch(`float/database/tables/${tableParams.tablePath}`)
     .then((res) => res.json())
     .then((json) => {
       jsonTable = json;
-      fetch(`/database/tables/${tableParams.headerPath}`)
+      fetch(`float/database/tables/${tableParams.headerPath}`)
         .then((res) => res.json())
         .then((json) => {
           jsonHeader = json;

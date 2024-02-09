@@ -4,7 +4,7 @@ const params = new URL(url).search;
 if (params) {
   const pathname = url.pathname;
   const image = new URL(url).searchParams.get('image').replace(' ', '+');
-  const src = `/database/pages${pathname}${image}`;
+  const src = `/float/database/pages${pathname}${image}`;
 
   document.documentElement.innerHTML = `
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
