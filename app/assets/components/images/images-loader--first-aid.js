@@ -24,7 +24,7 @@ for (const item of cards) {
             <object><a class="download-aside__open" js-download-aside-id="${i}" href="#!">Скачать</a></object>
             <h3 class="download-aside__title">Скачать</h3>
             <ul class="download-aside__list">
-                <li><object><a class="download-aside__download-item bg--green" href="/database/pages/handbook/fsl/first-aid/card_${item.grade}-${item.card}.jpg" download>jpg</a></object></li>
+                <li><object><a class="download-aside__download-item bg--green" href="/float/database/pages/handbook/fsl/first-aid/card_${item.grade}-${item.card}.jpg" download>jpg</a></object></li>
             </ul>
         </div>
     </a>

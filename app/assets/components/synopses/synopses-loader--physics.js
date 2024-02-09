@@ -24,8 +24,8 @@ for (const item of cards) {
             <object><a class="download-aside__open" js-download-aside-id="${i}" href="#!">Скачать</a></object>
             <h3 class="download-aside__title">Скачать</h3>
             <ul class="download-aside__list">
-                <li><object><a class="download-aside__download-item bg--green" href="/database/pages/handbook/physics/synopses/${item.grade}/card_${item.grade}-${item.card}.pdf" download>pdf</a></object></li>
-                <li><object><a class="download-aside__download-item bg--brown" href="/database/pages/handbook/physics/synopses/${item.grade}/card_${item.grade}-${item.card}.svg" download>svg</a></object></li>
+                <li><object><a class="download-aside__download-item bg--green" href="/float/database/pages/handbook/physics/synopses/${item.grade}/card_${item.grade}-${item.card}.pdf" download>pdf</a></object></li>
+                <li><object><a class="download-aside__download-item bg--brown" href="/float/database/pages/handbook/physics/synopses/${item.grade}/card_${item.grade}-${item.card}.svg" download>svg</a></object></li>
             </ul>
         </div>
     </a>
