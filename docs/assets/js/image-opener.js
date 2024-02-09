@@ -1,6 +1,6 @@
 "use strict";
 
-var url = document.location,
+var url = document.location.replace('/float', ''),
   params = new URL(url).search;
 if (params) {
   var n = url.pathname,
