@@ -2,7 +2,7 @@ const url = document.location;
 const params = new URL(url).search;
 
 if (params) {
-  const pathname = url.pathname;
+  const pathname = url.pathname.replace('/float', '');
   const image = new URL(url).searchParams.get('image').replace(' ', '+');
   const src = `/float/database/pages${pathname}${image}`;
 
