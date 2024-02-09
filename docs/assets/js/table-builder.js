@@ -38,10 +38,10 @@ function createTable(e) {
         grade: _a
       };
   }
-  fetch("float/database/tables/".concat(t.tablePath)).then(function (e) {
+  fetch("/float/database/tables/".concat(t.tablePath)).then(function (e) {
     return e.json();
   }).then(function (e) {
-    a = e, fetch("float/database/tables/".concat(t.headerPath)).then(function (e) {
+    a = e, fetch("/float/database/tables/".concat(t.headerPath)).then(function (e) {
       return e.json();
     }).then(function (e) {
       l = e, innerResult(buildTable(a, l, t.section, t.classes).outerHTML);
