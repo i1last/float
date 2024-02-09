@@ -8,7 +8,7 @@ var cards,
   ul = document.createElement("ul");
 ul.classList.add("synopses__list", "slides__list");
 var req = new XMLHttpRequest();
-req.open("GET", "/database/pages/handbook/mathematics/cards.json", !1), req.addEventListener("load", function () {
+req.open("GET", "/float/database/pages/handbook/mathematics/cards.json", !1), req.addEventListener("load", function () {
   cards = JSON.parse(req.response);
 }), req.send();
 var i = 0;

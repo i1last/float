@@ -38,10 +38,10 @@ function createTable(e) {
         grade: _a
       };
   }
-  fetch("/database/tables/".concat(t.tablePath)).then(function (e) {
+  fetch("float/database/tables/".concat(t.tablePath)).then(function (e) {
     return e.json();
   }).then(function (e) {
-    a = e, fetch("/database/tables/".concat(t.headerPath)).then(function (e) {
+    a = e, fetch("float/database/tables/".concat(t.headerPath)).then(function (e) {
       return e.json();
     }).then(function (e) {
       l = e, innerResult(buildTable(a, l, t.section, t.classes).outerHTML);
@@ -77,14 +77,14 @@ function buildTable(e, t, a, l) {
   } finally {
     _iterator.f();
   }
-  var i = 0;
+  var o = 0;
   var _iterator2 = _createForOfIteratorHelper(e[a][1]),
     _step2;
   try {
     for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
       var _t2 = _step2.value;
       var _e3 = document.createElement("tr");
-      if (_e3.classList.add("table__row"), 0 === i) _e3.classList.add("table__row--border-bottom");else _e3.classList.add("table__row--border-top");
+      if (_e3.classList.add("table__row"), 0 === o) _e3.classList.add("table__row--border-bottom");else _e3.classList.add("table__row--border-top");
       var _a2 = 0;
       var _iterator3 = _createForOfIteratorHelper(r),
         _step3;
@@ -110,7 +110,7 @@ function buildTable(e, t, a, l) {
       } finally {
         _iterator3.f();
       }
-      d.appendChild(_e3), i++;
+      d.appendChild(_e3), o++;
     }
   } catch (err) {
     _iterator2.e(err);

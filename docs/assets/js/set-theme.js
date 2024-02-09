@@ -4,7 +4,7 @@ var localStorageTheme = localStorage.getItem("theme"),
   currentBrowserThemeDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 var jsFavicon = document.querySelector(".js-favicon"),
   html = document.documentElement;
-switch (currentBrowserThemeDark && jsFavicon.setAttribute("href", "/favicon--dark.svg"), localStorageTheme) {
+switch (currentBrowserThemeDark && jsFavicon.setAttribute("href", "/float/favicon--dark.svg"), localStorageTheme) {
   case "dark":
     html.setAttribute("theme", "dark");
     break;
