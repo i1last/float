@@ -25,14 +25,17 @@ import concat from 'gulp-concat';
 import flatten from 'gulp-flatten';
 import sitemap from 'gulp-sitemap';
 
+let destPath = "docs";
+const devDestName = "float";
 
 task('test', series(jsCompile));
 task('build', parallel(svgCompile, rastrCompile, scssCompile, jsCompile, njkCompile, filesTransfer, generateSitemap));
-task('watch', series('build', function () {
+task('watch', series(function () { destPath = `devDest/${devDestName}`; return src('.'); }, 'build', function () {
     browserSync.init({
         server: {
-        baseDir: './docs/',
+          baseDir: destPath.slice(0, destPath.indexOf('/')),
         },
+        startPath: devDestName,
         notify: false,
         logFileChanges: false
     });
@@ -50,7 +53,7 @@ task('watch', series('build', function () {
 function generateSitemap() {
     return src('docs/**/*.html', { read: false })
         .pipe(sitemap({ siteUrl: 'https://i1last.github.io/float' }))
-        .pipe(dest('docs/'))
+        .pipe(dest(destPath))
 }
 
 function njkCompile() {
@@ -59,7 +62,7 @@ function njkCompile() {
         .pipe(htmlmin({
             collapseWhitespace: true
         }))
-        .pipe(dest('docs/'))
+        .pipe(dest(destPath))
         .pipe(browserSync.stream());
 }
 
@@ -87,7 +90,7 @@ function scssCompile() {
             level: 2
         }))
         .pipe(sourcemaps.write('./'))
-        .pipe(dest('docs/assets/css/'))
+        .pipe(dest(`${destPath}/assets/css/`))
         .pipe(browserSync.stream());
 }
 
@@ -100,13 +103,13 @@ function jsCompile() {
         }))
         .pipe(flatten())
         .pipe(sourcemaps.write('./'))
-        .pipe(dest('docs/assets/js/'))
+        .pipe(dest(`${destPath}/assets/js/`))
         .pipe(browserSync.stream());
 }
 
 function rastrCompile() {
     return src('app/database/images/**/*.*')
-        .pipe(changed('docs/database/images/'))
+        .pipe(changed(`${destPath}/database/images/`))
         .pipe(imagemin({interlaced: true, progressive: true, optimizationLevel: 5},
         [
             recompress({
@@ -123,13 +126,13 @@ function rastrCompile() {
             imageminOptipng()
         ]))
         .pipe(plumber())
-        .pipe(dest('docs/database/images/'))
+        .pipe(dest(`${destPath}/database/images/`))
         .pipe(browserSync.stream());
 }
 
 function svgCompile() {
     return src('app/database/pages/**/*.svg')
-        .pipe(changed('docs/database/pages/'))
+        .pipe(changed(`${destPath}/database/pages/`))
         .pipe(svgmin({
             plugins: [
             {
@@ -139,7 +142,7 @@ function svgCompile() {
             'removeEmptyContainers'
             ]
         }))
-        .pipe(dest('docs/database/pages/'))
+        .pipe(dest(`${destPath}/database/pages/`))
 }
 
 function filesTransfer() {
@@ -149,6 +152,6 @@ function filesTransfer() {
         '!app/**/*.+(njk|js|scss)',
         '!app/database/images/']
         )
-        .pipe(dest('docs/'))
+        .pipe(dest(destPath))
         .pipe(browserSync.stream());
 }
