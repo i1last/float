@@ -1,0 +1,14 @@
+.museum\:table-of-content {
+  position: sticky;
+  top: calc(34px + 12px); // 34px is height of header; 12px is indent to header
+  flex-shrink: 0;
+  width: 240px;
+  height: fit-content;
+  margin-right: 16px !important;
+  color: #4e4e4e;
+
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}

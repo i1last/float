@@ -1,0 +1,7 @@
+.museum\:image {
+  margin: 16px;
+
+  @media screen and (max-width: 499px) {
+    margin: 8px;
+  }
+}

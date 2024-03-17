@@ -1,0 +1,10 @@
+.museum\:images-grid {
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+  width: 100%;
+
+  @media screen and (max-width: 999px) {
+    justify-content: start;
+  }
+}
