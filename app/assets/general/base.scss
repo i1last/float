@@ -11,24 +11,24 @@ html {
 }
 
 body {
-  font-family: 'Golos Text', 'JetBrains Mono';
+  font-family: "Golos Text", "JetBrains Mono";
   color: var(--color-text);
   background-color: var(--color-background);
   font-weight: 300;
 }
 
 p {
-    color: var(--color-text);
-    font-size: 32px;
-    line-height: 1.2;
+  color: var(--color-text);
+  font-size: 32px;
+  line-height: 1.2;
 }
 
 details summary::-webkit-details-marker {
-    display: none;
+  display: none;
 }
 
 summary {
-    list-style: none;
+  list-style: none;
 }
 
 pre {
