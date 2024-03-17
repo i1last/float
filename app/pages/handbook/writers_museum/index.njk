@@ -1,0 +1,25 @@
+{% extends "base-layout.njk" %}
+{% block title %}Музей писателей{% endblock %}
+
+{% block preview__title %}
+  Музей писателей
+{% endblock %}
+{% block preview__description %}
+  © Санкевич Юлия Валерьевна, 2022. Все права защищены.<br>
+{% endblock %}
+
+{% block content %}
+  <section class="slides">
+    <ul class="slides__list">
+      <li class="slides__item slide slide--medium bg--cyan">
+        <a class="slide__link slide__link--p-large" href="/float/handbook/writers_museum/griboedov">
+          <div class="slide__title slide__title--fz-normal slide__title--mb-normal">А.С. Грибоедов</div>
+          <div class="slide__description slide__description--fz-normal slide__description--maw-large">Биография</div>
+        </a>
+      </li>
+    </ul>
+  </section>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}
