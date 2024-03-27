@@ -1,0 +1,24 @@
+.writer__avatar {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+  background-color: var(--color-surface);
+  font-family: "JetBrains Mono";
+  font-size: 20px;
+  height: 200px;
+  width: 200px;
+  margin-right: 32px;
+
+  @media screen and (max-width: 949px) {
+    height: 150px;
+    width: 150px;
+    margin-right: 32px;
+  }
+  @media screen and (max-width: 549px) {
+    height: 130px;
+    width: 130px;
+    margin-right: 32px;
+  }
+}

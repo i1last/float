@@ -1,0 +1,9 @@
+.image {
+  display: inline-block;
+  height: 50vw;
+  border-radius: 8px;
+
+  @media screen and (min-width: 1199px) {
+    height: 25em;
+  }
+}

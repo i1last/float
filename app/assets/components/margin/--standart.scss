@@ -1,0 +1,7 @@
+.margin--standart {
+  margin-bottom: 32px;
+
+  @media screen and (max-width: 1079px) {
+    margin-bottom: 16px;
+  }
+}

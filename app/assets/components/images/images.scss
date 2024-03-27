@@ -1,0 +1,10 @@
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 12px 0 12px 0;
+
+  @media screen and (max-width: 449px) {
+    margin: 8px 0 8px 0;
+  }
+}

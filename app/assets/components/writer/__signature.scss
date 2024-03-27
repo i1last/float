@@ -1,0 +1,11 @@
+.writer__signature {
+    margin-left: 96px;
+    width: 300px;
+
+    @media screen and (max-width: 949px) {
+        margin-left: 48px;
+    }
+    @media screen and (max-width: 854px) {
+        display: none;
+    }
+}
