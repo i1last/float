@@ -166,9 +166,9 @@ $ yarn install
 <h3>Доступные команды</h3>
 
 ```sh
-$ yarn run watch  # собирает проект и запускает browsersync
-$ yarn run build  # собирает проект
-$ yarn run test  # данный таск используется для отладки и все время меняется (см. gulpfile.js)
+$ yarn run watch  # собирает и открывает проект в режиме dev
+$ yarn run build  # собирает проект в режиме product
+$ yarn run test  # данный таск используется для отладки (см. gulpfile.js)
 ```
 <h3>Работа с gulpfile.js</h3>
 <p>
