@@ -1,14 +1,14 @@
 <h1 align="center"><img src="./.github/assets/logo-text.svg"></h1>
 <p align="center">
   <i align="center">
-    Сайт ориентирован на ГБОУ СОШ № 501 г. Санкт-Петербург.
+    Сайт ориентирован на ГБОУ СОШ № 1001 г. Санкт-Петербург.
   </i>
 </p>
 
 
 <h2>👀 О проекте</h2>
 <p>
-  .float – это сайт, разрабатываемый учениками ГБОУ СОШ № 501 (см. выше)
+  .float – это сайт, разрабатываемый учениками ГБОУ СОШ № 1001 (см. выше)
   для получения реального опыта, а также для проектной
   деятельности в этой школе.
 </p>
@@ -16,31 +16,31 @@
 <h2>🙋‍♂️ О создателях и поддержке</h2>
 <h3>🧙‍♂️ Куратор проекта</h3>
 <div>
-  <a href="http://www.kirov.spb.ru/sc/501/index.php?option=com_contact&task=view&contact_id=7&Itemid=30">
-    <img src="./.github/assets/supervisor-yn.png" title="Нилова Юлия Николаевна" width="80" height="80">
+  <a href="http://www.kirov.spb.ru/sc/1001/index.php?option=com_contact&task=view&contact_id=7&Itemid=30">
+    <img src="./.github/assets/supervisor-yn.jpg" title="Нилова Юлия Николаевна" height="150">
   </a>
   <p>
-    <a href="http://www.kirov.spb.ru/sc/501/index.php?option=com_contact&task=view&contact_id=7&Itemid=30">
+    <a href="http://www.kirov.spb.ru/sc/1001/index.php?option=com_contact&task=view&contact_id=7&Itemid=30">
       Нилова Юлия Николаевна
     </a>
   </p>
 </div>
 <div>
-  <a href="http://www.kirov.spb.ru/sc/501/index.php?option=com_contact&task=view&contact_id=60&Itemid=31">
-    <img src="./.github/assets/supervisor-ea.png" title="Орлова Екатерина Алексеевна" width="80" height="80">
+  <a href="http://www.kirov.spb.ru/sc/1001/index.php?option=com_contact&task=view&contact_id=60&Itemid=31">
+    <img src="./.github/assets/supervisor-ea.jpg" title="Орлова Екатерина Алексеевна" height="150">
   </a>
   <p>
-    <a href="http://www.kirov.spb.ru/sc/501/index.php?option=com_contact&task=view&contact_id=7&Itemid=30">
+    <a href="http://www.kirov.spb.ru/sc/1001/index.php?option=com_contact&task=view&contact_id=7&Itemid=30">
       Орлова Екатерина Алексеевна
     </a>
   </p>
 </div>
 <div>
-  <a href="http://www.kirov.spb.ru/sc/501/index.php?option=com_contact&task=view&contact_id=117&Itemid=30">
-    <img src="./.github/assets/supervisor-tv.png" title="Завальнова Татьяна Владимировна" width="80" height="80">
+  <a href="http://www.kirov.spb.ru/sc/1001/index.php?option=com_contact&task=view&contact_id=117&Itemid=30">
+    <img src="./.github/assets/supervisor-tv.jpg" title="Завальнова Татьяна Владимировна" height="150">
   </a>
   <p>
-    <a href="http://www.kirov.spb.ru/sc/501/index.php?option=com_contact&task=view&contact_id=7&Itemid=30">
+    <a href="http://www.kirov.spb.ru/sc/1001/index.php?option=com_contact&task=view&contact_id=7&Itemid=30">
      Завальнова Татьяна Владимировна 
     </a>
   </p>
@@ -50,13 +50,13 @@
 <h3>🧑‍🦽 Основатели проекта</h3>
 <div>
   <a href="https://github.com/i1last">
-    <img src="https://avatars.githubusercontent.com/u/90155905?v=4" title="Альберт" width="65" height="65">
+    <img src="https://avatars.githubusercontent.com/u/90155905?v=4" title="Альберт" width="100" height="100">
   </a>
   <p>Рахметов Альберт Рафаилович</p>
 </div>
 <div>
   <a href="https://github.com/Semvt">
-    <img src="https://avatars.githubusercontent.com/u/93983380?v=4" title="Семен" width="65" height="65">
+    <img src="https://avatars.githubusercontent.com/u/93983380?v=4" title="Семен" width="100" height="100">
   </a>
   <p>Вторушин Семён Андреевич</p>
 </div>
@@ -65,19 +65,19 @@
 <h3>👨‍🦯 Разработчики</h3>
 <div>
   <a href="#!">
-    <img src="https://img.freepik.com/premium-photo/happy-cute-tabby-grey-cat-jumping-on-isolated-solid-background_516484-1242.jpg" title="Санкевич" width="50" height="50">
+    <img src="https://img.freepik.com/premium-photo/happy-cute-tabby-grey-cat-jumping-on-isolated-solid-background_516484-1242.jpg" title="Санкевич" width="100" height="100">
   </a>
   <p>Санкевич Юлия Валерьевна</p>
 </div>
 <div>
   <a href="https://github.com/GAY-SLAVE">
-    <img src="https://avatars.githubusercontent.com/u/134802217?v=4" title="Николай" width="50" height="50">
+    <img src="https://avatars.githubusercontent.com/u/134802217?v=4" title="Николай" width="100" height="100">
   </a>
   <p>Зубарев Николай Александрович</p>
 </div>
 <div>
   <a href="https://github.com/andrix7777777">
-    <img src="https://avatars.githubusercontent.com/u/71929141?v=4" title="Андрей" width="50" height="50">
+    <img src="https://avatars.githubusercontent.com/u/71929141?v=4" title="Андрей" width="100" height="100">
   </a>
   <p>Махоткин Андрей Игоревич</p>
 </div>
