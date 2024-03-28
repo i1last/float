@@ -17,15 +17,32 @@
 <h3>🧙‍♂️ Куратор проекта</h3>
 <div>
   <a href="http://www.kirov.spb.ru/sc/501/index.php?option=com_contact&task=view&contact_id=7&Itemid=30">
-    <img src="./.github/assets/supervisor.png" title="Нилова Юлия Николаевна" width="80" height="80">
+    <img src="./.github/assets/supervisor-yn.png" title="Нилова Юлия Николаевна" width="80" height="80">
   </a>
   <p>
     <a href="http://www.kirov.spb.ru/sc/501/index.php?option=com_contact&task=view&contact_id=7&Itemid=30">
       Нилова Юлия Николаевна
     </a>
-    &#8211; заместитель директора по УВР (ИКТ)
-    школы ГБОУ 501 города Санкт-Петербург; учитель информатики высшей
-    квалификационной категории; кандидат педагогических наук.
+  </p>
+</div>
+<div>
+  <a href="http://www.kirov.spb.ru/sc/501/index.php?option=com_contact&task=view&contact_id=60&Itemid=31">
+    <img src="./.github/assets/supervisor-ea.png" title="Орлова Екатерина Алексеевна" width="80" height="80">
+  </a>
+  <p>
+    <a href="http://www.kirov.spb.ru/sc/501/index.php?option=com_contact&task=view&contact_id=7&Itemid=30">
+      Орлова Екатерина Алексеевна
+    </a>
+  </p>
+</div>
+<div>
+  <a href="http://www.kirov.spb.ru/sc/501/index.php?option=com_contact&task=view&contact_id=117&Itemid=30">
+    <img src="./.github/assets/supervisor-tv.png" title="Завальнова Татьяна Владимировна" width="80" height="80">
+  </a>
+  <p>
+    <a href="http://www.kirov.spb.ru/sc/501/index.php?option=com_contact&task=view&contact_id=7&Itemid=30">
+     Завальнова Татьяна Владимировна 
+    </a>
   </p>
 </div>
 
