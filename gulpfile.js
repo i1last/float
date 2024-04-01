@@ -149,6 +149,7 @@ function filesTransfer() {
     return src(
         ['app/pages/**',
         'app/database*/**',
+        'app/assets*/fonts*/**',
         '!app/**/*.+(njk|js|scss)',
         '!app/database/images/']
         )
