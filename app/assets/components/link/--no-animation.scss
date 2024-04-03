@@ -1,0 +1,12 @@
+.link--no-animation {
+  background-image: none !important;
+  background-position: none !important;
+  background-repeat: none !important;
+  background-size: none !important;
+  transition: none !important;
+  transition-property: none !important;
+
+  &:hover {
+    background-size: none !important;
+  }
+}
