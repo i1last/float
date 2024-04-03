@@ -23,6 +23,7 @@ html {
     --color-surface-negative: var(--color-dark-grey);
     --color-surface-colored: var(--color-green-light);
     --color-text: var(--color-black);
+    --color-subtext: var(--color-dark-grey)
   }
   &[theme='dark'] {
     --color-background: var(--color-light-black);
@@ -32,5 +33,6 @@ html {
     --color-surface-negative: var(--color-dark-white);
     --color-surface-colored: var(--color-dark-grey);
     --color-text: var(--color-dark-white);
+    --color-subtext: var(--color-light-grey)
   }
 }
