@@ -35,17 +35,6 @@
     </a>
   </p>
 </div>
-<div>
-  <a href="http://www.kirov.spb.ru/sc/1001/index.php?option=com_contact&task=view&contact_id=117&Itemid=30">
-    <img src="./.github/assets/supervisor-tv.jpg" title="Завальнова Татьяна Владимировна" height="150">
-  </a>
-  <p>
-    <a href="http://www.kirov.spb.ru/sc/1001/index.php?option=com_contact&task=view&contact_id=7&Itemid=30">
-     Завальнова Татьяна Владимировна 
-    </a>
-  </p>
-</div>
-
 
 <h3>🧑‍🦽 Основатели проекта</h3>
 <div>
