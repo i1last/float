@@ -1,4 +1,8 @@
 .popular-pages__slide {
-    flex-shrink: 0;
-    min-width: 84px;
+  flex-shrink: 0;
+  min-width: 32px;
+
+  @media screen and (max-width: 399px) {
+    min-width: 12px;
+  }
 }
