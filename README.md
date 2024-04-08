@@ -30,7 +30,7 @@
     <img src="./.github/assets/supervisor-ea.jpg" title="Орлова Екатерина Алексеевна" height="150">
   </a>
   <p>
-    <a href="http://www.kirov.spb.ru/sc/501/index.php?option=com_contact&task=view&contact_id=7&Itemid=30">
+    <a href="http://www.kirov.spb.ru/sc/501/index.php?option=com_contact&task=view&contact_id=60&Itemid=31">
       Орлова Екатерина Алексеевна
     </a>
   </p>
@@ -54,7 +54,7 @@
 <h3>👨‍🦯 Разработчики</h3>
 <div>
   <a href="#!">
-    <img src="https://img.freepik.com/premium-photo/happy-cute-tabby-grey-cat-jumping-on-isolated-solid-background_516484-1242.jpg" title="Санкевич" width="100" height="100">
+    <img src="https://img.freepik.com/premium-photo/happy-cute-tabby-grey-cat-jumping-on-isolated-solid-background_516484-1242.jpg" title="Юлия" width="100" height="100">
   </a>
   <p>Санкевич Юлия Валерьевна</p>
 </div>
