@@ -1,14 +1,14 @@
 <h1 align="center"><img src="./.github/assets/logo-text.svg"></h1>
 <p align="center">
   <i align="center">
-    Сайт ориентирован на ГБОУ СОШ № 1001 г. Санкт-Петербург.
+    Сайт ориентирован на ГБОУ СОШ № 501 г. Санкт-Петербург.
   </i>
 </p>
 
 
 <h2>👀 О проекте</h2>
 <p>
-  .float – это сайт, разрабатываемый учениками ГБОУ СОШ № 1001 (см. выше)
+  .float – это сайт, разрабатываемый учениками ГБОУ СОШ № 501 (см. выше)
   для получения реального опыта, а также для проектной
   деятельности в этой школе.
 </p>
@@ -16,21 +16,21 @@
 <h2>🙋‍♂️ О создателях и поддержке</h2>
 <h3>🧙‍♂️ Куратор проекта</h3>
 <div>
-  <a href="http://www.kirov.spb.ru/sc/1001/index.php?option=com_contact&task=view&contact_id=7&Itemid=30">
+  <a href="http://www.kirov.spb.ru/sc/501/index.php?option=com_contact&task=view&contact_id=7&Itemid=30">
     <img src="./.github/assets/supervisor-yn.jpg" title="Нилова Юлия Николаевна" height="150">
   </a>
   <p>
-    <a href="http://www.kirov.spb.ru/sc/1001/index.php?option=com_contact&task=view&contact_id=7&Itemid=30">
+    <a href="http://www.kirov.spb.ru/sc/501/index.php?option=com_contact&task=view&contact_id=7&Itemid=30">
       Нилова Юлия Николаевна
     </a>
   </p>
 </div>
 <div>
-  <a href="http://www.kirov.spb.ru/sc/1001/index.php?option=com_contact&task=view&contact_id=60&Itemid=31">
+  <a href="http://www.kirov.spb.ru/sc/501/index.php?option=com_contact&task=view&contact_id=60&Itemid=31">
     <img src="./.github/assets/supervisor-ea.jpg" title="Орлова Екатерина Алексеевна" height="150">
   </a>
   <p>
-    <a href="http://www.kirov.spb.ru/sc/1001/index.php?option=com_contact&task=view&contact_id=7&Itemid=30">
+    <a href="http://www.kirov.spb.ru/sc/501/index.php?option=com_contact&task=view&contact_id=7&Itemid=30">
       Орлова Екатерина Алексеевна
     </a>
   </p>
