@@ -53,8 +53,8 @@
 
 <h3>👨‍🦯 Разработчики</h3>
 <div>
-  <a href="#!">
-    <img src="https://img.freepik.com/premium-photo/happy-cute-tabby-grey-cat-jumping-on-isolated-solid-background_516484-1242.jpg" title="Юлия" width="100" height="100">
+  <a href="https://github.com/ktoyatellmepls">
+    <img src="https://avatars.githubusercontent.com/u/166416596?v=4" title="Юлия" width="100" height="100">
   </a>
   <p>Санкевич Юлия Валерьевна</p>
 </div>
