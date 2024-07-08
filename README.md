@@ -43,12 +43,6 @@
   </a>
   <p>Рахметов Альберт Рафаилович</p>
 </div>
-<div>
-  <a href="https://github.com/Semvt">
-    <img src="https://avatars.githubusercontent.com/u/93983380?v=4" title="Семен" width="100" height="100">
-  </a>
-  <p>Вторушин Семён Андреевич</p>
-</div>
 
 
 <h3>👨‍🦯 Разработчики</h3>
@@ -57,18 +51,6 @@
     <img src="https://avatars.githubusercontent.com/u/166416596?v=4" title="Юлия" width="100" height="100">
   </a>
   <p>Санкевич Юлия Валерьевна</p>
-</div>
-<div>
-  <a href="https://github.com/GAY-SLAVE">
-    <img src="https://avatars.githubusercontent.com/u/134802217?v=4" title="Николай" width="100" height="100">
-  </a>
-  <p>Зубарев Николай Александрович</p>
-</div>
-<div>
-  <a href="https://github.com/andrix7777777">
-    <img src="https://avatars.githubusercontent.com/u/71929141?v=4" title="Андрей" width="100" height="100">
-  </a>
-  <p>Махоткин Андрей Игоревич</p>
 </div>
 
 <h2>📂 Файловая структура</h2>
