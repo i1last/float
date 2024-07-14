@@ -146,8 +146,8 @@ slide/
 <h3>Клонирование репозитория</h3>
 
 ```sh
-$ git clone https://github.com/i1last/i1last.github.io.git
-$ cd i1last.github.io
+$ git clone https://github.com/i1last/float.git
+$ cd float
 $ yarn install
 ```
 
