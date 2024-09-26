@@ -36,21 +36,30 @@
   </p>
 </div>
 
-<h3>🧑‍🦽 Основатели проекта</h3>
+<h3>🧑‍🦽 Разработчики</h3>
 <div>
   <a href="https://github.com/i1last">
     <img src="https://avatars.githubusercontent.com/u/90155905?v=4" title="Альберт" width="100" height="100">
   </a>
   <p>Рахметов Альберт Рафаилович</p>
 </div>
-
-
-<h3>👨‍🦯 Разработчики</h3>
+<div>
+  <a href="https://github.com/Semvt">
+    <img src="https://avatars.githubusercontent.com/u/93983380?v=4" title="Семен" width="100" height="100">
+  </a>
+  <p>Вторушин Семён Андреевич</p>
+</div>
 <div>
   <a href="https://github.com/ktoyatellmepls">
     <img src="https://avatars.githubusercontent.com/u/166416596?v=4" title="Юлия" width="100" height="100">
   </a>
   <p>Санкевич Юлия Валерьевна</p>
+</div>
+<div>
+  <a href="https://github.com/GAY-SLAVE">
+    <img src="https://avatars.githubusercontent.com/u/134802217?v=4" title="Николай" width="100" height="100">
+  </a>
+  <p>Зубарев Николай Александрович</p>
 </div>
 
 <h2>📂 Файловая структура</h2>
